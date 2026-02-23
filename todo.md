@@ -1,0 +1,169 @@
+# Project TODO
+
+- [x] Añadir URLs de YouTube y Spotify para febrero (días 32-59)
+- [x] Iniciar automáticamente en el siguiente día no leído al abrir la aplicación
+- [x] Pantalla de bienvenida en el primer ingreso con imagen promocional
+- [x] Corregir y verificar URLs de YouTube y Spotify en todos los días de febrero
+- [x] Verificar y corregir URLs reales de YouTube para canciones de febrero
+- [x] Crear checkpoint para publicar versión con URLs verificadas
+- [x] Sistema de registro con nombre al iniciar
+- [x] Contador de usuarios en línea en tiempo real
+- [x] Estadísticas de usuarios activos del mes
+- [x] Estadísticas de total de usuarios registrados
+- [x] Simplificar app: usar localStorage para nombre (sin login)
+- [x] Añadir saludo personalizado "Hola, [Nombre]" en header
+- [x] Hacer estadísticas públicas sin autenticación
+- [x] Botón para cambiar nombre en el menú
+- [x] Animación fade-in en saludo personalizado
+- [x] Verificar URLs de YouTube para marzo-diciembre (días 60-365)
+- [x] Optimizar visibilidad de saludo, estadísticas y botón de cambiar nombre en móviles
+- [x] Corregir lógica para mostrar formulario de nombre si no existe, independiente de visitas previas
+- [x] Ocultar estadísticas de usuarios del header
+- [x] Crear manual visual con imágenes instructivas para móvil
+- [x] Regenerar imágenes del manual con logo oficial de CAC
+- [x] Generar código QR personalizado con colores CAC y logo oficial
+- [x] Crear menú de selección de devocionales
+- [x] Generar contenido de enero (31 días) para "Legado de Impacto"
+- [x] Generar contenido de febrero-diciembre (334 días restantes)
+- [x] Adaptar componentes para soportar múltiples devocionales
+- [x] Sistema de localStorage para recordar devocional seleccionado
+- [x] Añadir campos monthId y quote a todos los días de Legado de Impacto
+- [x] Hacer campo song opcional para días con películas
+- [x] Integrar películas en días 7, 14, 21, 28 de Legado de Impacto
+- [x] Agregar botón en header para regresar al selector de devocionales
+- [x] Generar imagen de bienvenida para Legado de Impacto
+- [x] Probar que ambos devocionales muestren sus imágenes de bienvenida correctamente
+- [x] Verificar que el código no borre progreso de usuarios existentes de Raíces de Esperanza
+- [x] Corregir URLs de canciones para que vayan directo al contenido (no búsquedas)
+- [x] Obtener URLs directas de YouTube y Spotify para 7 canciones principales
+- [x] Separar progreso de lectura entre Raíces de Esperanza y Legado de Impacto
+- [x] Usar claves de localStorage diferentes para cada devocional (devotional-progress-raices y devotional-progress-legado)
+- [x] Actualizar todas las referencias a devotional-progress en el código
+- [x] Agregar useEffect para recalcular currentDay cuando cambia selectedDevotional
+- [x] Probar que al cambiar de devocional se cargue el día correcto de cada uno
+- [x] Corregir URLs del día 15 - Dame Tus Ojos (Jesús Adrián Romero, Marcela Gándara)
+- [x] Corregir artista y URLs del día 16 - Paz en la Tormenta (Renan Carías)
+- [x] Buscar artista correcto y URLs del día 21 - Perfume a Tus Pies (En Espíritu Y En Verdad)
+- [x] Corregir URL de Spotify del día 24 - En el Borde de Su Manto (Juan Carlos Alvarado)
+- [x] Buscar y actualizar URLs de enero en Legado de Impacto (11 de 19 canciones con URLs correctas)
+- [x] Probar todas las URLs corregidas (día 2 de Legado verificado - URLs correctas)
+- [x] Corregir contraste en modo oscuro (texto casi blanco sobre fondo blanco)
+- [x] Verificar que los colores del tema oscuro sean legibles en ambos devocionales
+- [x] Buscar artista correcto para día 2 de Legado de Impacto (Michelle Matius y Miguel Ángel Matius)
+- [x] Buscar artista correcto para día 3 de Legado de Impacto (Aviva Fest Band)
+- [x] Corregir URLs del día 4 de Legado de Impacto (Océanos - Hillsong UNITED)
+- [x] Revisar y validar todas las URLs de YouTube y Spotify en Legado de Impacto (días 4-31)
+- [x] Actualizar 13 canciones con URLs correctas (11 canciones aún pendientes de revisión manual)
+- [x] Verificar estado del proyecto (checkpoint 22fd8609 guardado correctamente)
+- [x] Seleccionar 10 canciones contemporáneas cristianas para Legado de Impacto (días 1-10)
+- [x] Buscar URLs correctas de YouTube y Spotify para las 10 nuevas canciones
+- [x] Actualizar legado-data.ts con las nuevas canciones y URLs verificadas
+- [x] Probar que todas las URLs funcionen correctamente
+- [x] Corregir URL del día 2 de Legado de Impacto (Waymaker - Mandisa)
+- [x] Corregir URLs del día 4 - Océanos Hillsong en español
+- [x] Verificar y corregir URLs del día 5 - Goodness of God (Bethel Music)
+- [x] URGENTE: Corregir URL del día 2 - actualmente lleva a "Eres Mi Protector" en lugar de "Waymaker" de Mandisa
+- [x] Crear componente de biblioteca musical modal con todas las canciones del devocional
+- [x] Integrar botón "📚 Biblioteca Musical" en DevotionalCard
+- [x] Probar funcionalidad de biblioteca musical en ambos devocionales
+- [x] Revisar y corregir todas las canciones y URLs de febrero (días 32-59) de Raíces de Esperanza
+- [x] Verificar variedad de artistas cristianos en español para febrero
+- [x] Buscar canciones de canales oficiales verificados para febrero días 33-41 (hasta 10 de febrero)
+- [x] Verificar cada URL de YouTube y Spotify individualmente antes de aplicar días 33-41
+- [x] Aplicar correcciones de febrero días 33-41 verificadas
+- [ ] Continuar validación febrero días 42-59 (del 11 al 28 de febrero)
+- [x] Modificar botón de compartir para incluir versículo bíblico junto con frase diaria en WhatsApp
+- [x] Cambiar orden del contenido compartido: mostrar primero versículo bíblico y luego frase inspiradora
+- [x] Reemplazar frases de días 1-10 de Raíces de Esperanza con autores cristianos reconocidos
+- [x] Validar y reemplazar frases de enero (días 1-31) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de febrero (días 32-59) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de marzo (días 60-90) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de abril (días 91-120) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de mayo (días 121-151) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de junio (días 152-181) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de julio (días 182-212) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de agosto (días 213-243) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de septiembre (días 244-273) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de octubre (días 274-304) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de noviembre (días 305-334) de Raíces de Esperanza
+- [x] Validar y reemplazar frases de diciembre (días 335-365) de Raíces de Esperanza
+- [x] Validación completa de Raíces de Esperanza (365 días) con autores cristianos reconocidos
+- [ ] Validar y reemplazar frases de Legado de Impacto con autores cristianos reconocidos
+- [x] Validar y reemplazar frases de enero de Legado de Impacto (días 1-31)
+- [x] Reemplazar 11 autores no reconocidos de enero en Legado de Impacto
+- [ ] Validar y reemplazar frases de febrero-diciembre de Legado de Impacto (días 32-365)
+- [x] Corregir versículos bíblicos incorrectos en Legado de Impacto (9 días corregidos)
+- [x] Analizar autores de marzo en Legado de Impacto (días 60-90)
+- [x] Buscar y corregir versículos incorrectos en abril-diciembre de Legado de Impacto (días 91-365) - No se encontraron versículos incorrectos
+- [x] Validar autores de abril-diciembre en Legado de Impacto (días 91-365) - 4 autores reemplazados
+- [x] Corregir día 38 duplicado en Raíces de Esperanza (igual al día 36)
+- [x] Corregir canción del día 38 - cambiar a "Portador de Tu Gloria" de Julissa
+- [x] Buscar y corregir días duplicados en Raíces de Esperanza (52 días reemplazados con contenido único)
+- [x] Corregir canción del día 39 - cambiar a "Descansa" de Lily Goodman con URLs correctas
+- [x] Revisar y corregir canciones de febrero (días 40-59) en Raíces de Esperanza - Día 40 corregido
+- [x] Corregir URL de Spotify del día 40 para "Confiaré En Ti" de Majo Solís
+- [x] Corregir versículo incorrecto del día 23 en Legado de Impacto
+- [x] Reemplazar canción "Gracias" de Marcos Witt (repetida) en día 23 de Legado de Impacto
+- [x] Revisar y corregir febrero completo (días 41-59) de Raíces de Esperanza: 13 días corregidos (canciones, versículos y URLs)
+- [x] Corregir canción del día 41 - cambiar a canción acorde al tema "Gratitud en la Tentación" con URLs correctas
+- [x] Revisar versículos de Legado de Impacto desde día 23 hasta día 31 para verificar que sean textos bíblicos reales y no paráfrasis - Solo 1 paráfrasis encontrada y corregida (día 23)
+- [x] Corregir comportamiento de PWA para que al abrir desde ícono instalado se abra en modo standalone (app) y no en navegador web
+- [x] Crear biblioteca de películas similar a biblioteca musical, mostrando todas las películas de cada devocional con botón junto a biblioteca musical - Implementado con 4 películas de enero (semanas 1-4)
+- [x] Completar biblioteca de películas de Raíces de Esperanza agregando URLs de YouTube (trailers) a las 48 películas restantes (febrero-diciembre) - 52 películas totales con trailers
+- [x] Implementar biblioteca de películas para Legado de Impacto con películas sobre negocios, liderazgo y emprendimiento cristiano con trailers de YouTube - 4 películas con trailers
+- [ ] Completar biblioteca de películas de Legado de Impacto agregando 48 películas semanales sobre negocios, liderazgo y emprendimiento cristiano con trailers de YouTube (actualmente tiene 4/52 películas)
+- [x] Estandarizar estructura de legado-data.ts al mismo formato de devotional-data.ts para facilitar agregar películas
+- [x] Agregar 48 películas restantes a Legado de Impacto usando el método exitoso de Raíces de Esperanza - 52/52 películas completas (100%)
+- [x] Revisar y reemplazar películas de Legado de Impacto que contengan contenido inapropiado para devocional cristiano (sexual, lenguaje fuerte, temas controversiales) con alternativas apropiadas para promoción en iglesias - 6 películas reemplazadas
+- [x] Verificar y corregir canción repetida "Gracias" de Marcos Witt en día 46 de Raíces de Esperanza, reemplazándola por canción diferente apropiada al tema - Reemplazada por "Gratidão" de Gabriela Rocha
+- [ ] Identificar y reemplazar todas las canciones repetidas en Raíces de Esperanza, dejando solo la primera aparición de cada canción y reemplazando las demás con canciones cristianas variadas apropiadas a cada tema
+- [x] Crear archivo atletas-data.ts con estructura de datos para "Atletas de Cristo"
+- [x] Generar contenido de 5 días para "Atletas de Cristo" con versículos, reflexiones deportivas, citas, desafíos, canciones, películas y videos motivacionales
+- [x] Agregar tarjeta de "Atletas de Cristo" en página Home junto a los otros dos devocionales
+- [x] Crear rutas para "Atletas de Cristo" en App.tsx
+- [x] Probar que los tres devocionales funcionen independientemente sin afectar el progreso de los otros
+- [ ] Generar imagen de bienvenida para "Atletas de Cristo"
+- [ ] Generar contenido de febrero-diciembre (334 días restantes) para "Atletas de Cristo"
+- [x] Corregir estructura de atletas-data.ts: películas solo en días 7, 14, 21, 28 (no en todos los días)
+- [x] Hacer campo movie opcional en la interfaz DevotionalDay de atletas-data.ts
+- [x] Verificar y corregir URLs de Spotify y YouTube de las 5 canciones de Atletas de Cristo
+- [x] Asegurar que todos los días tengan videos motivacionales cortos (3-6 minutos)
+- [x] Verificar y corregir URLs de Spotify y YouTube de días 3, 4 y 5 de Atletas de Cristo
+- [x] Verificar URL de Spotify del día 3 de Atletas de Cristo (funciona correctamente)
+- [x] Corregir URL de Spotify del día 5 de Atletas de Cristo (lleva a canción incorrecta de Marcela Gándara)
+- [x] Cambiar canción del día 3 de Atletas de Cristo por una canción verificada y funcional
+- [x] Actualizar tarjeta de Atletas de Cristo con indicador moderno "en construcción" (badge, animación, mensaje motivador)
+- [x] Agregar badge "Próximamente" o "En Desarrollo" con diseño atractivo
+- [x] Considerar deshabilitar temporalmente el botón "Comenzar" o cambiar texto a "Vista Previa"
+- [x] Generar contenido de días 6-31 de Atletas de Cristo (versículos, reflexiones, citas, desafíos)
+- [x] Seleccionar canciones cristianas variadas para días 6-31 (español principalmente, inglés/portugués secundario)
+- [x] Agregar películas deportivas inspiradoras en días 7, 14, 21 y 28
+- [x] Incluir videos motivacionales cortos de YouTube para todos los días 6-31
+- [ ] Verificar todas las URLs de Spotify y YouTube de días 6-31
+- [x] Actualizar componente DevotionalCard para mostrar videos motivacionales en la interfaz
+- [x] Corregir URLs de Spotify de días 6-31 de Atletas de Cristo (actualmente apuntan a canciones incorrectas)
+- [x] Verificar que cada URL de Spotify lleve a la canción específica mencionada en el día
+- [x] Seleccionar 26 canciones cristianas contemporáneas para jóvenes (días 6-31 de Atletas de Cristo)
+- [x] Priorizar artistas como Rescate, Funky, Redimi2, Rojo, Alex Zurdo, Barak, Evan Craft, Hillsong Young & Free
+- [x] Buscar y verificar URL de Spotify para cada canción seleccionada
+- [x] Buscar y verificar URL de YouTube para cada canción seleccionada
+- [x] Actualizar atletas-data.ts con las nuevas canciones verificadas
+- [x] Reemplazar videos motivacionales de días 1-5 de Atletas de Cristo con videos en español verificados
+- [x] Reemplazar videos motivacionales de días 6-31 de Atletas de Cristo con videos en español verificados
+- [x] Generar imagen de bienvenida personalizada para Atletas de Cristo con temática deportiva y logo de CAC
+- [x] Regenerar imagen de bienvenida de Atletas de Cristo usando logo oficial de CAC y agregando implementos de gimnasia rítmica
+- [x] Corregir mes del día 32 de Legado de Impacto de "Enero" a "Febrero"
+- [x] Corregir enlaces de la canción del día 33 de Legado de Impacto
+- [x] Reemplazar video motivacional del día 3 de Atletas de Cristo con video en español de atleta diferente
+- [x] Variar versículos y reflexiones de días 34-35 de Legado de Impacto manteniendo tema de visión
+- [x] Verificar y corregir enlaces de canciones de días 34-35 de Legado de Impacto (YouTube y Spotify)
+- [x] Reemplazar canción del día 50 de Raíces de Esperanza (Gracias de Danny Berrios sin derechos en Spotify)
+- [x] Reemplazar canción del día 34 de Legado de Impacto (enlace de Spotify solo lleva al artista, no a la canción)
+- [x] Actualizar canciones de días 2, 3 y 5 de Atletas de Cristo con música cristiana contemporánea moderna para jóvenes
+- [x] Reemplazar video motivacional del día 3 de Atletas de Cristo que contiene malas palabras con video limpio apropiado
+- [x] Reemplazar video del día 5 de Atletas de Cristo con video en español (Facing the Giants)
+- [ ] Revisar videos motivacionales de días 6-31 de Atletas de Cristo para asegurar que no contengan lenguaje inapropiado y estén en español
+- [x] Corregir enlace de Spotify del día 3 de Atletas de Cristo (Sueños de Un Corazón)
+- [ ] Verificar y corregir enlaces de Spotify de días 4-31 de Atletas de Cristo si es necesario
+- [x] Corregir enlace de Spotify del día 5 de Atletas de Cristo
+- [x] Corregir enlace del video motivacional del día 5 de Atletas de Cristo

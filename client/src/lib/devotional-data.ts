@@ -1,0 +1,8269 @@
+export interface DevotionalDay {
+  day: number;
+  month: string;
+  monthId: number;
+  title: string;
+  verse: {
+    text: string;
+    reference: string;
+  };
+  reflection: string;
+  quote: {
+    text: string;
+    author: string;
+  };
+  challenge: string;
+  song?: {
+    title: string;
+    artist: string;
+    youtubeUrl?: string;
+    spotifyUrl?: string;
+  };
+  movie?: {
+    title: string;
+    description: string;
+    platform: string;
+    youtubeUrl?: string;
+  };
+  motivationalVideo?: {
+    title: string;
+    youtubeUrl: string;
+    description: string;
+    duration: string;
+  };
+}
+
+export const months = [
+  { id: 1, name: "Enero", theme: "Fundamentos de la Gratitud" },
+  { id: 2, name: "Febrero", theme: "Gratitud en las Dificultades" },
+  { id: 3, name: "Marzo", theme: "Gratitud en las Relaciones" },
+  { id: 4, name: "Abril", theme: "Gratitud por la Salvación" },
+  { id: 5, name: "Mayo", theme: "Gratitud en la Vida Diaria" },
+  { id: 6, name: "Junio", theme: "Gratitud por la Creación" },
+  { id: 7, name: "Julio", theme: "Gratitud por la Libertad" },
+  { id: 8, name: "Agosto", theme: "Gratitud en el Servicio" },
+  { id: 9, name: "Septiembre", theme: "Gratitud por la Palabra" },
+  { id: 10, name: "Octubre", theme: "Gratitud en la Cosecha" },
+  { id: 11, name: "Noviembre", theme: "Gratitud como Estilo de Vida" },
+  { id: 12, name: "Diciembre", theme: "Gratitud por el Regalo de Jesús" },
+];
+
+export const devotionalData: DevotionalDay[] = [
+  {
+    day: 1,
+    month: "Enero",
+    monthId: 1,
+    title: "El Comienzo de la Gratitud",
+    verse: {
+      text: "Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:18"
+    },
+    reflection: "Comenzamos este viaje de 365 días reconociendo que la gratitud no es solo un sentimiento, sino una decisión y un mandato divino. Dios sabe que un corazón agradecido es un corazón sano. Al iniciar este año, decidimos alinear nuestra voluntad con la de Dios: dar gracias en toda circunstancia. No por todo lo que pasa, sino en medio de todo lo que pasa.",
+    quote: {
+      text: "La acción de gracias —el dar gracias— a Dios por todas Sus bendiciones debería ser una de las marcas más distintivas del creyente en Jesucristo.",
+      author: "Billy Graham"
+    },
+    challenge: "Compra un cuaderno o crea una nota en tu celular. Escribe hoy 10 cosas por las que estás agradecido al comenzar este año.",
+    song: {
+      title: "Gracias",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=f12sNAX_Hg0",
+      spotifyUrl: "https://open.spotify.com/track/1jnUCPGWdEXtjTaviVG9E9"
+    },
+    movie: {
+      title: "Cuarto de Guerra (War Room) (2015)",
+      description: "Una película poderosa sobre la importancia de la oración y la gratitud estratégica para pelear las batallas de la vida.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=mIl-XY9t_Lw"
+    }
+  },
+  {
+    day: 2,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Vida",
+    verse: {
+      text: "Y todo lo que hacéis, sea de palabra o de hecho, hacedlo todo en el nombre del Señor Jesús, dando gracias a Dios Padre por medio de él.",
+      reference: "Colosenses 3:17"
+    },
+    reflection: "El simple hecho de despertar hoy es un milagro. A menudo damos por sentado el aire que respiramos y el latido de nuestro corazón. La gratitud por la vida nos hace conscientes de la fragilidad y la belleza de nuestra existencia. Hoy, no mires lo que te falta, celebra el hecho de que estás aquí, con propósito y oportunidad.",
+    quote: {
+      text: "La gratitud levanta nuestros ojos de las cosas que nos faltan para que podamos ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Tómate un momento para sentir tu pulso. Agradece a Dios por cada latido que te ha regalado hasta hoy.",
+    song: {
+      title: "Tu Nombre",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Vv6S4oeHPU0",
+      spotifyUrl: "https://open.spotify.com/track/2JZ9xtZrEvZ76cbiKwySUf"
+    }
+  },
+  {
+    day: 3,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Salvación",
+    verse: {
+      text: "Gracias a Dios por su don inefable.",
+      reference: "2 Corintios 9:15"
+    },
+    reflection: "El regalo más grande que hemos recibido no es material, es la salvación en Cristo. Es un don 'inefable', es decir, tan grandioso que no se puede describir con palabras. Cuando todo lo demás falla, nuestra salvación permanece segura. Recordar de dónde nos sacó Dios y a dónde nos lleva es la fuente más profunda de gratitud.",
+    quote: {
+      text: "Quejarse y la gratitud están, para el hijo de Dios, en conflicto. Sé agradecido y no te quejarás. Quéjate y no serás agradecido.",
+      author: "Billy Graham"
+    },
+    challenge: "Escribe en una frase qué significa para ti ser salvo y compártela con alguien o en tus redes sociales.",
+    song: {
+      title: "Sublime Gracia",
+      artist: "Hillsong en Español",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3MHkeMZGfp6hNB5rsrEnBa"
+    }
+  },
+  {
+    day: 4,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Palabra de Dios",
+    verse: {
+      text: "Lámpara es a mis pies tu palabra, y lumbrera a mi camino.",
+      reference: "Salmo 119:105"
+    },
+    reflection: "Imagina caminar en total oscuridad. Así sería nuestra vida sin la guía de Dios. Su Palabra nos da dirección, consuelo y corrección. Agradecer por la Biblia es valorar la voz de Dios escrita para nosotros. No es solo un libro antiguo, es el manual de vida del Creador para su creación.",
+    quote: {
+      text: "La Biblia no nos fue dada para aumentar nuestro conocimiento, sino para cambiar nuestra vida.",
+      author: "D.L. Moody"
+    },
+    challenge: "Lee el Salmo 19 hoy y agradece específicamente por un versículo que te haya impactado en el pasado.",
+    song: {
+      title: "Tu Palabra",
+      artist: "Marcela Gándara",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/6fucuTLVX3jzZcjH6kDnKg"
+    }
+  },
+  {
+    day: 5,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Familia",
+    verse: {
+      text: "Y si mal os parece servir a Jehová, escogeos hoy a quién sirváis... pero yo y mi casa serviremos a Jehová.",
+      reference: "Josué 24:15"
+    },
+    reflection: "Ninguna familia es perfecta, pero la familia es el diseño de Dios para formarnos. Agradecer por nuestra familia (de sangre o de fe) es reconocer que no fuimos creados para estar solos. Incluso en las dificultades familiares, hay lecciones de perdón y amor incondicional que solo se aprenden en casa.",
+    quote: {
+      text: "Un hogar cristiano es donde Cristo es la cabeza, el amor es la ley, y servir a Dios es el propósito.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Envía un mensaje de texto a un familiar diciéndole simplemente: 'Doy gracias a Dios por tu vida'.",
+    song: {
+      title: "Mi Casa y Yo",
+      artist: "Nezareth ft. Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=f12sNAX_Hg0",
+      spotifyUrl: "https://open.spotify.com/track/6XrklcX8kC1O21Nl3708dV"
+    }
+  },
+  {
+    day: 6,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Creación",
+    verse: {
+      text: "Los cielos cuentan la gloria de Dios, y el firmamento anuncia la obra de sus manos.",
+      reference: "Salmo 19:1"
+    },
+    reflection: "Vivimos en una obra de arte. Desde el amanecer hasta las estrellas, la creación grita la grandeza de Dios. A menudo pasamos tan rápido por la vida que no nos detenemos a admirar. La gratitud por la naturaleza nos conecta con el Artista Supremo y nos da perspectiva sobre nuestro lugar en el universo.",
+    quote: {
+      text: "Dios escribe el evangelio no solo en la Biblia, sino en los árboles, las flores, las nubes y las estrellas.",
+      author: "Martin Lutero"
+    },
+    challenge: "Sal a caminar 10 minutos sin audífonos. Observa el cielo, los árboles o las aves y da gracias por la belleza creada.",
+    song: {
+      title: "Cuán Grande Es Él",
+      artist: "En Espíritu y En Verdad",
+      youtubeUrl: "https://www.youtube.com/watch?v=HQkRUis2HkA",
+      spotifyUrl: "https://open.spotify.com/track/0WigYZOESf55IuZsoWb0YD"
+    }
+  },
+  {
+    day: 7,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Descanso",
+    verse: {
+      text: "En paz me acostaré, y asimismo dormiré; porque solo tú, Jehová, me haces vivir confiado.",
+      reference: "Salmo 4:8"
+    },
+    reflection: "El descanso es un regalo y un mandato. Dios mismo descansó. Agradecer por poder dormir, por tener una cama y por el 'Sabbat' (descanso) semanal es un acto de fe. Decimos: 'Dios, tú sigues trabajando mientras yo duermo'. La gratitud nos ayuda a soltar las preocupaciones antes de cerrar los ojos.",
+    quote: {
+      text: "El descanso es una cosa celestial. Dios descansó, no porque estuviera cansado, sino para darnos un patrón.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Esta noche, antes de dormir, no uses el celular en la cama. Ora agradeciendo por el descanso y duerme confiado.",
+    song: {
+      title: "Al Que Está Sentado en el Trono",
+      artist: "Marcos Brunet",
+      youtubeUrl: "https://www.youtube.com/watch?v=HQkRUis2HkA",
+      spotifyUrl: "https://open.spotify.com/track/499FGrXrU5vMuuh9EG0vEU"
+    },
+    movie: {
+      title: "Milagros del Cielo (Miracles from Heaven) (2016)",
+      description: "Una historia conmovedora sobre la fe, la familia y cómo Dios obra milagros en medio de la desesperación.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=CldGTG6iVrU"
+    }
+  },
+  {
+    day: 8,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Salud",
+    verse: {
+      text: "Amado, yo deseo que tú seas prosperado en todas las cosas, y que tengas salud, así como prospera tu alma.",
+      reference: "3 Juan 1:2"
+    },
+    reflection: "La salud es esa corona que solo los enfermos ven. A menudo solo la valoramos cuando la perdemos. Agradecer por la salud de hoy, por la fuerza en nuestros huesos y la claridad en nuestra mente, es vital. Y si estás pasando por enfermedad, agradece por la promesa de salud eterna y por la fortaleza para hoy.",
+    quote: {
+      text: "Nuestros cuerpos son templos del Espíritu Santo. Debemos cuidarlos como un acto de adoración.",
+      author: "Rick Warren"
+    },
+    challenge: "Haz algo saludable hoy por tu cuerpo (beber más agua, comer una fruta) como acto de gratitud por el templo del Espíritu Santo.",
+    song: {
+      title: "Sana Nuestra Tierra",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=7h7-oPg8AHM",
+      spotifyUrl: "https://open.spotify.com/track/6viyvAwhF791gksn4WBvcJ"
+    }
+  },
+  {
+    day: 9,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Trabajo",
+    verse: {
+      text: "Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres.",
+      reference: "Colosenses 3:23"
+    },
+    reflection: "El trabajo no es un castigo, es una forma de adoración. A través de nuestro trabajo servimos a otros y reflejamos la creatividad de Dios. Ya sea que ames tu trabajo o sea difícil, agradece por tener la capacidad de producir y ser útil. La gratitud transforma la rutina en misión.",
+    quote: {
+      text: "El trabajo no es una maldición, es una bendición de Dios. A través de él servimos a otros y glorificamos a nuestro Creador.",
+      author: "Timothy Keller"
+    },
+    challenge: "Agradece hoy a un compañero de trabajo o a tu jefe por algo específico. Si no trabajas, agradece por tus habilidades.",
+    song: {
+      title: "Tú Estás Aquí",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=-ALOwx-RHm4",
+      spotifyUrl: "https://open.spotify.com/track/0z9DXuG0neo1ohRJNzujM7"
+    }
+  },
+  {
+    day: 10,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Provisión",
+    verse: {
+      text: "Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús.",
+      reference: "Filipenses 4:19"
+    },
+    reflection: "Dios es Jehová Jireh, nuestro proveedor. A veces nos enfocamos en lo que queremos y olvidamos agradecer por lo que necesitamos y ya tenemos. Comida en la mesa, techo, ropa. La gratitud por la provisión diaria mata la ansiedad por el futuro. Si Dios cuidó de ti ayer, cuidará de ti mañana.",
+    quote: {
+      text: "La preocupación no vacía el mañana de sus penas, vacía el hoy de su fuerza.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "A la hora de la comida, haz una oración especial de gratitud, no solo por los alimentos, sino por todo el proceso para que llegaran a tu mesa.",
+    song: {
+      title: "Dios Ha Sido Bueno",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=CeQoe6IcWuc",
+      spotifyUrl: "https://open.spotify.com/track/1SvyN5M5IjkUPhu1Voocri"
+    }
+  },
+  {
+    day: 11,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por los Amigos",
+    verse: {
+      text: "En todo tiempo ama el amigo, y es como un hermano en tiempo de angustia.",
+      reference: "Proverbios 17:17"
+    },
+    reflection: "Los amigos son la familia que elegimos. Dios nos da compañeros de camino para reír, llorar y crecer. Un buen amigo es un tesoro invaluable. Agradecer por esas personas que nos aceptan como somos y nos impulsan a ser mejores es esencial. La amistad duplica las alegrías y divide las angustias.",
+    quote: {
+      text: "La verdadera amistad se forma hombro con hombro, trabajando juntos en una causa digna y grande por la que estás dispuesto a dar tu vida.",
+      author: "John Piper"
+    },
+    challenge: "Llama o escribe a un amigo que hace tiempo no ves y dile: 'Estaba pensando en ti y agradecí a Dios por tu amistad'.",
+    song: {
+      title: "Amigos",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=vDJxYL8qr-s",
+      spotifyUrl: "https://open.spotify.com/track/3BLZZBrpbJNEmqTivlf9tK"
+    }
+  },
+  {
+    day: 12,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Iglesia",
+    verse: {
+      text: "No dejando de congregarnos, como algunos tienen por costumbre, sino exhortándonos.",
+      reference: "Hebreos 10:25"
+    },
+    reflection: "La iglesia no es un edificio, somos las personas. Es el cuerpo de Cristo en la tierra. Agradecer por nuestra comunidad de fe es valorar el lugar donde somos nutridos, corregidos y amados. A pesar de sus imperfecciones, la iglesia es el plan de Dios para el mundo. Agradece por tener un lugar donde adorar en libertad.",
+    quote: {
+      text: "La iglesia es el cuerpo de Cristo, y cada miembro tiene un papel vital que desempeñar en el cumplimiento de su misión en la tierra.",
+      author: "Rick Warren"
+    },
+    challenge: "Ora hoy por tu pastor y los líderes de tu iglesia, agradeciendo por su servicio y dedicación.",
+    song: {
+      title: "Iglesia",
+      artist: "Lilly Goodman",
+      youtubeUrl: "https://www.youtube.com/watch?v=aWnFmsqEY7s",
+      spotifyUrl: "https://open.spotify.com/track/4Po4C0odXzBWN3z5F9qiBa"
+    }
+  },
+  {
+    day: 13,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Perdón",
+    verse: {
+      text: "Si confesamos nuestros pecados, él es fiel y justo para perdonar nuestros pecados, y limpiarnos de toda maldad.",
+      reference: "1 Juan 1:9"
+    },
+    reflection: "Cargar con la culpa es agotador. El perdón de Dios es como un baño de agua fresca para el alma. Agradecer porque no somos condenados, sino perdonados y restaurados, nos llena de paz. No hay error que su gracia no pueda cubrir si venimos con un corazón arrepentido. Vive hoy como alguien perdonado y libre.",
+    quote: {
+      text: "Has sido perdonado, y puedes perdonar a otros. Recordar el perdón de Dios hacia ti hace más fácil soltar y perdonar.",
+      author: "Rick Warren"
+    },
+    challenge: "Si hay algo por lo que te sientes culpable, confiésalo a Dios, recibe su perdón y agradécele en voz alta por su misericordia.",
+    song: {
+      title: "Renuevame",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=SNHtwDiRI50",
+      spotifyUrl: "https://open.spotify.com/track/4s9u7U9Ac1QvFuss2IgpPO"
+    }
+  },
+  {
+    day: 14,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Música",
+    verse: {
+      text: "Cantad a Jehová cántico nuevo; su alabanza sea en la congregación de los santos.",
+      reference: "Salmo 149:1"
+    },
+    reflection: "La música es un lenguaje universal que toca el alma donde las palabras no llegan. Dios creó la música para la adoración y el deleite. Agradecer por las melodías que nos levantan el ánimo, que nos hacen llorar o que nos conectan con el cielo. Imagina un mundo sin música; sería gris y silencioso. ¡Gracias Dios por el arte!",
+    quote: {
+      text: "El que canta ora dos veces.",
+      author: "San Agustín"
+    },
+    challenge: "Escucha tu canción de adoración favorita a todo volumen y cántala con todo el corazón.",
+    song: {
+      title: "Te Alabaré Mi Buen Jesús",
+      artist: "Rojo",
+      youtubeUrl: "https://www.youtube.com/watch?v=p0q0S0mU3fQ",
+      spotifyUrl: "https://open.spotify.com/track/4jOxpIjGJ1Iq8qWzJXJmYL"
+    },
+    movie: {
+      title: "La Canción de mi Padre (I Can Only Imagine) (2018)",
+      description: "La historia real detrás de la canción cristiana más vendida de todos los tiempos, mostrando el poder del perdón y la redención.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=fm_zzAMuvyQ"
+    }
+  },
+  {
+    day: 15,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Sabiduría",
+    verse: {
+      text: "Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios, el cual da a todos abundantemente y sin reproche.",
+      reference: "Santiago 1:5"
+    },
+    reflection: "En un mundo lleno de información, la verdadera sabiduría es escasa. La sabiduría es ver la vida desde la perspectiva de Dios. Agradecer porque Dios no nos deja a ciegas, sino que promete darnos sabiduría si la pedimos. Agradece por las lecciones aprendidas, incluso las difíciles, que te han hecho más sabio hoy.",
+    quote: {
+      text: "La sabiduría no es simplemente conocer a Dios, es aplicar ese conocimiento a cada área de nuestra vida diaria.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Lee un capítulo de Proverbios (el que corresponda a la fecha de hoy) y agradece por un consejo práctico que encuentres.",
+    song: {
+      title: "Dame Tus Ojos",
+      artist: "Jesús Adrián Romero, Marcela Gándara",
+      youtubeUrl: "https://www.youtube.com/watch?v=T5gGDtW9l2Y",
+      spotifyUrl: "https://open.spotify.com/track/3HZCMyuazaSOLgXexcMASl"
+    }
+  },
+  {
+    day: 16,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Paz",
+    verse: {
+      text: "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da.",
+      reference: "Juan 14:27"
+    },
+    reflection: "La paz no es la ausencia de problemas, es la presencia de Dios en medio de ellos. El mundo ofrece distracciones, Jesús ofrece paz integral (Shalom). Agradecer por esa calma sobrenatural que guarda nuestros corazones cuando todo alrededor es caos. Es un regalo exclusivo para sus hijos.",
+    quote: {
+      text: "La paz de Dios no es la ausencia de tormenta, es su presencia en medio de ella.",
+      author: "Max Lucado"
+    },
+    challenge: "Tómate 5 minutos de silencio absoluto hoy. Respira profundo y agradece a Dios por su paz que sobrepasa todo entendimiento.",
+    song: {
+      title: "Paz En La Tormenta",
+      artist: "Renan Carías",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ss_NXL5mdQg",
+      spotifyUrl: "https://open.spotify.com/track/5POOA6wRWhAM9PQyvmwR3x"
+    }
+  },
+  {
+    day: 17,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Esperanza",
+    verse: {
+      text: "Y el Dios de esperanza os llene de todo gozo y paz en el creer.",
+      reference: "Romanos 15:13"
+    },
+    reflection: "La esperanza es el ancla del alma. No es un 'ojalá', es una certeza de que Dios tiene el control y el final de la historia es bueno. Agradecer porque no estamos desesperados. Tenemos un futuro. La gratitud alimenta la esperanza y la esperanza alimenta la fe. Gracias Dios porque lo mejor está por venir.",
+    quote: {
+      text: "La esperanza cristiana no es un deseo, es una certeza basada en las promesas inquebrantables de Dios.",
+      author: "John Piper"
+    },
+    challenge: "Escribe una meta o sueño que tengas para este año y preséntalo a Dios con acción de gracias, confiando en Su tiempo.",
+    song: {
+      title: "Way Maker (Aquí Estás)",
+      artist: "Priscilla Bueno",
+      youtubeUrl: "https://www.youtube.com/watch?v=9TIZMohIYqQ",
+      spotifyUrl: "https://open.spotify.com/track/5CBMIfSbwEqytxeN9gEaVM"
+    }
+  },
+  {
+    day: 18,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Libertad",
+    verse: {
+      text: "Así que, si el Hijo os libertare, seréis verdaderamente libres.",
+      reference: "Juan 8:36"
+    },
+    reflection: "Fuimos creados para ser libres, no esclavos del pecado, del miedo o de la opinión de otros. Cristo pagó un precio alto por nuestra libertad. Agradecer hoy porque las cadenas han sido rotas. Podemos elegir amar, perdonar y vivir con propósito. La libertad es un regalo precioso que debemos cuidar con gratitud.",
+    quote: {
+      text: "El camino hacia la libertad puede ser difícil a veces, pero avanzar hacia la libertad es más fácil que permanecer cargado.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Identifica un miedo que te ata y declara en voz alta: 'Soy libre en Cristo'. Agradece por esa libertad.",
+    song: {
+      title: "Libre Soy",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/watch?v=053BvHDfIdI",
+      spotifyUrl: "https://open.spotify.com/track/4gycvQ1rla1LiMKyzhN29t"
+    }
+  },
+  {
+    day: 19,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Gozo",
+    verse: {
+      text: "El gozo de Jehová es vuestra fuerza.",
+      reference: "Nehemías 8:10"
+    },
+    reflection: "La felicidad depende de las circunstancias, el gozo depende de Dios. Es una fuerza interna que nos sostiene. Agradecer por los momentos de risa, de celebración y de alegría profunda. El gozo es un fruto del Espíritu. Un cristiano amargado es una contradicción. La gratitud desbloquea el gozo en nuestra vida diaria.",
+    quote: {
+      text: "El gozo es la bandera que ondea en el castillo del corazón cuando el Rey está en residencia.",
+      author: "R.G. Lee"
+    },
+    challenge: "Haz reír a alguien hoy. Comparte un momento de alegría y agradece a Dios por la capacidad de sonreír.",
+    song: {
+      title: "Remolineando",
+      artist: "Fernel Monroy",
+      youtubeUrl: "https://www.youtube.com/watch?v=WITnPmdJZKQ",
+      spotifyUrl: "https://open.spotify.com/track/7lZ6oIdGtRGAztE2ZvgXrv"
+    }
+  },
+  {
+    day: 20,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Fidelidad de Dios",
+    verse: {
+      text: "Nuevas son cada mañana; grande es tu fidelidad.",
+      reference: "Lamentaciones 3:23"
+    },
+    reflection: "Nosotros fallamos, Dios nunca. Su fidelidad es la roca sobre la que construimos. Agradecer porque Él sigue siendo fiel incluso cuando somos infieles. Mira atrás en tu vida y verás el hilo dorado de su fidelidad en cada temporada. Agradecer por su constancia nos da seguridad para enfrentar lo desconocido.",
+    quote: {
+      text: "La fidelidad de Dios es el consuelo de su pueblo.",
+      author: "Arthur W. Pink"
+    },
+    challenge: "Haz una lista de 3 momentos difíciles en tu pasado donde viste la mano fiel de Dios ayudándote.",
+    song: {
+      title: "Tu Fidelidad",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=4dB5PIdHoVY",
+      spotifyUrl: "https://open.spotify.com/track/3ngh2nS1P1GOr6qDGzwojQ"
+    }
+  },
+  {
+    day: 21,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por los Maestros",
+    verse: {
+      text: "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+      reference: "Proverbios 22:6"
+    },
+    reflection: "Todos hemos tenido maestros que nos marcaron, en la escuela, en la vida o en la fe. Agradecer por quienes dedicaron tiempo a enseñarnos, a corregirnos y a inspirarnos. El conocimiento que tenemos hoy es fruto de su siembra. La gratitud hacia nuestros mentores y maestros es un acto de humildad y reconocimiento.",
+    quote: {
+      text: "Un maestro piadoso no solo enseña con palabras, sino que moldea vidas con el ejemplo de Cristo.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Si tienes contacto con algún maestro o mentor de tu pasado, envíale una nota de agradecimiento hoy.",
+    song: {
+      title: "Perfume a Tus Pies",
+      artist: "En Espíritu Y En Verdad",
+      youtubeUrl: "https://www.youtube.com/watch?v=RTyvh6qpQMY",
+      spotifyUrl: "https://open.spotify.com/track/5cS1TaKqN5z5brcTnG2Ory"
+    },
+    movie: {
+      title: "El Cielo es Real (Heaven Is for Real) (2014)",
+      description: "Basada en una historia real que nos enseña a ver el cielo y la fe a través de los ojos inocentes de un niño.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=N-ewaCVARtM"
+    }
+  },
+  {
+    day: 22,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Tecnología",
+    verse: {
+      text: "Y se aumentará la ciencia.",
+      reference: "Daniel 12:4"
+    },
+    reflection: "A veces demonizamos la tecnología, pero es una herramienta. Nos permite conectar, aprender y evangelizar como nunca antes. Agradecer por tener acceso a la Biblia en el celular, por poder escuchar prédicas y música cristiana. La gratitud nos lleva a usar la tecnología con sabiduría y propósito, no como amos, sino como mayordomos.",
+    quote: {
+      text: "Usa la tecnología como una herramienta para el reino de Dios, no como un ídolo que te aleje de Él.",
+      author: "Rick Warren"
+    },
+    challenge: "Usa tus redes sociales hoy para publicar algo de gratitud o un versículo bíblico. Usa la tecnología para bendecir.",
+    song: {
+      title: "Increíble",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=xHPd8VEiYQs",
+      spotifyUrl: "https://open.spotify.com/track/08K1nnlQybRYxVrQVQQN4h"
+    }
+  },
+  {
+    day: 23,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Agua",
+    verse: {
+      text: "El que bebiere del agua que yo le daré, no tendrá sed jamás.",
+      reference: "Juan 4:14"
+    },
+    reflection: "El agua es vida. Millones no tienen acceso a agua potable. Nosotros abrimos el grifo y sale. Agradecer por este recurso vital nos hace conscientes y responsables. También nos recuerda a Jesús, el Agua Viva que sacia nuestra sed espiritual. Cada vaso de agua hoy puede ser un recordatorio de su gracia.",
+    quote: {
+      text: "Jesús es el agua viva que satisface el alma sedienta. Todo lo demás deja sed.",
+      author: "John Piper"
+    },
+    challenge: "Cada vez que bebas agua hoy, di mentalmente: 'Gracias Señor por saciar mi sed física y espiritual'.",
+    song: {
+      title: "Ríos de Agua Viva",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Wx0AicvADjQ",
+      spotifyUrl: "https://open.spotify.com/track/2ZbYmQGNqS1pvbRppji0c1"
+    }
+  },
+  {
+    day: 24,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Ropa",
+    verse: {
+      text: "Y si la hierba del campo... Dios la viste así, ¿no hará mucho más a vosotros, hombres de poca fe?",
+      reference: "Mateo 6:30"
+    },
+    reflection: "Abrir el armario y tener qué ponerse es una bendición que a menudo ignoramos mientras nos quejamos de que 'no tenemos nada'. Agradecer por el abrigo, por la protección contra el clima y por la dignidad que nos da la vestimenta. Dios es quien nos viste y nos cubre, física y espiritualmente con su justicia.",
+    quote: {
+      text: "Dios no solo viste los lirios del campo, también te cubre con su justicia y gracia.",
+      author: "Max Lucado"
+    },
+    challenge: "Selecciona una prenda de ropa en buen estado que no uses y prepárala para donarla a alguien que la necesite.",
+    song: {
+      title: "El Borde de Su Manto",
+      artist: "Juan Carlos Alvarado",
+      youtubeUrl: "https://www.youtube.com/watch?v=ieI-Ke2igAg",
+      spotifyUrl: "https://open.spotify.com/track/6tYqerwTycPh7ooEszkobq"
+    }
+  },
+  {
+    day: 25,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por los Sentidos",
+    verse: {
+      text: "El oído que oye, y el ojo que ve, ambas cosas igualmente ha hecho Jehová.",
+      reference: "Proverbios 20:12"
+    },
+    reflection: "Ver un atardecer, oír la risa de un niño, oler el café, gustar una comida, sentir un abrazo. Nuestros sentidos son las ventanas al mundo y regalos de Dios para disfrutar su creación. Agradecer por cada sentido nos hace vivir más plenamente. Hoy, sé consciente de lo que percibes y da gracias.",
+    quote: {
+      text: "Nuestros sentidos son los ministros de Dios.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Haz un ejercicio de '5 sentidos': Identifica 1 cosa que ves, 1 que oyes, 1 que hueles, 1 que gustas y 1 que tocas, y agradece por cada una.",
+    song: {
+      title: "Abre Mis Ojos Oh Cristo",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=sAm49exVyZc",
+      spotifyUrl: "https://open.spotify.com/track/6PAJFp2kDlR0iufNUWHHxF"
+    }
+  },
+  {
+    day: 26,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Libertad de Expresión",
+    verse: {
+      text: "Hablaré de tus testimonios delante de los reyes, y no me avergonzaré.",
+      reference: "Salmo 119:46"
+    },
+    reflection: "Poder decir lo que pensamos y creemos sin temor a prisión es un privilegio que muchos no tienen. Agradecer por la libertad de adorar, de predicar y de opinar. Usemos nuestra voz para edificar, para agradecer y para bendecir, no para destruir. Nuestra voz es un regalo poderoso.",
+    quote: {
+      text: "Usa tu voz para proclamar la verdad de Dios con valentía y amor, sin avergonzarte del evangelio.",
+      author: "Billy Graham"
+    },
+    challenge: "Usa tu voz hoy para defender a alguien o para expresar una verdad bíblica con amor a alguien que lo necesite.",
+    song: {
+      title: "Cantaré de Tu Amor",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=ny3zy3gnthM",
+      spotifyUrl: "https://open.spotify.com/track/5YdB1rjt73m6cISEVX0zFb"
+    }
+  },
+  {
+    day: 27,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por los Errores",
+    verse: {
+      text: "Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien.",
+      reference: "Romanos 8:28"
+    },
+    reflection: "Sí, agradecer por los errores. Porque son nuestros mejores maestros. Nos enseñan humildad y nos muestran áreas donde necesitamos crecer. Dios usa incluso nuestros fallos para formarnos si tenemos un corazón enseñable. No te castigues por el pasado, agradécele a Dios por la lección y sigue adelante más sabio.",
+    quote: {
+      text: "Dios puede tomar nuestros errores y fracasos y convertirlos en victorias si se los entregamos a Él.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Piensa en un error reciente. En lugar de lamentarte, escribe qué aprendiste de él y agradece a Dios por esa enseñanza.",
+    song: {
+      title: "Alfarero",
+      artist: "Evan Craft",
+      youtubeUrl: "https://www.youtube.com/watch?v=pot566ui6Kg",
+      spotifyUrl: "https://open.spotify.com/track/4rxHHuJwrYKk6xu45PIkFz"
+    }
+  },
+  {
+    day: 28,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Diversidad",
+    verse: {
+      text: "Después de esto miré, y he aquí una gran multitud... de todas naciones y tribus y pueblos y lenguas.",
+      reference: "Apocalipsis 7:9"
+    },
+    reflection: "Dios ama la variedad. Creó miles de especies, colores y culturas. Agradecer por la diversidad en el cuerpo de Cristo y en el mundo enriquece nuestra vida. Qué aburrido sería si todos fuéramos iguales. La gratitud por las diferencias nos cura de prejuicios y nos abre a ver la imagen de Dios en cada persona.",
+    quote: {
+      text: "En el cuerpo de Cristo, la diversidad no es una debilidad, es una fortaleza que refleja la creatividad de Dios.",
+      author: "Rick Warren"
+    },
+    challenge: "Ora por una nación o cultura diferente a la tuya hoy. Si puedes, prueba una comida de otra cultura y agradece por la variedad.",
+    song: {
+      title: "Pueblos Todos",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=L600CKAVctE",
+      spotifyUrl: "https://open.spotify.com/track/1gIm472QLQmtVrY0n0479S"
+    },
+    movie: {
+      title: "Talentos Ocultos (Hidden Figures) (2016)",
+      description: "Una historia inspiradora sobre cómo el talento y la perseverancia rompen barreras raciales y de género.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=5wfrDhgUMGI"
+    }
+  },
+  {
+    day: 29,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Tiempo",
+    verse: {
+      text: "Todo tiene su tiempo, y todo lo que se quiere debajo del cielo tiene su hora.",
+      reference: "Eclesiastés 3:1"
+    },
+    reflection: "El tiempo es el recurso más democrático; todos tenemos 24 horas. Agradecer por el tiempo es valorarlo como un regalo no renovable. Cada minuto es una oportunidad para amar, servir y glorificar a Dios. No 'mates' el tiempo, inviértelo. La gratitud nos ayuda a ser sabios administradores de nuestros días.",
+    quote: {
+      text: "El tiempo es el regalo más valioso que Dios nos da. Úsalo sabiamente para su gloria.",
+      author: "Rick Warren"
+    },
+    challenge: "Haz una auditoría de tu tiempo hoy. Elimina 30 minutos de algo improductivo y úsalos para orar o estar con tu familia.",
+    song: {
+      title: "Mejores Tiempos",
+      artist: "Lilly Goodman",
+      youtubeUrl: "https://www.youtube.com/watch?v=mNf7-TNN0Fs",
+      spotifyUrl: "https://open.spotify.com/track/04wdnzU6Af2zrMhptFFvLd"
+    }
+  },
+  {
+    day: 30,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por la Oración",
+    verse: {
+      text: "Clama a mí, y yo te responderé, y te enseñaré cosas grandes y ocultas que tú no conoces.",
+      reference: "Jeremías 33:3"
+    },
+    reflection: "Tenemos acceso directo al Creador del universo. ¡Qué privilegio! No necesitamos cita previa ni intermediarios humanos. Agradecer por el regalo de la oración es reconocer que somos escuchados. La oración cambia las cosas, pero sobre todo, nos cambia a nosotros. Gracias Dios porque siempre tienes tu oído atento.",
+    quote: {
+      text: "La oración es la llave que abre el corazón de Dios y libera su poder en nuestras vidas.",
+      author: "Billy Graham"
+    },
+    challenge: "Dedica un tiempo hoy solo para agradecer en oración, sin pedir nada. Solo gratitud y adoración.",
+    song: {
+      title: "Cerca de Ti",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=MMF_ReEbZuI",
+      spotifyUrl: "https://open.spotify.com/track/3hqxcbk0Qy4EzYPiwbl8dV"
+    }
+  },
+  {
+    day: 31,
+    month: "Enero",
+    monthId: 1,
+    title: "Gratitud por el Mes Vivido",
+    verse: {
+      text: "Hasta aquí nos ayudó Jehová.",
+      reference: "1 Samuel 7:12"
+    },
+    reflection: "Terminamos el primer mes. Hemos vivido 31 días de gracia. Agradecer por el mes que termina es cerrar un ciclo con bendición. Ebenezer: hasta aquí nos ha ayudado Dios. Mirar atrás con gratitud nos da impulso para el mes que viene. No importa qué pasó este mes, Dios estuvo contigo. Y eso es suficiente motivo para dar gracias.",
+    quote: {
+      text: "La gratitud transforma nuestra memoria de cada día en un testimonio de la fidelidad de Dios.",
+      author: "Max Lucado"
+    },
+    challenge: "Revisa tus notas del día 1. ¿Cómo ha cambiado tu perspectiva de gratitud este mes? Escribe una breve conclusión.",
+    song: {
+      title: "Proezas",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=WfzH9B99M_8",
+      spotifyUrl: "https://open.spotify.com/track/7A4niQ2FA8nOnnqyhUsOOt"
+    }
+  },
+  {
+    day: 32,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Soledad",
+    verse: {
+      text: "No te desampararé, ni te dejaré.",
+      reference: "Hebreos 13:5"
+    },
+    reflection: "La soledad puede ser dolorosa, pero también es un lugar de encuentro con Dios. En el silencio de la soledad, su voz se hace más clara. Agradecer en la soledad es reconocer que nunca estamos realmente solos. Su presencia llena cualquier vacío. Transforma tu soledad en 'solitud': un tiempo elegido para estar a solas con el Amado.",
+    quote: {
+      text: "Nunca estás menos solo que cuando estás solo con Dios.",
+      author: "Anónimo"
+    },
+    challenge: "Si te sientes solo hoy, habla con Dios como si estuviera sentado a tu lado. Agradece por su compañía invisible pero real.",
+    song: {
+      title: "A Sus Pies",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=5IWc3Q-u6nE",
+      spotifyUrl: "https://open.spotify.com/track/0YwFMo2jsOKL1dWEYHKccl"
+    }
+  },
+  {
+    day: 33,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud en Tiempos Difíciles",
+    verse: {
+      text: "Estén siempre alegres, oren sin cesar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:16-18"
+    },
+    reflection: "En medio de la escasez, la gratitud se convierte en un ancla para el alma. El apóstol Pablo nos exhorta a dar gracias en toda situación, no solo por las circunstancias favorables, sino porque es la voluntad de Dios para nosotros en Cristo Jesús. Esta perspectiva nos invita a reconocer la soberanía divina incluso cuando los recursos son limitados o las pruebas abundan. Al elegir la gratitud, cambiamos nuestro enfoque de lo que nos falta a lo que aún poseemos, abriendo nuestros ojos a las innumerables bendiciones que a menudo pasamos por alto. Es un acto de fe que nos permite ver la mano de Dios obrando en cada detalle, fortaleciendo nuestra confianza en Su provisión y cuidado constante, sin importar la magnitud de la escasez.",
+    quote: {
+      text: "La gratitud eleva nuestra mirada, nos quita los ojos de las cosas que nos faltan para ver las bendiciones.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece por tres cosas que consideras pequeñas o insignificantes. Escríbelas y reflexiona sobre su valor en tu vida.",
+    song: {
+      title: "Gratitud + Gracias",
+      artist: "Generación 12",
+      youtubeUrl: "https://www.youtube.com/watch?v=dsez17jmyVM",
+      spotifyUrl: "https://open.spotify.com/track/6DSyIGReyQ9M2W6LD6x8FF"
+    },
+  },  {
+    day: 34,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Enfermedad",
+    verse: {
+      text: "Él mismo tomó nuestras enfermedades, y llevó nuestras dolencias.",
+      reference: "Mateo 8:17"
+    },
+    reflection: "La enfermedad no es castigo, es campo de batalla. Agradecer en la enfermedad es reconocer que Dios sigue siendo bueno, incluso cuando el cuerpo duele. La gratitud en el dolor nos conecta con el Dios que sana, no solo cuerpos, sino almas. Cada día de enfermedad puede ser un día de intimidad con Él.",
+    quote: {
+      text: "En la enfermedad, Dios no nos abandona; nos sostiene más cerca de su corazón.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Si estás enfermo, agradece por una parte de tu cuerpo que sí funciona. Si estás sano, ora por alguien que no lo está.",
+    song: {
+      title: "Tú Estás Aquí",
+      artist: "Jesús Adrián Romero & Marcela Gándara",
+      youtubeUrl: "https://www.youtube.com/watch?v=-ALOwx-RHm4",
+      spotifyUrl: "https://open.spotify.com/track/6zd4W5nBVnqXTIhaASx9GO"
+    }
+  },
+  {
+    day: 35,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Rechazo",
+    verse: {
+      text: "Despreciado y desechado entre los hombres, varón de dolores... y no lo estimamos.",
+      reference: "Isaías 53:3"
+    },
+    reflection: "El rechazo duele profundamente. Pero Jesús conoce ese dolor mejor que nadie. Agradecer en el rechazo es identificarnos con Cristo. Además, a veces el rechazo de los hombres es la protección de Dios. Él cierra puertas que no nos convienen. Agradece porque tu valor no depende de la aceptación de otros, sino de ser hijo de Dios.",
+    quote: {
+      text: "El rechazo es la redirección de Dios hacia algo mejor.",
+      author: "Anónimo"
+    },
+    challenge: "Perdona hoy a alguien que te haya rechazado. Di: 'Gracias Dios porque tú me aceptas y me amas eternamente'.",
+    song: {
+      title: "Como Dijiste",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=3uUJCvdbH3k",
+      spotifyUrl: "https://open.spotify.com/track/7BY5JRklkQUu4e0tlZDBy7"
+    },
+    movie: {
+      title: "El Caso de Cristo (The Case for Christ) (2017)",
+      description: "Un periodista ateo intenta desacreditar el cristianismo, enfrentando el rechazo de la fe, hasta que la evidencia transforma su vida.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=On6RM27qSFc"
+    }
+  },
+  {
+    day: 36,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Espera",
+    verse: {
+      text: "Pacientemente esperé a Jehová, y se inclinó a mí, y oyó mi clamor.",
+      reference: "Salmo 40:1"
+    },
+    reflection: "Esperar desespera. Pero la sala de espera de Dios es un taller de carácter. Agradecer mientras esperamos esa respuesta, ese trabajo o esa pareja, es adoración pura. La gratitud acelera el tiempo y mantiene nuestro corazón dulce mientras la promesa llega. Dios nunca llega tarde, siempre llega a tiempo.",
+    quote: {
+      text: "La paciencia no es simplemente la capacidad de esperar, es cómo nos comportamos mientras esperamos.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Si estás esperando algo de Dios, escribe hoy una carta de agradecimiento anticipada, como si ya lo hubieras recibido.",
+    song: {
+      title: "Poderoso Dios",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=jzr24y4FWb4",
+      spotifyUrl: "https://open.spotify.com/track/4eMnZja2FGmWuagYRLrQBw"
+    }
+  },
+  {
+    day: 37,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Pérdida",
+    verse: {
+      text: "Jehová dio, y Jehová quitó; sea el nombre de Jehová bendito.",
+      reference: "Job 1:21"
+    },
+    reflection: "Perder duele, pero agradecer sana. La gratitud en la pérdida no niega el dolor, lo redime. Cuando perdemos algo o alguien, podemos agradecer por el tiempo que tuvimos. La pérdida nos enseña que nada es permanente, excepto Dios. Agradecer en la pérdida es confiar en que Dios restaura.",
+    quote: {
+      text: "Dios no desperdicia nuestro dolor; lo usa para moldear nuestro carácter y acercarnos a Él.",
+      author: "Rick Warren"
+    },
+    challenge: "Escribe una carta de agradecimiento a Dios por algo o alguien que perdiste, enfocándote en lo que te enseñó.",
+    song: {
+      title: "Mi Universo",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=3tSz1I1XogE",
+      spotifyUrl: "https://open.spotify.com/track/6lMk5sY36yHg5vY2Q29lJd"
+    }
+  },
+  {
+    day: 38,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud por la Creación Divina",
+    verse: {
+      text: "Porque todo lo que Dios creó es bueno, y nada es de desecharse, si se toma con acción de gracias; porque por la palabra de Dios y por la oración es santificado.",
+      reference: "1 Timoteo 4:4-5",
+    },
+    reflection: "En nuestro caminar diario, a menudo pasamos por alto la majestuosidad y la belleza que nos rodea. La creación de Dios es un testimonio constante de Su amor, sabiduría y poder. Desde el más pequeño insecto hasta las vastas galaxias, cada elemento ha sido diseñado con un propósito divino. 1 Timoteo 4:4-5 nos recuerda que todo lo que Dios creó es bueno y digno de ser recibido con gratitud. Esta perspectiva nos invita a ver más allá de lo ordinario y a reconocer la mano de Dios en cada detalle de nuestro entorno. Cultivar la gratitud por la creación nos transforma. Nos ayuda a apreciar los dones simples de la vida: el aire que respiramos, el sol que nos calienta, la lluvia que nutre la tierra. Charles Spurgeon nos insta a que nuestros pensamientos y conocimientos nos lleven a glorificar a Dios y a ser agradecidos. Al hacerlo, no solo honramos a nuestro Creador, sino que también enriquecemos nuestra propia experiencia de vida, encontrando alegría y paz en la contemplación de Su obra. Que cada amanecer y cada atardecer sean una oportunidad para elevar un corazón agradecido por la inmensidad y la delicadeza de Su creación.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon",
+    },
+    challenge: "Identifica algo por lo que has estado esperando y agradece a Dios por lo que ya ha hecho mientras esperas.",
+    song: {
+      title: "Portador de Tu Gloria",
+      artist: "Julissa",
+      youtubeUrl: "https://www.youtube.com/watch?v=d2mT0YAVXmc",
+      spotifyUrl: "https://open.spotify.com/track/6XvNQ1Opq2atxq0bUkqLAY"
+    }
+  },
+  {
+    day: 39,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Cansancio",
+    verse: {
+      text: "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.",
+      reference: "Mateo 11:28"
+    },
+    reflection: "A veces estamos exhaustos. La vida pesa. Agradecer en el cansancio es reconocer nuestra humanidad y nuestra necesidad de Dios. Es soltar la carga a sus pies. Gracias Dios porque no tengo que ser fuerte siempre, puedo ser débil para que tú seas fuerte en mí. El cansancio es una invitación a su regazo.",
+    quote: {
+      text: "Cuando estés cansado, descansa en los brazos de Dios, no en tus propias fuerzas.",
+      author: "Max Lucado"
+    },
+    challenge: "Tómate un descanso real hoy. Siéntate 15 minutos sin hacer nada, solo agradeciendo a Dios por sostenerte.",
+    song: {
+      title: "Descansa",
+      artist: "Lily Goodman",
+      youtubeUrl: "https://www.youtube.com/watch?v=QQsdG5KZ4VA",
+      spotifyUrl: "https://open.spotify.com/track/0GsYMYRBQJnVSfaDbqSBB3"
+    }
+  },
+  {
+    day: 40,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Incertidumbre",
+    verse: {
+      text: "Por fe andamos, no por vista.",
+      reference: "2 Corintios 5:7"
+    },
+    reflection: "No saber qué pasará mañana genera ansiedad. Pero la incertidumbre es el terreno donde florece la fe. Agradecer cuando no vemos el camino es confiar en el Guía. Dios no nos da un mapa completo, nos da su mano. La gratitud en la niebla es declarar: 'No sé a dónde voy, pero sé con quién voy'.",
+    quote: {
+      text: "La fe es dar el primer paso incluso cuando no ves toda la escalera.",
+      author: "Martin Luther King Jr."
+    },
+    challenge: "Entrega hoy a Dios esa situación incierta que te preocupa. Di: 'Gracias porque tú tienes el control, aunque yo no lo vea'.",
+    song: {
+      title: "Confiaré En Ti",
+      artist: "Majo Solís",
+      youtubeUrl: "https://www.youtube.com/watch?v=v2WbbuwZclg",
+      spotifyUrl: "https://open.spotify.com/track/3oEJ8uzUa1HPdNGZcfangW"
+    }
+  },
+  {
+    day: 41,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Tentación",
+    verse: {
+      text: "No os ha sobrevenido ninguna tentación que no sea humana; pero fiel es Dios, que no os dejará ser tentados más de lo que podéis resistir.",
+      reference: "1 Corintios 10:13"
+    },
+    reflection: "La tentación no es pecado, es una batalla. Agradecer en medio de la tentación es celebrar que Dios nos ha dado una salida. Agradece por la fuerza para decir 'no'. Cada tentación resistida es un músculo espiritual fortalecido. La gratitud nos enfoca en la santidad de Dios y nos aleja del deseo momentáneo.",
+    quote: {
+      text: "La oportunidad a menudo viene disfrazada de tentación.",
+      author: "Anónimo"
+    },
+    challenge: "Identifica una debilidad y agradece a Dios porque su poder se perfecciona en ella. Pide su ayuda para vencer hoy.",
+    song: {
+      title: "Eres Mi Fuerza",
+      artist: "Christine D'Clario feat. Jaime De León",
+      youtubeUrl: "https://www.youtube.com/watch?v=IDBbaYQC5Q8",
+      spotifyUrl: "https://open.spotify.com/track/6YAfzeZnA23VxKSp21zrw3"
+    }
+  },
+  {
+    day: 42,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Fracaso",
+    verse: {
+      text: "Porque siete veces cae el justo, y vuelve a levantarse; Mas los impíos caerán en el mal.",
+      reference: "Proverbios 24:16"
+    },
+    reflection: "Fracasar no nos convierte en fracasados. Es parte del aprendizaje. Agradecer por los fracasos es tener una mentalidad de crecimiento. Gracias Dios porque esto no salió como esperaba, pero aprendí. El fracaso nos mantiene humildes y dependientes de la gracia. La gratitud nos ayuda a levantarnos más rápido.",
+    quote: {
+      text: "El fracaso no es el final; es una oportunidad para que Dios muestre su poder restaurador.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Piensa en un proyecto o meta que falló. Agradece a Dios por cerrarte esa puerta y confía en que abrirá una mejor.",
+    song: {
+      title: "Gratitud",
+      artist: "Generación 12",
+      youtubeUrl: "https://www.youtube.com/watch?v=dsez17jmyVM",
+      spotifyUrl: "https://open.spotify.com/track/2aFYyTR9mnemgiqsAveXSZ",
+    },
+    movie: {
+      title: "Desafío de Gigantes (Facing the Giants) (2006)",
+      description: "Un entrenador de fútbol americano con una racha de derrotas aprende a alabar a Dios tanto en la victoria como en el fracaso.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=4GAMs9mUHFc"
+    }
+  },
+  {
+    day: 43,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Injusticia",
+    verse: {
+      text: "No os venguéis vosotros mismos, amados míos, sino dejad lugar a la ira de Dios; porque escrito está: Mía es la venganza, yo pagaré, dice el Señor.",
+      reference: "Romanos 12:19"
+    },
+    reflection: "Ver o sufrir injusticia nos llena de ira. Pero Dios es el Juez Justo. Agradecer en la injusticia es soltar el derecho a la venganza y confiar en la justicia divina. Jesús sufrió la mayor injusticia con gratitud y amor. Agradece porque al final, Dios pondrá todo en su lugar. Tu trabajo es guardar tu corazón.",
+    quote: {
+      text: "La injusticia en cualquier lugar es una amenaza para la justicia en todas partes.",
+      author: "Martin Luther King Jr."
+    },
+    challenge: "Ora por justicia en una situación específica, pero termina agradeciendo a Dios porque Él es el Juez Supremo.",
+    song: {
+      title: "Rey de Justicia",
+      artist: "En Espíritu Y En Verdad",
+      youtubeUrl: "https://www.youtube.com/watch?v=G_6HN0zaJMU",
+      spotifyUrl: "https://open.spotify.com/track/5ICEcRuuvSZVeWvOTmtoyg",
+    }
+  },
+  {
+    day: 44,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Silencio de Dios",
+    verse: {
+      text: "Dios mío, clamo de día, y no respondes; Y de noche, y no hay para mí reposo.",
+      reference: "Salmo 22:2"
+    },
+    reflection: "A veces el cielo parece de bronce. Oramos y no pasa nada. El silencio de Dios no es ausencia, es una invitación a confiar más profundo. Agradecer en el silencio es fe pura. Es decir: 'Aunque no te oiga, sé que estás ahí y que me amas'. El Maestro a menudo guarda silencio durante el examen.",
+    quote: {
+      text: "Cuando no puedas rastrear la mano de Dios, confía en su corazón.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Si sientes que Dios está callado, adórale hoy solo por quién es Él, no por lo que hace o dice.",
+    song: {
+      title: "El Sonido del Silencio",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=boaEb4rAZt4",
+      spotifyUrl: "https://open.spotify.com/track/0BwInBmQbV8qrWkzneA4qx",
+    }
+  },
+  {
+    day: 45,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Rutina",
+    verse: {
+      text: "El que es fiel en lo muy poco, también en lo más es fiel; y el que en lo muy poco es injusto, también en lo más es injusto.",
+      reference: "Lucas 16:10"
+    },
+    reflection: "La vida diaria puede ser monótona. Lavar platos, tráfico, trabajo repetitivo. Agradecer en la rutina es encontrar lo sagrado en lo ordinario. Dios está en los detalles. La gratitud le pone color a los días grises. Gracias por la estabilidad, por lo predecible, por la fidelidad de cada día.",
+    quote: {
+      text: "En las tareas ordinarias de cada día, podemos encontrar oportunidades extraordinarias para glorificar a Dios.",
+      author: "Timothy Keller"
+    },
+    challenge: "Realiza una tarea rutinaria hoy (limpiar, conducir) cantando o agradeciendo a Dios mientras lo haces.",
+    song: {
+      title: "Fiel",
+      artist: "Hillary Benavidez ft. Ingrid Rosario",
+      youtubeUrl: "https://www.youtube.com/watch?v=F35RQsotZ3g",
+      spotifyUrl: "https://open.spotify.com/track/7l1UXQJF9ypHJy8E1z4m7b"
+    }
+  },
+  {
+    day: 46,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Vejez",
+    verse: {
+      text: "Aun en la vejez fructificarán; Estarán vigorosos y verdes,",
+      reference: "Salmo 92:14"
+    },
+    reflection: "Envejecer es un privilegio negado a muchos. Agradecer por cada cana y cada arruga es celebrar la historia vivida. La vejez trae sabiduría y perspectiva. En lugar de temer al paso del tiempo, agradece por la madurez y por la cercanía al encuentro eterno con Cristo.",
+    quote: {
+      text: "La vejez es la corona de gloria cuando se ha vivido en los caminos de justicia.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Si eres joven, agradece por un anciano. Si eres mayor, agradece por tu vida y comparte tu sabiduría con alguien hoy.",
+    song: {
+      title: "Gratidão",
+      artist: "Gabriela Rocha",
+      youtubeUrl: "https://www.youtube.com/watch?v=gUzSFqhoy34",
+      spotifyUrl: "https://open.spotify.com/track/3X4XeWkoHnD8efpxhfK2fz"
+    }
+  },
+  {
+    day: 47,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Tormenta",
+    verse: {
+      text: "Y se levantó una gran tempestad... y él estaba en la popa, durmiendo.",
+      reference: "Marcos 4:37-38"
+    },
+    reflection: "Las tormentas de la vida llegan sin aviso. Pero Jesús está en la barca. Agradecer en la tormenta no es negar la lluvia, es reconocer al Capitán. La gratitud nos mantiene a flote. Las tormentas limpian el aire y riegan la tierra. Gracias Dios porque ninguna tormenta dura para siempre y tú eres mi refugio.",
+    quote: {
+      text: "A veces Dios calma la tormenta, a veces deja que la tormenta rujan y calma a su hijo.",
+      author: "Anónimo"
+    },
+    challenge: "Dibuja o imagina una barca en medio de olas. Escribe 'Jesús está aquí' y da gracias por su protección.",
+    song: {
+      title: "Paz En La Tormenta",
+      artist: "Renan Carías",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ss_NXL5mdQg",
+      spotifyUrl: "https://open.spotify.com/track/5POOA6wRWhAM9PQyvmwR3x"
+    }
+  },
+  {
+    day: 48,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Cambio",
+    verse: {
+      text: "He aquí que yo hago cosa nueva; pronto saldrá a luz.",
+      reference: "Isaías 43:19"
+    },
+    reflection: "Los cambios nos asustan. Mudanzas, nuevos trabajos, nuevas etapas. Pero el cambio es señal de vida. Lo que no cambia, no crece. Agradecer por los cambios es abrazar la aventura de Dios. Él es inmutable, pero su obra en nosotros es dinámica. Gracias por lo nuevo que estás haciendo.",
+    quote: {
+      text: "Dios está haciendo algo nuevo en ti; confía en su proceso de transformación.",
+      author: "Rick Warren"
+    },
+    challenge: "Si estás enfrentando un cambio, haz una lista de 3 cosas positivas que este cambio puede traer a tu vida.",
+    song: {
+      title: "Su Poder",
+      artist: "Miel San Marcos & Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=VG-b7wi8nBM",
+      spotifyUrl: "https://open.spotify.com/track/4ggL9CpFu2bIr4nxpIoQpz"
+    }
+  },
+  {
+    day: 49,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Debilidad",
+    verse: {
+      text: "Bástate mi gracia; porque mi poder se perfecciona en la debilidad.",
+      reference: "2 Corintios 12:9"
+    },
+    reflection: "Odiamos sentirnos débiles. Pero nuestra debilidad es el escenario para el poder de Dios. Agradecer por nuestras limitaciones nos hace humildes y dependientes. Cuando soy débil, entonces soy fuerte en Él. Gracias Dios porque no tengo que ser un superhéroe, solo un hijo confiado en tu poder.",
+    quote: {
+      text: "Dios usa a personas quebrantadas porque tienen muchos pedazos para compartir.",
+      author: "Anónimo"
+    },
+    challenge: "Reconoce hoy una debilidad ante Dios y dile: 'Gracias porque aquí es donde tú vas a brillar'.",
+    song: {
+      title: "En Tu Presencia",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=tAHJmD5j0pE",
+      spotifyUrl: "https://open.spotify.com/track/7oNZgSymJXpLxKIN926zct"
+    },
+    movie: {
+      title: "Soul Surfer (2011)",
+      description: "La historia real de Bethany Hamilton, quien perdió un brazo por un tiburón pero encontró propósito y gratitud en medio de su tragedia.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=MWeOjBCi3c4"
+    }
+  },
+  {
+    day: 50,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Abundancia",
+    verse: {
+      text: "Sino acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas, a fin de confirmar su pacto que juró a tus padres, como en este día.",
+      reference: "Deuteronomio 8:18"
+    },
+    reflection: "A veces la abundancia es una prueba más difícil que la escasez, porque tendemos a olvidar a Dios. Agradecer en la abundancia es mantener el corazón humilde, reconociendo que todo viene de Él. La gratitud nos protege del orgullo y nos mueve a la generosidad. Bendecido para bendecir.",
+    quote: {
+      text: "La prosperidad no es solo tener cosas, es tener a Dios en medio de las cosas.",
+      author: "Anónimo"
+    },
+    challenge: "Si tienes abundancia en alguna área, comparte hoy con alguien que tenga menos como acto de gratitud.",
+    song: {
+      title: "Gratitude (Gratitud)",
+      artist: "Brandon Lake",
+      youtubeUrl: "https://www.youtube.com/watch?v=9GQmQlAkpRw",
+      spotifyUrl: "https://open.spotify.com/track/4VI7berVSzuaBt1BGrBksC"
+    }
+  },
+  {
+    day: 51,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Dolor Emocional",
+    verse: {
+      text: "Cercano está Jehová a los quebrantados de corazón; Y salva a los contritos de espíritu.",
+      reference: "Salmo 34:18"
+    },
+    reflection: "La depresión, la ansiedad y la tristeza son reales. Agradecer en medio del dolor emocional no es negar lo que sentimos, es aferrarnos a la promesa de su cercanía. Dios no desprecia al corazón roto. Agradece porque Él recoge tus lágrimas en su redoma. No estás solo en tu dolor.",
+    quote: {
+      text: "Dios está cerca del quebrantado de corazón y recoge cada una de tus lágrimas.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Escribe tus sentimientos en un papel y entrégaselos a Dios. Agradece porque Él entiende tu dolor.",
+    song: {
+      title: "Sumérgeme",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=ZZkSo5claV0",
+      spotifyUrl: "https://open.spotify.com/track/2DgnAYJ9QJaMoxA2peFTmN",
+    }
+  },
+  {
+    day: 52,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Disciplina",
+    verse: {
+      text: "Porque el Señor al que ama, disciplina, Y azota a todo el que recibe por hijo.",
+      reference: "Hebreos 12:6"
+    },
+    reflection: "La disciplina duele, pero es prueba de paternidad. Si Dios nos corrige es porque le importamos y quiere lo mejor para nosotros. Agradecer por la corrección divina es madurez espiritual. Nos libra de caminos de muerte. Gracias Padre porque me amas demasiado como para dejarme igual.",
+    quote: {
+      text: "La disciplina de Dios es una señal de su amor paternal que nos moldea a la imagen de Cristo.",
+      author: "John Piper"
+    },
+    challenge: "Si sientes que Dios te está corrigiendo en algo, no te resistas. Agradece y obedece.",
+    song: {
+      title: "Obra de Tu Amor (Alfarero)",
+      artist: "Generación 12",
+      youtubeUrl: "https://www.youtube.com/watch?v=391kK9oJlcQ",
+      spotifyUrl: "https://open.spotify.com/track/2c6GI6IJj4y8of8a6HeKiE",
+    }
+  },
+  {
+    day: 53,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Victoria",
+    verse: {
+      text: "Mas a Dios gracias, el cual nos lleva siempre en triunfo en Cristo Jesús, y por medio de nosotros manifiesta en todo lugar el olor de su conocimiento.",
+      reference: "2 Corintios 2:14"
+    },
+    reflection: "Cuando ganamos, cuando logramos la meta, es vital detenernos a agradecer. No fue solo nuestro esfuerzo, fue su gracia. La gratitud en la victoria nos mantiene con los pies en la tierra y la gloria en el cielo. Celebra tus logros, pero dale el crédito al que te dio la fuerza.",
+    quote: {
+      text: "Toda victoria es un regalo de Dios; celebra con gratitud y humildad.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Celebra una pequeña victoria reciente (un hábito logrado, un trabajo terminado) dando gracias a Dios.",
+    song: {
+      title: "Rey Vencedor",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=scdXbTC7mYg",
+      spotifyUrl: "https://open.spotify.com/track/43h9o5qOFh0anJ5Y4GaiI8",
+    }
+  },
+  {
+    day: 54,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Oscuridad",
+    verse: {
+      text: "Aun las tinieblas no encubren de ti, Y la noche resplandece como el día; Lo mismo te son las tinieblas que la luz.",
+      reference: "Salmo 139:12"
+    },
+    reflection: "Hay momentos oscuros donde no vemos nada. Pero para Dios, la oscuridad es como la luz. Él ve perfectamente dónde estamos. Agradecer en la oscuridad es confiar en su visión nocturna. Él nos guía aunque nosotros no veamos el camino. Gracias porque tú eres mi luz.",
+    quote: {
+      text: "En los momentos más oscuros es cuando Dios hace brillar su luz más fuerte.",
+      author: "Max Lucado"
+    },
+    challenge: "Enciende una luz en una habitación oscura y reflexiona sobre cómo Cristo ilumina tu vida.",
+    song: {
+      title: "Enciende una Luz",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=68WW8GZotIw",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/1UEwI2FyRaowh1kUWCzNLg",
+    }
+  },
+  {
+    day: 55,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Presión",
+    verse: {
+      text: "Pero tenemos este tesoro en vasos de barro, para que la excelencia del poder sea de Dios, y no de nosotros,",
+      reference: "2 Corintios 4:7"
+    },
+    reflection: "La presión produce diamantes. El aceite sale de la aceituna prensada. Agradecer por las situaciones de presión es entender que Dios está extrayendo lo mejor de nosotros. No te rompas bajo la presión, apóyate en la Roca. Gracias Dios porque esta presión está sacando mi propósito.",
+    quote: {
+      text: "La presión revela lo que hay dentro de ti; deja que Dios use esos momentos para refinarte.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Si te sientes presionado hoy, respira y di: 'Gracias Dios porque me estás haciendo más fuerte'.",
+    song: {
+      title: "Eres Mi Protector",
+      artist: "Maranatha! Latin",
+      youtubeUrl: "https://www.youtube.com/watch?v=azqgZB1ZSOA",
+      spotifyUrl: "https://open.spotify.com/track/7B2MTnxcpb0oBRCMv2P6cE",
+    }
+  },
+  {
+    day: 56,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Confusión",
+    verse: {
+      text: "Porque Dios no es Dios de confusión, sino de paz.",
+      reference: "1 Corintios 14:33"
+    },
+    reflection: "Cuando no entendemos nada, cuando todo es confuso, volvemos a la gratitud. Agradecer ordena los pensamientos. Nos recuerda quién es Dios. La gratitud es el antídoto contra el caos mental. Gracias Dios porque aunque yo esté confundido, tú tienes un plan claro.",
+    quote: {
+      text: "La claridad viene de la obediencia, no del análisis.",
+      author: "Anónimo"
+    },
+    challenge: "Deja de tratar de entender todo hoy. Solo agradece y descansa en que Dios sí entiende.",
+    song: {
+      title: "Alaba a Dios",
+      artist: "Danny Berríos",
+      youtubeUrl: "https://www.youtube.com/watch?v=SNHtwDiRI50",
+      spotifyUrl: "https://open.spotify.com/track/3MHkeMZGfp6hNB5rsrEnBa"
+    },
+    movie: {
+      title: "Dios No Está Muerto (God's Not Dead) (2014)",
+      description: "Un estudiante enfrenta la confusión y el desafío intelectual de defender su fe en un ambiente hostil.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=j2KDj7qxnds"
+    }
+  },
+  {
+    day: 57,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en el Sacrificio",
+    verse: {
+      text: "Así que, hermanos, os ruego por las misericordias de Dios, que presentéis vuestros cuerpos en sacrificio vivo, santo, agradable a Dios, que es vuestro culto racional.",
+      reference: "Romanos 12:1"
+    },
+    reflection: "El amor verdadero requiere sacrificio. Agradecer cuando nos cuesta, cuando tenemos que ceder o perder para que otro gane, es adoración. Jesús se sacrificó con gozo por nosotros. Agradece por la oportunidad de morir al 'yo' y vivir para Él. El sacrificio con gratitud es olor fragante.",
+    quote: {
+      text: "El sacrificio es la medida del amor.",
+      author: "Anónimo"
+    },
+    challenge: "Sacrifica algo hoy (tiempo, comodidad, dinero) por alguien más y hazlo con una sonrisa de gratitud.",
+    song: {
+      title: "Perfume a Tus Pies",
+      artist: "Marcela Gándara",
+      youtubeUrl: "https://www.youtube.com/watch?v=Nco69szMp0Y",
+      spotifyUrl: "https://open.spotify.com/track/2htV0R3uI8RlrjTtS7X91w",
+    }
+  },
+  {
+    day: 58,
+    month: "Febrero",
+    monthId: 2,
+    title: "Gratitud en la Despedida",
+    verse: {
+      text: "Jehová guarde tu salida y tu entrada.",
+      reference: "Salmo 121:8"
+    },
+    reflection: "Decir adiós es difícil. Cerrar ciclos duele. Pero cada final es el comienzo de algo nuevo. Agradecer en las despedidas es honrar lo vivido y confiar en el futuro. Gracias Dios por el tiempo compartido y por lo que viene. La gratitud nos ayuda a soltar y avanzar.",
+    quote: {
+      text: "Cada despedida es una puerta que Dios cierra para abrir una mejor.",
+      author: "Max Lucado"
+    },
+    challenge: "Si tienes que despedirte de algo o alguien (una etapa, un lugar), haz una oración de gratitud por ello.",
+    song: {
+      title: "Te Doy Gloria",
+      artist: "En Espíritu y En Verdad",
+      youtubeUrl: "https://www.youtube.com/watch?v=tAHJmD5j0pE",
+      spotifyUrl: "https://open.spotify.com/track/6lMk5sY36yHg5vY2Q29lJd"
+    }
+  },
+  {
+    day: 59,
+    month: "Mes",
+    monthId: 1,
+    title: "Corazones Agradecidos en Su Presencia",
+    verse: {
+      text: "Entrad por sus puertas con acción de gracias, Por sus atrios con alabanza; Alabadle, bendecid su nombre. Porque Jehová es bueno; para siempre es su misericordia, Y su verdad por todas las generaciones.",
+      reference: "Salmos 100:4-5"
+    },
+    reflection: "La gratitud es una puerta de entrada a la presencia de Dios. Salmos 100:4-5 nos invita a acercarnos a Él con un corazón agradecido, reconociendo su bondad inagotable y su fidelidad eterna. En medio de las circunstancias de la vida, sean buenas o desafiantes, podemos encontrar motivos para dar gracias. Esta actitud no solo transforma nuestra perspectiva, sino que también nos conecta más profundamente con el amor y la misericordia divina. Al alabar su nombre y bendecirlo, afirmamos nuestra confianza en que Él es bueno y que su amor perdura por siempre, generación tras generación. La gratitud es un acto de fe que nos recuerda quién es Dios y todo lo que ha hecho por nosotros.",
+    quote: {
+      text: "Lo que pienses o sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, dedica cinco minutos a escribir una lista de cinco cosas por las que estás genuinamente agradecido a Dios, y exprésale tu gratitud en oración.",
+    song: {
+      title: "Agradecido",
+      artist: "Danny Gokey",
+      youtubeUrl: "https://www.youtube.com/watch?v=Jz_LbGdyx20",
+      spotifyUrl: "https://open.spotify.com/track/2LgV8qhIUvcQSHHz2o7s8O",
+    },
+  },  {
+    day: 60,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por el Cónyuge",
+    verse: {
+      text: "El que halla esposa halla el bien, y alcanza la benevolencia de Jehová.",
+      reference: "Proverbios 18:22"
+    },
+    reflection: "El matrimonio es un regalo de Dios, diseñado para reflejar el amor de Cristo por la iglesia. Agradecer por nuestro cónyuge es un antídoto contra el egoísmo y la rutina. A menudo nos enfocamos en lo que nuestra pareja no hace, en lugar de agradecer por lo que es. La gratitud renueva el amor y suaviza los conflictos. Si eres soltero, agradece por tu futuro cónyuge o por la completitud que tienes en Cristo.",
+    quote: {
+      text: "Un matrimonio feliz es la unión de dos buenos perdonadores.",
+      author: "Ruth Bell Graham"
+    },
+    challenge: "Escribe 3 cosas que admiras de tu cónyuge (o de un ser querido cercano si eres soltero) y díselas hoy.",
+    song: {
+      title: "Mi Bendición",
+      artist: "Juan Luis Guerra",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Mi+Bendición+Juan+Luis+Guerra",
+      spotifyUrl: "https://open.spotify.com/search/Mi%20Bendición%20Juan%20Luis%20Guerra"
+    }
+  },
+  {
+    day: 61,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Hijos",
+    verse: {
+      text: "He aquí, herencia de Jehová son los hijos; cosa de estima el fruto del vientre.",
+      reference: "Salmo 127:3"
+    },
+    reflection: "Los hijos no son una carga, son una herencia. Son flechas en manos del valiente. Agradecer por los hijos (propios o espirituales) es valorar la vida que Dios nos ha confiado para moldear. La crianza es difícil, pero la gratitud nos da paciencia. Agradece por sus risas, por sus preguntas y hasta por el desorden, porque es señal de vida y crecimiento.",
+    quote: {
+      text: "Tus hijos son el único tesoro que podrás llevar al cielo.",
+      author: "Anónimo"
+    },
+    challenge: "Abraza a tus hijos (o sobrinos/nietos) hoy y diles: 'Doy gracias a Dios por ti'.",
+    song: {
+      title: "Profetizaré",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Profetizaré+Barak",
+      spotifyUrl: "https://open.spotify.com/search/Profetizaré%20Barak"
+    }
+  },
+  {
+    day: 62,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Padres",
+    verse: {
+      text: "Honra a tu padre y a tu madre, que es el primer mandamiento con promesa.",
+      reference: "Efesios 6:2"
+    },
+    reflection: "Nuestros padres nos dieron la vida y, en la mayoría de los casos, sacrificaron mucho por nosotros. Agradecer por ellos es un mandamiento con promesa de bendición. Incluso si no fueron perfectos, Dios los usó para traerte al mundo. La gratitud hacia los padres sana heridas del pasado y honra el diseño de autoridad de Dios. Si ya no están, agradece por su memoria y legado.",
+    quote: {
+      text: "Honrar a tus padres es honrar el diseño de Dios y abre las puertas de bendición en tu vida.",
+      author: "Billy Graham"
+    },
+    challenge: "Si tus padres viven, llámalos hoy solo para agradecerles. Si no, escribe una carta de gratitud a Dios por ellos.",
+    song: {
+      title: "Mi Herencia",
+      artist: "Nancy Amancio",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Mi+Herencia+Nancy+Amancio",
+      spotifyUrl: "https://open.spotify.com/search/Mi%20Herencia%20Nancy%20Amancio"
+    }
+  },
+  {
+    day: 63,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Hermanos",
+    verse: {
+      text: "¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!",
+      reference: "Salmo 133:1"
+    },
+    reflection: "Los hermanos (de sangre y de fe) son nuestros primeros compañeros de vida. Con ellos aprendemos a compartir, a pelear y a perdonar. Agradecer por los hermanos es valorar la compañía en el camino. No estamos solos. Dios nos puso en una familia para que nos apoyemos mutuamente. La gratitud elimina la rivalidad y fomenta la unidad.",
+    quote: {
+      text: "El amor entre hermanos refleja el amor de Dios que nos une como familia eterna.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Envía un mensaje a un hermano (de sangre o de la iglesia) recordando una anécdota divertida juntos y agradeciendo por su vida.",
+    song: {
+      title: "Yo Te Busco",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Las Crónicas de Narnia: El León, la Bruja y el Ropero (2005)",
+      description: "Una historia clásica que muestra la dinámica entre hermanos, el sacrificio, el perdón y la redención en un mundo mágico.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=usEkWtuNn-w"
+    }
+  },
+  {
+    day: 64,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Mentores",
+    verse: {
+      text: "Lo que has oído de mí ante muchos testigos, esto encarga a hombres fieles que sean idóneos para enseñar también a otros.",
+      reference: "2 Timoteo 2:2"
+    },
+    reflection: "Nadie se hace a sí mismo. Todos estamos parados sobre los hombros de gigantes que nos enseñaron. Agradecer por los mentores es reconocer la inversión de otros en nuestra vida. Un mentor nos ahorra años de errores con su consejo. La gratitud hacia ellos nos mantiene enseñables y humildes. Honra a quienes te han guiado espiritualmente o profesionalmente.",
+    quote: {
+      text: "Un mentor es alguien que ve más talento y capacidad dentro de ti, de lo que tú ves en ti mismo.",
+      author: "John C. Maxwell"
+    },
+    challenge: "Identifica a un mentor en tu vida y agradécele específicamente por una lección que te haya enseñado.",
+    song: {
+      title: "Vasijas Rotas",
+      artist: "Hillsong Worship",
+      youtubeUrl: "https://www.youtube.com/watch?v=dy9nwe9_xzw",
+      spotifyUrl: "https://open.spotify.com/track/5YJdF3Zqy0qAYbXnC9FXVG"
+    }
+  },
+  {
+    day: 65,
+    month: "Mes",
+    monthId: 1,
+    title: "Amor al Prójimo: Gratitud Diaria",
+    verse: {
+      text: "El segundo es: “Ama a tu prójimo como a ti mismo”. No hay otro mandamiento más importante que estos.",
+      reference: "Marcos 12:31"
+    },
+    reflection: "El amor al prójimo es un pilar fundamental de nuestra fe cristiana, y en él encontramos una fuente inagotable de gratitud. Cuando amamos a nuestros vecinos como a nosotros mismos, no solo cumplimos un mandamiento divino, sino que también abrimos nuestros corazones a la bendición de la comunidad. Cada interacción, cada gesto de bondad y cada palabra de aliento se convierten en oportunidades para expresar agradecimiento por las personas que Dios ha puesto en nuestro camino. Reconocer el valor de quienes nos rodean, con sus virtudes y sus desafíos, nos permite ver la mano de Dios obrando en nuestras vidas a través de ellos. La gratitud por nuestros vecinos nos impulsa a construir relaciones sólidas, a ser luz en sus vidas y a reflejar el amor incondicional de Cristo en nuestro día a día.",
+    quote: {
+      text: "La gratitud mira hacia el pasado y el amor al presente; el miedo, la avaricia y la ambición miran hacia adelante.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, saluda a un vecino con una sonrisa y ofrécele ayuda si la necesita, mostrando el amor de Cristo.",
+    song: {
+      title: "Ama A Dios Y A Tu Vecino",
+      artist: "Danny Gokey, Evan Craft, Redimi2",
+      youtubeUrl: "https://www.youtube.com/watch?v=Nkrtpsnqrn0",
+      spotifyUrl: "https://open.spotify.com/track/0ZIzGwc3j4lVacHR1c5DKb"
+    },
+  },  {
+    day: 66,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Compañeros de Trabajo",
+    verse: {
+      text: "Hierro con hierro se aguza; y así el hombre aguza el rostro de su amigo.",
+      reference: "Proverbios 27:17"
+    },
+    reflection: "Pasamos gran parte de nuestra vida trabajando. Nuestros compañeros pueden ser una fuente de estrés o de bendición. La gratitud cambia nuestra perspectiva: los vemos como personas a quienes servir y con quienes crecer. Agradecer por el equipo de trabajo fomenta un ambiente de colaboración y respeto. Incluso el compañero difícil nos 'aguza' y nos enseña paciencia.",
+    quote: {
+      text: "El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos.",
+      author: "Michael Jordan"
+    },
+    challenge: "Agradece a un compañero de trabajo por su ayuda o colaboración en algún proyecto reciente.",
+    song: {
+      title: "Juntos",
+      artist: "Un Corazón",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Juntos+Un+Corazón",
+      spotifyUrl: "https://open.spotify.com/search/Juntos%20Un%20Corazón"
+    }
+  },
+  {
+    day: 67,
+    month: "Mes",
+    monthId: 1,
+    title: "Gracias por nuestros líderes",
+    verse: {
+      text: "Así que recomiendo, ante todo, que se hagan plegarias, oraciones, súplicas y acciones de gracias por todos, por los reyes y por todas las autoridades, para que tengamos paz y tranquilidad, y llevemos una vida devota y digna.",
+      reference: "1 Timoteo 2:1-2"
+    },
+    reflection: "El apóstol Pablo nos exhorta en 1 Timoteo 2:1-2 a orar y dar gracias por todos, especialmente por nuestros líderes. Esta instrucción no es una sugerencia, sino un mandato que nos invita a una postura activa de gratitud y súplica. Reconocer el rol de quienes nos guían, ya sea en la iglesia, el gobierno o la comunidad, y elevar oraciones por ellos, es un acto de fe y obediencia. Al hacerlo, no solo impactamos sus vidas, sino que también contribuimos a un ambiente de paz y tranquilidad que nos permite vivir una vida devota. La gratitud por nuestros líderes nos ayuda a ver su servicio desde una perspectiva divina, confiando en que Dios los usa para sus propósitos, incluso en medio de desafíos. Es un recordatorio de que la verdadera autoridad proviene de Él y que nuestra respuesta debe ser siempre de agradecimiento y apoyo espiritual.",
+    quote: {
+      text: "La gratitud es la clave para una vida feliz y plena, sin importar las circunstancias.",
+      author: "Rick Warren"
+    },
+    challenge: "Hoy, ora específicamente por un líder en tu vida, agradeciendo a Dios por su servicio y pidiendo sabiduría para él.",
+    song: {
+      title: "Hay Un Lugar",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=rB8vI9s4l8g",
+      spotifyUrl: "https://open.spotify.com/track/3LlGGGhby3Zy8KhCZCQzZ2"
+    },
+  },  {
+    day: 68,
+    month: "Mes",
+    monthId: 1,
+    title: "Regalo Divino: Hijos y Gratitud",
+    verse: {
+      text: "Los hijos son un regalo del Señor; los frutos del vientre son nuestra recompensa. Los hijos que nos nacen en nuestra juventud son como flechas en las manos del guerrero. Dichosos los que llenan su aljaba con ellos. No serán humillados cuando se enfrenten con sus enemigos en los tribunales.",
+      reference: "Salmos 127:3-5"
+    },
+    reflection: "Salmos 127:3-5 nos recuerda que los hijos son un don precioso de Dios, una herencia y una recompensa. En un mundo que a menudo valora la independencia y la autosuficiencia, es fácil olvidar la profunda bendición que representan los niños en nuestras vidas. Son una fuente de alegría, un recordatorio constante del amor y la provisión divina. Reflexionar sobre su presencia nos invita a una gratitud sincera, no solo por su existencia, sino por la oportunidad de guiarlos, amarlos y verlos crecer. Cada risa, cada abrazo, cada desafío superado con ellos, es una manifestación de la gracia de Dios. Agradezcamos hoy por la vida de nuestros hijos, reconociéndolos como flechas que Dios nos confía para impactar el futuro con esperanza y fe.",
+    quote: {
+      text: "Los hijos no son distracción del trabajo más importante. Son el trabajo más importante.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Dedica tiempo hoy a tus hijos. Escúchalos, juega con ellos y dales las gracias a Dios por su vida, expresando tu gratitud en voz alta.",
+    song: {
+      title: "La Bendición",
+      artist: "Elevation Worship, Elevation Español",
+      youtubeUrl: "https://www.youtube.com/watch?v=pVb8rGuIkag",
+      spotifyUrl: "https://open.spotify.com/track/5KNP7zONOFZqOL3ixeWMOQ"
+    },
+  },  {
+    day: 69,
+    month: "Mes",
+    monthId: 1,
+    title: "Honrando la Sabiduría Anciana",
+    verse: {
+      text: "Asimismo, vosotros los más jóvenes, estad sujetos a los mayores; y todos, revestíos de humildad en vuestro trato mutuo, porque Dios resiste a los soberbios, pero da gracia a los humildes.",
+      reference: "1 Pedro 5:5"
+    },
+    reflection: "La gratitud se manifiesta de muchas formas, y una de las más profundas es el respeto y la sujeción a la sabiduría de aquellos que nos preceden. El apóstol Pedro nos exhorta a los jóvenes a someternos a los mayores, no como una imposición, sino como un acto de humildad y reconocimiento del valor que la experiencia y la fe acumuladas representan. Los ancianos son un tesoro de conocimiento y discernimiento, sus vidas son testimonios vivos de la fidelidad de Dios. Al honrarlos y aprender de ellos, no solo demostramos gratitud por su legado, sino que también cultivamos en nosotros la humildad que agrada a Dios. Esta actitud nos permite recibir la gracia divina y nos prepara para ser, a su debido tiempo, ejemplos dignos para las futuras generaciones. Agradezcamos hoy por la presencia de los ancianos en nuestras vidas, por su guía y por la paciencia con la que comparten sus vivencias.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Dedica tiempo hoy a escuchar a un anciano. Agradécele por su sabiduría y ora por su bienestar, reconociendo su valioso aporte.",
+    song: {
+      title: "Aleluya",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    },
+  },  {
+    day: 70,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Solteros",
+    verse: {
+      text: "El soltero tiene cuidado de las cosas del Señor, de cómo agradar al Señor.",
+      reference: "1 Corintios 7:32"
+    },
+    reflection: "La soltería no es un estado de espera, es un estado de plenitud y servicio. Agradecer por los solteros en la comunidad es valorar su dedicación y libertad para servir al Reino. Jesús fue soltero. Pablo fue soltero. La gratitud por este estado de vida nos ayuda a ver las ventajas y oportunidades únicas que ofrece para la gloria de Dios.",
+    quote: {
+      text: "La soltería es un regalo, no una maldición. Es un tiempo para una devoción indivisa a Dios.",
+      author: "Tony Evans"
+    },
+    challenge: "Si eres soltero, agradece por tu libertad para servir. Si eres casado, invita a un soltero a comer y agradece por su amistad.",
+    song: {
+      title: "Todo Lo Haces Nuevo",
+      artist: "Athenas",
+    },
+    movie: {
+      title: "Reto de Valientes (Courageous) (2011)",
+      description: "Aunque se centra en padres, muestra la importancia de la integridad y el compromiso en todas las relaciones, inspirando a hombres solteros y casados.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=70MVn1q-yyM"
+    }
+  },
+  {
+    day: 71,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Difíciles",
+    verse: {
+      text: "Si es posible, en cuanto dependa de vosotros, estad en paz con todos los hombres.",
+      reference: "Romanos 12:18"
+    },
+    reflection: "Todos tenemos a alguien 'difícil' en nuestra vida. Agradecer por ellos parece contraintuitivo, pero son necesarios. Son la lija que Dios usa para pulir nuestro carácter. Nos enseñan paciencia, dominio propio y amor incondicional. Sin personas difíciles, no creceríamos en gracia. Agradece hoy por ese 'entrenador de paciencia' que Dios ha puesto en tu camino.",
+    quote: {
+      text: "Dios usa a las personas difíciles para perfeccionar nuestro carácter y enseñarnos a amar como Cristo amó.",
+      author: "Rick Warren"
+    },
+    challenge: "Ora bendiciendo a esa persona difícil en tu vida. No pidas que cambie, pide que Dios te dé gracia para amarla.",
+    song: {
+      title: "Amarte Solo a Ti",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Amarte+Solo+a+Ti+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Amarte%20Solo%20a%20Ti%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 72,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Extraños",
+    verse: {
+      text: "No os olvidéis de la hospitalidad, porque por ella algunos, sin saberlo, hospedaron ángeles.",
+      reference: "Hebreos 13:2"
+    },
+    reflection: "Un extraño es un amigo que aún no conoces. Agradecer por los encuentros casuales es estar abierto a las sorpresas de Dios. A veces Dios usa a un desconocido para darnos una palabra, una ayuda o una lección. La gratitud nos hace hospitalarios y amables. Nunca sabemos cuándo un breve encuentro puede cambiar una vida, la nuestra o la de ellos.",
+    quote: {
+      text: "Trata a cada persona como si fuera Cristo disfrazado, porque en verdad, lo es.",
+      author: "Mother Teresa"
+    },
+    challenge: "Sonríe y saluda amablemente a un extraño hoy. Agradece a Dios por la oportunidad de ser luz en la calle.",
+    song: {
+      title: "Brilla",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Brilla+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Brilla%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 73,
+    month: "Mes",
+    monthId: 1,
+    title: "Manos Abiertas, Corazón Agradecido",
+    verse: {
+      text: "En todo os he enseñado que, trabajando así, se debe ayudar a los necesitados, recordar las palabras del Señor Jesús, que dijo: Más bienaventurado es dar que recibir",
+      reference: "Hechos 20:35"
+    },
+    reflection: "El versículo de Hechos 20:35 nos revela una profunda verdad espiritual: hay más bienaventuranza en dar que en recibir. Esta enseñanza de Jesús nos invita a reflexionar sobre la gratitud no solo por lo que recibimos, sino por la capacidad misma de dar y servir a los demás. Cuando extendemos una mano a los necesitados, no solo suplimos una carencia física, sino que experimentamos una plenitud y un gozo que solo provienen de reflejar el amor de Dios. La gratitud se profundiza al reconocer que cada acto de generosidad es una oportunidad divina para ser un canal de bendición. Al dar, nuestros corazones se llenan de un agradecimiento genuino por la gracia que hemos recibido, lo que nos impulsa a compartirla con alegría y sin reservas, transformando nuestra perspectiva y enriqueciendo nuestra fe.",
+    quote: {
+      text: "La verdadera gratitud es un desborde del corazón que se siente mejor tratado de lo que merece.",
+      author: "John Piper"
+    },
+    challenge: "Hoy, busca una oportunidad para ayudar a alguien en necesidad, por pequeña que sea, y agradece a Dios por permitirte ser un instrumento de su amor.",
+    song: {
+      title: "Agradecido",
+      artist: "Danny Gokey & Alex Zurdo",
+      youtubeUrl: "https://www.youtube.com/watch?v=Jz_LbGdyx20",
+      spotifyUrl: "https://open.spotify.com/track/4oui4DGF163Vc22PVajbPz"
+    },
+  },  {
+    day: 74,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Consejeros",
+    verse: {
+      text: "En la multitud de consejeros hay seguridad.",
+      reference: "Proverbios 11:14"
+    },
+    reflection: "Tomar decisiones solos es peligroso. Agradecer por las personas sabias que nos aconsejan es valorar la seguridad. Un buen consejo puede salvarnos de un desastre. Agradece por aquellos que tienen la valentía de decirte la verdad y la sabiduría para guiarte. La gratitud hacia los consejeros nos hace prudentes.",
+    quote: {
+      text: "El que escucha consejo y acepta la corrección llegará a ser sabio.",
+      author: "Proverbios 19:20"
+    },
+    challenge: "Pide consejo a alguien sabio sobre una decisión pendiente y agradécele por su perspectiva.",
+    song: {
+      title: "Espíritu Santo",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Espíritu+Santo+Barak",
+      spotifyUrl: "https://open.spotify.com/search/Espíritu%20Santo%20Barak"
+    }
+  },
+  {
+    day: 75,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Discípulos",
+    verse: {
+      text: "Id, y haced discípulos a todas las naciones.",
+      reference: "Mateo 28:19"
+    },
+    reflection: "Invertir en la vida de otros es el mandato de Jesús. Agradecer por las personas que estamos discipulando o ayudando a crecer es celebrar la multiplicación del Reino. Ver a alguien madurar en la fe es uno de los mayores gozos. La gratitud nos motiva a seguir invirtiendo tiempo y amor en las nuevas generaciones de creyentes.",
+    quote: {
+      text: "El éxito sin sucesor es un fracaso.",
+      author: "Myles Munroe"
+    },
+    challenge: "Dedica tiempo hoy a enseñar o animar a alguien más joven en la fe. Agradece a Dios por el privilegio de influir.",
+    song: {
+      title: "Generación Que Danza",
+      artist: "En Espíritu y En Verdad",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Generación+Que+Danza+En+Espíritu+y+En+Verdad",
+      spotifyUrl: "https://open.spotify.com/search/Generación%20Que%20Danza%20En%20Espíritu%20y%20En%20Verdad"
+    }
+  },
+  {
+    day: 76,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Servidores",
+    verse: {
+      text: "El que quiera hacerse grande entre vosotros será vuestro servidor.",
+      reference: "Mateo 20:26"
+    },
+    reflection: "A menudo pasamos por alto a quienes sirven: los que limpian, los que cocinan, los que cuidan los detalles. Agradecer por los servidores es reconocer su dignidad y valor. Sin ellos, el mundo se detendría. Jesús vino a servir. La gratitud hacia quienes nos sirven nos hace más parecidos a Cristo y menos arrogantes.",
+    quote: {
+      text: "El servicio es el alquiler que pagamos por estar en la tierra.",
+      author: "Muhammad Ali"
+    },
+    challenge: "Agradece explícitamente a alguien que te sirva hoy (mesero, conserje, cajero) mirándolo a los ojos.",
+    song: {
+      title: "Heme Aquí",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Heme+Aquí+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Heme%20Aquí%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 77,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Intercesores",
+    verse: {
+      text: "Orad unos por otros, para que seáis sanados.",
+      reference: "Santiago 5:16"
+    },
+    reflection: "Hay personas que oran por nosotros en secreto. Quizás tus padres, abuelos o amigos. Agradecer por los intercesores es reconocer que estamos sostenidos por las oraciones de otros. Muchas de nuestras victorias se deben a alguien que peleó por nosotros de rodillas. La gratitud por la intercesión nos anima a ser también intercesores por otros.",
+    quote: {
+      text: "La oración mueve la mano que mueve el mundo.",
+      author: "John Wallace"
+    },
+    challenge: "Pregunta a alguien: '¿Cómo puedo orar por ti hoy?' y tómate el tiempo de hacerlo. Agradece por quienes oran por ti.",
+    song: {
+      title: "Levanto Mis Manos",
+      artist: "Samuel Hernández",
+    },
+    movie: {
+      title: "Vencedor (Overcomer) (2019)",
+      description: "Muestra cómo la identidad en Cristo y la intercesión pueden transformar vidas y restaurar relaciones rotas.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=Le05vmahdXQ"
+    }
+  },
+  {
+    day: 78,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Perdonados",
+    verse: {
+      text: "Soportándoos unos a otros, y perdonándoos unos a otros.",
+      reference: "Colosenses 3:13"
+    },
+    reflection: "Agradecer por aquellos a quienes hemos perdonado es el sello de la sanidad. Cuando podemos mirar a quien nos ofendió sin amargura, sino con gratitud por la restauración, somos verdaderamente libres. El perdón restaura relaciones o al menos libera nuestro corazón. Agradece hoy por la capacidad sobrenatural de perdonar que Dios te da.",
+    quote: {
+      text: "Perdonar es liberar a un prisionero y descubrir que el prisionero eras tú.",
+      author: "Lewis B. Smedes"
+    },
+    challenge: "Ora por alguien a quien hayas perdonado, pidiendo lo mejor para su vida. Agradece a Dios por haber sanado tu corazón.",
+    song: {
+      title: "Perdón",
+      artist: "René González",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Perdón+René+González",
+      spotifyUrl: "https://open.spotify.com/search/Perdón%20René%20González"
+    }
+  },
+  {
+    day: 79,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Lejanos",
+    verse: {
+      text: "Jehová guardará tu salida y tu entrada desde ahora y para siempre.",
+      reference: "Salmo 121:8"
+    },
+    reflection: "Muchos tenemos seres queridos lejos, en otros países o ciudades. La distancia duele, pero la gratitud nos conecta. Agradecer por ellos, aunque estén lejos, es confiarlos al cuidado omnipresente de Dios. La tecnología nos acerca, pero la oración nos une. Agradece hoy porque el mismo Dios que está contigo está con ellos.",
+    quote: {
+      text: "La distancia no rompe la oración.",
+      author: "Anónimo"
+    },
+    challenge: "Haz una videollamada a alguien que esté lejos y oren juntos unos minutos, agradeciendo a Dios por su vínculo.",
+    song: {
+      title: "No Importa La Distancia",
+      artist: "Rabito",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Importa+La+Distancia+Rabito",
+      spotifyUrl: "https://open.spotify.com/search/No%20Importa%20La%20Distancia%20Rabito"
+    }
+  },
+  {
+    day: 80,
+    month: "Mes",
+    monthId: 1,
+    title: "Cuidando la Creación Divina",
+    verse: {
+      text: "El justo cuida de la vida de su bestia; Mas el corazón de los impíos es cruel.",
+      reference: "Proverbios 12:10"
+    },
+    reflection: "Proverbios 12:10 nos recuerda la responsabilidad que tenemos como justos de cuidar la vida de los animales. Esta gratitud se extiende a toda la creación de Dios, reconociendo Su sabiduría y amor en cada ser vivo. Al cuidar de ellos, reflejamos el carácter de nuestro Creador y expresamos nuestra gratitud por Su provisión y el regalo de la vida. Es un acto de adoración y una forma tangible de vivir la gratitud en nuestro día a día, reconociendo que cada criatura es una bendición.",
+    quote: {
+      text: "La gratitud eleva nuestra mirada, nos quita los ojos de las cosas que nos faltan para que podamos ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Observa hoy la creación de Dios a tu alrededor y agradece por la vida animal.",
+    song: {
+      title: "Dios Hizo los Animales",
+      artist: "Godfy",
+      youtubeUrl: "https://www.youtube.com/watch?v=Cgf13O6Mpjs",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/2WUS8sB0YXFtCFYAWoeT1T"
+    },
+  },  {
+    day: 81,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Vecinos de Fe",
+    verse: {
+      text: "Así que, según tengamos oportunidad, hagamos bien a todos, y mayormente a los de la familia de la fe.",
+      reference: "Gálatas 6:10"
+    },
+    reflection: "Nuestros hermanos en la fe son nuestra familia eterna. Agradecer por la comunidad cristiana global es sentirnos parte de algo inmenso. No estamos solos en el mundo; tenemos millones de hermanos. Agradecer por la iglesia perseguida y por la iglesia libre nos da perspectiva y unidad. Somos un solo cuerpo.",
+    quote: {
+      text: "En lo esencial, unidad; en lo dudoso, libertad; en todo, caridad.",
+      author: "San Agustín"
+    },
+    challenge: "Ora hoy por los cristianos en un país donde hay persecución, agradeciendo por su testimonio de fidelidad.",
+    song: {
+      title: "Somos Uno",
+      artist: "Generación 12",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Somos+Uno+Generación+12",
+      spotifyUrl: "https://open.spotify.com/search/Somos%20Uno%20Generación%2012"
+    }
+  },
+  {
+    day: 82,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Pacificadores",
+    verse: {
+      text: "Bienaventurados los pacificadores, porque ellos serán llamados hijos de Dios.",
+      reference: "Mateo 5:9"
+    },
+    reflection: "En un mundo de conflicto, los pacificadores son un regalo. Agradecer por aquellas personas que buscan la reconciliación y la paz es valorar el carácter de Dios. Ellos construyen puentes donde otros levantan muros. La gratitud nos inspira a ser también pacificadores en nuestras relaciones.",
+    quote: {
+      text: "Bienaventurados los pacificadores, porque reflejan el corazón de Dios que busca reconciliar al mundo consigo mismo.",
+      author: "Max Lucado"
+    },
+    challenge: "Sé un pacificador hoy. Si hay un conflicto a tu alrededor, trata de mediar o llevar palabras de paz y gratitud.",
+    song: {
+      title: "Instrumento de Tu Paz",
+      artist: "San Francisco de Asís (Versión Musical)",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Instrumento+de+Tu+Paz+San+Francisco+de+Asís+(Versión+Musical)",
+      spotifyUrl: "https://open.spotify.com/search/Instrumento%20de%20Tu%20Paz%20San%20Francisco%20de%20Asís%20(Versión%20Musical)"
+    }
+  },
+  {
+    day: 83,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Generosos",
+    verse: {
+      text: "El alma generosa será prosperada; y el que saciare, él también será saciado.",
+      reference: "Proverbios 11:25"
+    },
+    reflection: "Las personas generosas nos inspiran y nos bendicen. Agradecer por quienes dan alegremente es celebrar el corazón de Dios. La generosidad rompe el poder de la avaricia. Agradece por aquellos que te han ayudado financieramente o con su tiempo. Su generosidad es un reflejo de la provisión de Dios.",
+    quote: {
+      text: "No podemos dar más que Dios.",
+      author: "G.W. Peters"
+    },
+    challenge: "Practica la generosidad hoy. Invita un café o comida a alguien y agradece a Dios por poder compartir.",
+    song: {
+      title: "Doy Gracias",
+      artist: "Gateway Worship",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Doy+Gracias+Gateway+Worship",
+      spotifyUrl: "https://open.spotify.com/search/Doy%20Gracias%20Gateway%20Worship"
+    }
+  },
+  {
+    day: 84,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Hospitalarios",
+    verse: {
+      text: "Hospedaos los unos a los otros sin murmuraciones.",
+      reference: "1 Pedro 4:9"
+    },
+    reflection: "Abrir la casa es abrir el corazón. Agradecer por quienes nos reciben en sus hogares es valorar la comunión. La hospitalidad crea un espacio seguro para el amor y la amistad. Agradece por esos hogares donde te sientes bienvenido y amado. La gratitud nos mueve a abrir también nuestras puertas.",
+    quote: {
+      text: "La hospitalidad cristiana es hacer espacio para otros en nuestro corazón y en nuestro hogar.",
+      author: "Anónimo"
+    },
+    challenge: "Planea invitar a alguien a tu casa pronto (una cena o un café). Agradece a Dios por tu hogar y úsalo para bendecir.",
+    song: {
+      title: "Bienvenido a Este Lugar",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Un Sueño Posible (The Blind Side) (2009)",
+      description: "La historia real de cómo la hospitalidad radical y el amor de una familia transformaron la vida de un joven sin hogar.",
+      platform: "Netflix / HBO Max",
+      youtubeUrl: "https://www.youtube.com/watch?v=gvqj_Tk_kuM"
+    }
+  },
+  {
+    day: 85,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Valientes",
+    verse: {
+      text: "Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes.",
+      reference: "Josué 1:9"
+    },
+    reflection: "Los valientes nos abren camino. Agradecer por quienes se atreven a hacer lo correcto, a predicar la verdad o a defender al débil es honrar el coraje. Su valentía nos contagia. Agradece por los héroes de la fe y por los valientes cotidianos que te rodean. La gratitud nos da fuerzas para ser valientes también.",
+    quote: {
+      text: "El verdadero coraje viene de confiar en Dios, no en nuestras propias fuerzas.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Haz algo que te dé miedo hoy (hablar en público, compartir tu fe) confiando en Dios. Agradece por su espíritu de poder.",
+    song: {
+      title: "Guerrero",
+      artist: "Evan Craft",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Guerrero+Evan+Craft",
+      spotifyUrl: "https://open.spotify.com/search/Guerrero%20Evan%20Craft"
+    }
+  },
+  {
+    day: 86,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Humildes",
+    verse: {
+      text: "Dios resiste a los soberbios, y da gracia a los humildes.",
+      reference: "Santiago 4:6"
+    },
+    reflection: "La humildad es atractiva. Agradecer por las personas humildes es valorar la esencia de Cristo. Ellos no buscan el protagonismo, sino servir. Nos enseñan que el verdadero éxito no es la fama, sino la fidelidad. Agradece por esos modelos de humildad que te inspiran a bajar la cabeza y servir mejor.",
+    quote: {
+      text: "La humildad no es pensar menos de ti mismo, es pensar menos en ti mismo.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Sirve hoy en secreto. Haz algo bueno por alguien sin que nadie se entere y agradece a Dios por el privilegio de servir.",
+    song: {
+      title: "Vengo a Adorarte",
+      artist: "Hillsong Worship",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Vengo+a+Adorarte+Hillsong+Worship",
+      spotifyUrl: "https://open.spotify.com/search/Vengo%20a%20Adorarte%20Hillsong%20Worship"
+    }
+  },
+  {
+    day: 87,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Fieles",
+    verse: {
+      text: "Sé fiel hasta la muerte, y yo te daré la corona de la vida.",
+      reference: "Apocalipsis 2:10"
+    },
+    reflection: "La fidelidad es rara hoy en día. Agradecer por las personas que permanecen, que cumplen sus promesas y que no abandonan es vital. La fidelidad de otros nos da seguridad. Agradece por ese amigo fiel, ese cónyuge leal o ese empleado constante. Son reflejo de la fidelidad inquebrantable de Dios.",
+    quote: {
+      text: "La fidelidad en las cosas pequeñas es algo grande.",
+      author: "San Agustín"
+    },
+    challenge: "Agradece a alguien hoy por su fidelidad y constancia en tu vida. Dile cuánto valoras que siempre esté ahí.",
+    song: {
+      title: "Vuelvo a Casa",
+      artist: "Maverick City Música",
+      youtubeUrl: "https://www.youtube.com/watch?v=gCJd5RfN-Nk",
+      spotifyUrl: "https://open.spotify.com/track/4pG2zNjxVv2RJl8LmQPQ0L"
+    }
+  },
+  {
+    day: 88,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Alegres",
+    verse: {
+      text: "El corazón alegre constituye buen remedio.",
+      reference: "Proverbios 17:22"
+    },
+    reflection: "Hay personas que iluminan la habitación cuando entran. Agradecer por quienes traen alegría y risas es celebrar la vida. Nos ayudan a no tomarnos todo tan en serio y a disfrutar el momento. La alegría es contagiosa y sanadora. Agradece por esos 'vitaminas' de alegría en tu círculo social.",
+    quote: {
+      text: "La alegría es la forma más simple de gratitud.",
+      author: "Karl Barth"
+    },
+    challenge: "Sé tú la causa de la alegría de alguien hoy. Cuenta un chiste, sonríe o da una buena noticia. Agradece por el gozo.",
+    song: {
+      title: "Danzar",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Danzar+Barak",
+      spotifyUrl: "https://open.spotify.com/search/Danzar%20Barak"
+    }
+  },
+  {
+    day: 89,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por los Prudentes",
+    verse: {
+      text: "El avisado ve el mal y se esconde; mas los simples pasan y reciben el daño.",
+      reference: "Proverbios 22:3"
+    },
+    reflection: "La prudencia evita muchos dolores. Agradecer por las personas prudentes que nos advierten o nos frenan es sabiduría. A veces nos molestan sus advertencias, pero nos salvan de caídas. Agradece por esa voz de cautela en tu vida que te ayuda a pensar antes de actuar.",
+    quote: {
+      text: "La prudencia es la hija del fracaso y la madre del éxito.",
+      author: "Anónimo"
+    },
+    challenge: "Antes de tomar una decisión hoy, detente, ora y piensa. Agradece a Dios por el espíritu de prudencia.",
+    song: {
+      title: "Enséñame Tu Camino",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Enséñame+Tu+Camino+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Enséñame%20Tu%20Camino%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 90,
+    month: "Marzo",
+    monthId: 3,
+    title: "Gratitud por Jesús, el Mejor Amigo",
+    verse: {
+      text: "Nadie tiene mayor amor que este, que uno ponga su vida por sus amigos.",
+      reference: "Juan 15:13"
+    },
+    reflection: "Cerramos el mes de las relaciones con la relación suprema. Jesús es el amigo que nunca falla, que ama en todo tiempo y que dio su vida por nosotros. Todas las demás relaciones son un reflejo pálido de su amor. Agradecer por la amistad de Jesús es el fundamento de nuestra vida social. Él llena nuestros vacíos para que podamos amar a otros desde la plenitud, no desde la necesidad.",
+    quote: {
+      text: "¡Qué amigo nos es Cristo!",
+      author: "Joseph Scriven"
+    },
+    challenge: "Escribe una carta a Jesús agradeciéndole por ser tu mejor amigo. Cuéntale tus secretos y descansa en su amor.",
+    song: {
+      title: "Amigo Fiel",
+      artist: "Coalo Zamorano",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Amigo+Fiel+Coalo+Zamorano",
+      spotifyUrl: "https://open.spotify.com/search/Amigo%20Fiel%20Coalo%20Zamorano"
+    }
+  },
+  {
+    day: 91,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Cruz",
+    verse: {
+      text: "Mas Dios muestra su amor para con nosotros, en que siendo aún pecadores, Cristo murió por nosotros.",
+      reference: "Romanos 5:8"
+    },
+    reflection: "La cruz no fue un accidente, fue un plan de amor. Agradecer por la cruz es reconocer el precio de nuestra libertad. Allí, la justicia y la misericordia se besaron. No hay mayor motivo de gratitud que saber que alguien tomó nuestro lugar. Hoy, mira la cruz no con lástima, sino con profunda gratitud por el intercambio divino.",
+    quote: {
+      text: "La cruz es la escalera al cielo.",
+      author: "Thomas Adams"
+    },
+    challenge: "Dibuja una cruz pequeña en tu muñeca o lleva una cruz hoy como recordatorio constante para dar gracias.",
+    song: {
+      title: "La Cruz",
+      artist: "Lead",
+    },
+    movie: {
+      title: "La Pasión de Cristo (The Passion of the Christ) (2004)",
+      description: "Una representación gráfica y conmovedora de las últimas horas de Jesús, recordándonos el costo de nuestra salvación.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=K83366UdtXw"
+    }
+  },
+  {
+    day: 92,
+    month: "Mes",
+    monthId: 1,
+    title: "Redención por Gracia",
+    verse: {
+      text: "en quien tenemos redención por su sangre, el perdón de pecados según las riquezas de su gracia,",
+      reference: "Efesios 1:7"
+    },
+    reflection: "Efesios 1:7 nos recuerda la inmensurable gracia de Dios manifestada en la redención que tenemos por la sangre de Cristo. Esta verdad fundamental del cristianismo nos invita a una profunda gratitud. No fuimos salvados por nuestras obras, sino por el sacrificio perfecto de Jesús en la cruz. Su sangre derramada es el precio de nuestra libertad, el perdón de nuestros pecados y nuestra reconciliación con un Dios santo. Reflexionar sobre este acto de amor supremo debe llenar nuestros corazones de un agradecimiento constante. Es un regalo inmerecido que transforma nuestra existencia, dándonos esperanza, paz y una nueva identidad en Él. Cada día es una oportunidad para vivir en gratitud por esta redención tan costosa y gloriosa.",
+    quote: {
+      text: "La salvación es toda gracia, por obra del Espíritu Santo que aplica al alma la preciosa sangre de Jesús.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, agradece a Dios por el perdón de tus pecados a través de la sangre de Cristo.",
+    song: {
+      title: "Por Tu Sangre",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=7q7Se9CUBnI",
+      spotifyUrl: "https://open.spotify.com/track/2Eth7jkrxHgUvF9wnHbvLW"
+    },
+  },  {
+    day: 93,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Resurrección",
+    verse: {
+      text: "Bendito el Dios... que nos hizo renacer para una esperanza viva, por la resurrección de Jesucristo.",
+      reference: "1 Pedro 1:3"
+    },
+    reflection: "¡La tumba está vacía! Nuestra fe no es en un mártir muerto, sino en un Rey vivo. Agradecer por la resurrección es celebrar que la muerte no tiene la última palabra. Porque Él vive, nosotros también viviremos. La gratitud por la resurrección nos quita el miedo a la muerte y nos llena de esperanza eterna.",
+    quote: {
+      text: "El cristianismo es una religión de tumba vacía.",
+      author: "Anónimo"
+    },
+    challenge: "Saluda a alguien hoy diciendo: '¡Él vive!' y comparte la alegría de la resurrección.",
+    song: {
+      title: "La Tumba Vacía",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=La+Tumba+Vacía+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/La%20Tumba%20Vacía%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 94,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Justificación",
+    verse: {
+      text: "Justificados, pues, por la fe, tenemos paz para con Dios por medio de nuestro Señor Jesucristo.",
+      reference: "Romanos 5:1"
+    },
+    reflection: "Justificación significa que Dios nos declara 'inocentes', como si nunca hubiéramos pecado. Agradecer por este estatus legal ante el Juez del universo es liberador. No tenemos que ganarnos su favor, ya lo tenemos por Cristo. La gratitud por la justificación elimina la necesidad de probar nuestra valía.",
+    quote: {
+      text: "La justificación es el artículo sobre el cual la iglesia se mantiene o cae.",
+      author: "Martín Lutero"
+    },
+    challenge: "Mírate al espejo y di: 'Soy justo delante de Dios gracias a Jesús'. Agradece por esa nueva identidad.",
+    song: {
+      title: "Digno y Santo",
+      artist: "Kari Jobe",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Digno+y+Santo+Kari+Jobe",
+      spotifyUrl: "https://open.spotify.com/search/Digno%20y%20Santo%20Kari%20Jobe"
+    }
+  },
+  {
+    day: 95,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Adopción",
+    verse: {
+      text: "Mirad cuál amor nos ha dado el Padre, para que seamos llamados hijos de Dios.",
+      reference: "1 Juan 3:1"
+    },
+    reflection: "No somos solo siervos, somos hijos. Dios nos adoptó legal y relacionalmente. Agradecer por ser parte de la familia de Dios nos da seguridad y pertenencia. Tenemos un Padre bueno que nos cuida, nos disciplina y nos hereda. La gratitud por la adopción sana la orfandad espiritual.",
+    quote: {
+      text: "La adopción es la forma más alta de amor.",
+      author: "Anónimo"
+    },
+    challenge: "Ora hoy llamando a Dios 'Abba, Padre' (Papito). Agradece por la intimidad de ser su hijo/a.",
+    song: {
+      title: "Ya No Soy Esclavo",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ya+No+Soy+Esclavo+Christine+D'Clario",
+      spotifyUrl: "https://open.spotify.com/search/Ya%20No%20Soy%20Esclavo%20Christine%20D'Clario"
+    }
+  },
+  {
+    day: 96,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Vida Eterna",
+    verse: {
+      text: "Y esta es la promesa que él nos hizo, la vida eterna.",
+      reference: "1 Juan 2:25"
+    },
+    reflection: "Esta vida es un suspiro, pero la eternidad es para siempre. Agradecer por la promesa del cielo nos ayuda a vivir con perspectiva. Los problemas de hoy son temporales. La gratitud por la vida eterna nos desapega de lo material y nos enfoca en lo que realmente dura. ¡Lo mejor está por venir!",
+    quote: {
+      text: "Apunta al cielo y tendrás la tierra por añadidura; apunta a la tierra y no tendrás ninguna de las dos.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Imagina cómo será tu primer día en el cielo. Agradece a Dios por preparar un lugar para ti.",
+    song: {
+      title: "Cuan Bello Es El Señor",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cuan+Bello+Es+El+Señor+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Cuan%20Bello%20Es%20El%20Señor%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 97,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Espíritu Santo",
+    verse: {
+      text: "Y yo rogaré al Padre, y os dará otro Consolador, para que esté con vosotros para siempre.",
+      reference: "Juan 14:16"
+    },
+    reflection: "Jesús ascendió, pero no nos dejó solos. Nos dejó su Espíritu. Agradecer por el Espíritu Santo es valorar su compañía constante, su consuelo y su poder. Él es Dios viviendo dentro de nosotros. Sin Él, la vida cristiana sería imposible. Agradece hoy por ese Compañero fiel que te guía a toda verdad.",
+    quote: {
+      text: "El Espíritu Santo es el secreto de la vida cristiana victoriosa.",
+      author: "D.L. Moody"
+    },
+    challenge: "Pide al Espíritu Santo que te guíe en una decisión hoy. Agradece por su voz suave en tu interior.",
+    song: {
+      title: "Espíritu Santo",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Espíritu+Santo+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Espíritu%20Santo%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 98,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Intercesión de Jesús",
+    verse: {
+      text: "Por lo cual puede también salvar perpetuamente... viviendo siempre para interceder por ellos.",
+      reference: "Hebreos 7:25"
+    },
+    reflection: "Ahora mismo, Jesús está orando por ti. ¡Qué pensamiento tan poderoso! Agradecer porque el Hijo de Dios menciona nuestro nombre ante el Padre nos da una seguridad inquebrantable. Cuando no sabemos cómo orar, Él intercede. La gratitud por su intercesión nos sostiene en los momentos de debilidad.",
+    quote: {
+      text: "Si pudiera oír a Cristo orando por mí en la habitación de al lado, no temería a un millón de enemigos.",
+      author: "Robert Murray M'Cheyne"
+    },
+    challenge: "Agradece a Jesús en voz alta: 'Gracias por orar por mí'. Siéntete respaldado por el Cielo.",
+    song: {
+      title: "Jesús",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "El Progreso del Peregrino (The Pilgrim's Progress) (2019)",
+      description: "Una alegoría animada del viaje de la vida cristiana, llena de peligros y la constante ayuda divina hasta llegar a la Ciudad Celestial.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=04WXlAcOtS0"
+    }
+  },
+  {
+    day: 99,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Nuevo Pacto",
+    verse: {
+      text: "Este es el pacto que haré con ellos... Pondré mis leyes en sus corazones.",
+      reference: "Hebreos 10:16"
+    },
+    reflection: "Ya no vivimos bajo la ley de piedra, sino bajo la ley del Espíritu. Agradecer por el Nuevo Pacto es celebrar que Dios ha escrito su voluntad en nuestros corazones. No obedecemos por miedo, sino por amor. La gratitud por este pacto de gracia nos libera del legalismo y nos acerca a la relación.",
+    quote: {
+      text: "El Nuevo Pacto no pide menos que el Antiguo, da más.",
+      author: "Anónimo"
+    },
+    challenge: "Lee Hebreos 8:10-12 y agradece por cada promesa del Nuevo Pacto que encuentres allí.",
+    song: {
+      title: "Tu Amor No Tiene Fin",
+      artist: "Generación 12",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Tu+Amor+No+Tiene+Fin+Generación+12",
+      spotifyUrl: "https://open.spotify.com/search/Tu%20Amor%20No%20Tiene%20Fin%20Generación%2012"
+    }
+  },
+  {
+    day: 100,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Reconciliación",
+    verse: {
+      text: "Y todo esto proviene de Dios, quien nos reconcilió consigo mismo por Cristo.",
+      reference: "2 Corintios 5:18"
+    },
+    reflection: "Éramos enemigos de Dios, pero Él tomó la iniciativa de reconciliarnos. Agradecer porque la guerra terminó. Hay paz entre Dios y nosotros. Y no solo eso, nos dio el ministerio de la reconciliación. La gratitud por estar en paz con Dios nos impulsa a buscar la paz con los demás.",
+    quote: {
+      text: "La reconciliación es el corazón del Evangelio.",
+      author: "Anónimo"
+    },
+    challenge: "Si estás distanciado de alguien, da el primer paso hoy para reconciliarte, como acto de gratitud por lo que Dios hizo contigo.",
+    song: {
+      title: "A Tus Pies",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=A+Tus+Pies+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/A%20Tus%20Pies%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 101,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Redención",
+    verse: {
+      text: "En quien tenemos redención por su sangre, el perdón de pecados.",
+      reference: "Colosenses 1:14"
+    },
+    reflection: "Redimir significa 'comprar de nuevo'. Estábamos esclavizados y Cristo pagó el precio completo. Agradecer por la redención es reconocer nuestro valor: valemos la sangre de Dios. Ya no pertenecemos al mercado del pecado. La gratitud nos lleva a vivir como propiedad exclusiva de Dios.",
+    quote: {
+      text: "La redención es el acto más costoso y amoroso de Dios: pagó con su propia sangre para comprarnos de vuelta.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Escribe en un papel 'PROPIEDAD DE CRISTO' y colócalo en tu espejo. Agradece por tu nuevo Dueño.",
+    song: {
+      title: "Redimidos",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Redimidos+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Redimidos%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 102,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Santificación",
+    verse: {
+      text: "Porque la voluntad de Dios es vuestra santificación.",
+      reference: "1 Tesalonicenses 4:3"
+    },
+    reflection: "Dios nos ama tal como somos, pero nos ama demasiado para dejarnos así. La santificación es el proceso de hacernos como Jesús. Agradecer por este proceso, aunque a veces duela (como la poda), es desear la santidad. Gracias Dios porque estás trabajando en mi carácter cada día.",
+    quote: {
+      text: "La santidad no es el camino a Cristo; Cristo es el camino a la santidad.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Identifica un área donde has crecido espiritualmente en el último año y agradece a Dios por ese avance.",
+    song: {
+      title: "Refiner",
+      artist: "Maverick City Music (Español)",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Refiner+Maverick+City+Music+(Español)",
+      spotifyUrl: "https://open.spotify.com/search/Refiner%20Maverick%20City%20Music%20(Español)"
+    }
+  },
+  {
+    day: 103,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Acceso al Trono",
+    verse: {
+      text: "Acerquémonos, pues, confiadamente al trono de la gracia.",
+      reference: "Hebreos 4:16"
+    },
+    reflection: "En el Antiguo Testamento, solo el sumo sacerdote entraba una vez al año. Hoy, tú y yo podemos entrar en cualquier momento. El velo se rasgó. Agradecer por el acceso VIP que tenemos a la presencia de Dios. No hay burocracia celestial. La gratitud nos hace entrar con confianza y reverencia.",
+    quote: {
+      text: "La oración es la llave que abre el almacén del cielo.",
+      author: "Anónimo"
+    },
+    challenge: "Tómate un momento ahora mismo para 'entrar' al trono de la gracia y simplemente decir: 'Gracias por recibirme'.",
+    song: {
+      title: "Trono de Gracia",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Trono+de+Gracia+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Trono%20de%20Gracia%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 104,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Libertad del Temor",
+    verse: {
+      text: "Porque no nos ha dado Dios espíritu de cobardía, sino de poder, de amor y de dominio propio.",
+      reference: "2 Timoteo 1:7"
+    },
+    reflection: "El miedo paraliza, pero el amor perfecto echa fuera el temor. Agradecer porque en Cristo no tenemos por qué vivir atemorizados. Tenemos recursos divinos: poder, amor y dominio propio. La gratitud cambia el foco del miedo (el problema) a la fe (la solución).",
+    quote: {
+      text: "El miedo toca a la puerta. La fe responde. No hay nadie allí.",
+      author: "Anónimo"
+    },
+    challenge: "Escribe tu mayor miedo actual. Táchalo y escribe encima: 'Dios está conmigo'. Agradece por su protección.",
+    song: {
+      title: "No Temeré",
+      artist: "Dante Gebel",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Temeré+Dante+Gebel",
+      spotifyUrl: "https://open.spotify.com/search/No%20Temeré%20Dante%20Gebel"
+    }
+  },
+  {
+    day: 105,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Ciudadanía Celestial",
+    verse: {
+      text: "Mas nuestra ciudadanía está en los cielos.",
+      reference: "Filipenses 3:20"
+    },
+    reflection: "Somos peregrinos aquí. Nuestro pasaporte real es del Reino de los Cielos. Agradecer porque pertenecemos a un Reino inconmovible. Esto nos da identidad y propósito. No nos aferramos a este mundo porque sabemos que nuestro verdadero hogar nos espera. La gratitud nos hace vivir como embajadores.",
+    quote: {
+      text: "Este mundo no es mi hogar, solo voy de paso.",
+      author: "Himno Tradicional"
+    },
+    challenge: "Actúa hoy como un embajador del cielo: representa bien a tu Rey con tus palabras y acciones.",
+    song: {
+      title: "Hogar",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Pablo, Apóstol de Cristo (Paul, Apostle of Christ) (2018)",
+      description: "Muestra la vida de Pablo en prisión, su certeza de la ciudadanía celestial y su legado de fe inquebrantable.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=LyOqQZUDdO4"
+    }
+  },
+  {
+    day: 106,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Victoria sobre la Muerte",
+    verse: {
+      text: "¿Dónde está, oh muerte, tu aguijón? ¿Dónde, oh sepulcro, tu victoria?",
+      reference: "1 Corintios 15:55"
+    },
+    reflection: "La muerte era el rey de los terrores, hasta que Jesús la venció. Agradecer porque la muerte ya no es el final, sino una puerta. Para el cristiano, morir es ganancia. Esta verdad nos quita la ansiedad existencial. Agradece hoy porque tu vida es indestructible en Cristo.",
+    quote: {
+      text: "La muerte ha sido devorada en victoria.",
+      author: "Pablo de Tarso"
+    },
+    challenge: "Si has perdido a alguien en Cristo, agradece hoy porque volverás a verlo. Celebra la esperanza de la reunión.",
+    song: {
+      title: "La Muerte Venciste",
+      artist: "Rescate",
+      youtubeUrl: "https://www.youtube.com/results?search_query=La+Muerte+Venciste+Rescate",
+      spotifyUrl: "https://open.spotify.com/search/La%20Muerte%20Venciste%20Rescate"
+    }
+  },
+  {
+    day: 107,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud en Su Nombre",
+    verse: {
+      text: "Y todo lo que hagan, de palabra o de obra, háganlo en el nombre del Señor Jesús, dando gracias a Dios el Padre por medio de él.",
+      reference: "Colosenses 3:17"
+    },
+    reflection: "La gratitud es una expresión profunda de reconocimiento por las bendiciones recibidas. En Colosenses 3:17, se nos exhorta a hacer todo en el nombre del Señor Jesús, dando gracias a Dios Padre por medio de Él. Esto nos recuerda que cada acción, cada palabra, cada momento de nuestra vida puede ser un acto de adoración y agradecimiento. Al invocar el nombre de Jesús, no solo reconocemos su autoridad y sacrificio, sino que también elevamos nuestra gratitud a un nivel espiritual, entendiendo que todas las cosas buenas provienen de Dios a través de su Hijo. La gratitud en el nombre de Jesús transforma nuestra perspectiva, permitiéndonos ver la mano de Dios incluso en las circunstancias más desafiantes y dándonos la fuerza para perseverar con un corazón agradecido. Es un recordatorio constante de que nuestra fe y nuestra vida están intrínsecamente ligadas a la fuente de toda bendición.",
+    quote: {
+      text: "La gratitud dice: 'Dios es tan bueno en darme esto'.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, antes de cada comida, tómate un momento para agradecer a Dios en el nombre de Jesús por el alimento y por su provisión en tu vida.",
+    song: {
+      title: "El Nombre de Jesús",
+      artist: "Redimi2 ft. Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=bQNikeLRJQw",
+      spotifyUrl: "https://open.spotify.com/track/1T2Q9IzgGK3eyPUWFD4C1U"
+    },
+  },  {
+    day: 108,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Gracia Futura",
+    verse: {
+      text: "Ciertamente el bien y la misericordia me seguirán todos los días de mi vida.",
+      reference: "Salmo 23:6"
+    },
+    reflection: "No solo agradecemos por la gracia pasada, sino por la que vendrá. Agradecer por adelantado porque Dios ya está en tu mañana. Su gracia te 'seguirá' (te perseguirá) activamente. La gratitud por la gracia futura elimina la ansiedad por el porvenir. Dios ya proveyó para mañana.",
+    quote: {
+      text: "La administración fiel de los recursos es un acto de adoración a Dios.",
+      author: "Randy Alcorn"
+    },
+    challenge: "Piensa en un evento futuro que te preocupe y da gracias a Dios porque su gracia ya está allí esperándote.",
+    song: {
+      title: "Tu Bondad",
+      artist: "Kike Pavón",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Tu+Bondad+Kike+Pavón",
+      spotifyUrl: "https://open.spotify.com/search/Tu%20Bondad%20Kike%20Pavón"
+    }
+  },
+  {
+    day: 109,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por ser Templo de Dios",
+    verse: {
+      text: "¿O ignoráis que vuestro cuerpo es templo del Espíritu Santo?",
+      reference: "1 Corintios 6:19"
+    },
+    reflection: "Dios no vive en templos hechos por manos humanas, vive en ti. ¡Eres la dirección de Dios en la tierra! Agradecer por este honor inmerecido nos lleva a cuidar nuestro cuerpo y nuestra mente. La gratitud nos motiva a mantener la casa limpia para el Invitado de honor.",
+    quote: {
+      text: "Si Dios vive en ti, deja que se note en tu rostro.",
+      author: "Anónimo"
+    },
+    challenge: "Haz una limpieza simbólica hoy (ordena tu cuarto o escritorio) mientras pides a Dios que limpie su templo (tú).",
+    song: {
+      title: "Habitación",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Habitación+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Habitación%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 110,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Libertad del Pecado",
+    verse: {
+      text: "Porque el pecado no se enseñoreará de vosotros.",
+      reference: "Romanos 6:14"
+    },
+    reflection: "Antes no podíamos dejar de pecar; ahora tenemos el poder para elegir la santidad. Agradecer porque el pecado ya no es nuestro amo. Podemos tropezar, pero ya no somos esclavos. La gratitud por esta libertad nos empodera para vivir en victoria sobre viejos hábitos.",
+    quote: {
+      text: "Ser libre no es hacer lo que quieras, es tener el poder de hacer lo correcto.",
+      author: "Anónimo"
+    },
+    challenge: "Declara en voz alta: 'El pecado no tiene poder sobre mí'. Agradece a Dios por romper las cadenas.",
+    song: {
+      title: "Rompe Las Cadenas",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Rompe+Las+Cadenas+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Rompe%20Las%20Cadenas%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 111,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Herencia",
+    verse: {
+      text: "Y si hijos, también herederos; herederos de Dios y coherederos con Cristo.",
+      reference: "Romanos 8:17"
+    },
+    reflection: "Somos inmensamente ricos. Herederos del Dueño del universo. Agradecer por nuestra herencia espiritual (paz, gozo, amor) y eterna. A veces vivimos como mendigos espirituales cuando somos príncipes. La gratitud nos recuerda nuestra posición y posesión en Cristo.",
+    quote: {
+      text: "El cristiano es el único que puede perderlo todo y aún así tenerlo todo.",
+      author: "Anónimo"
+    },
+    challenge: "Lee Efesios 1 y haz una lista de las 'riquezas' que tienes en Cristo. Agradece por cada una.",
+    song: {
+      title: "Hijo de Dios",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hijo+de+Dios+Barak",
+      spotifyUrl: "https://open.spotify.com/search/Hijo%20de%20Dios%20Barak"
+    }
+  },
+  {
+    day: 112,
+    month: "Mes",
+    monthId: 1,
+    title: "La Luz de Cristo: Guía y Gratitud",
+    verse: {
+      text: "Una vez más Jesús se dirigió a la gente y dijo: Yo soy la luz del mundo. El que me sigue no andará en oscuridad, sino que tendrá la luz de la vida.",
+      reference: "Juan 8:12"
+    },
+    reflection: "Juan 8:12 nos revela a Jesús como la luz inquebrantable del mundo. En un mundo a menudo sumido en la oscuridad de la incertidumbre y el pecado, Su promesa de que quien le sigue no andará en tinieblas, sino que tendrá la luz de la vida, es un faro de esperanza. Esta verdad nos invita a una profunda gratitud. Agradecemos no solo por la existencia de la luz, sino por la guía constante que nos ofrece, disipando nuestras dudas y miedos. Es un recordatorio de que, incluso en nuestros momentos más oscuros, la presencia de Cristo ilumina nuestro camino, llenándonos de propósito y paz. Nuestra gratitud se manifiesta al caminar en esa luz, reflejando Su amor y verdad a quienes nos rodean.",
+    quote: {
+      text: "La gratitud mira hacia el pasado y el amor al presente; el miedo, la avaricia, la lujuria y la ambición miran hacia adelante.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, agradece a Dios por una situación difícil que Él te ayudó a superar, reconociendo Su luz en tu camino.",
+    song: {
+      title: "Eres Mi Protector",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=KJFp69BZ1p4",
+      spotifyUrl: "https://open.spotify.com/track/1kXvLdwQEQVcZ4zLZQZQ0Q"
+    },
+  },  {
+    day: 113,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Amor Incondicional",
+    verse: {
+      text: "Por lo cual estoy seguro de que ni la muerte, ni la vida... nos podrá separar del amor de Dios.",
+      reference: "Romanos 8:38-39"
+    },
+    reflection: "Nada puede hacer que Dios te ame más, y nada puede hacer que te ame menos. Agradecer por este amor seguro, estable y eterno. En un mundo de amor condicional ('te amo si...'), el amor de Dios es un refugio. La gratitud es nuestra respuesta natural a ser tan amados.",
+    quote: {
+      text: "Dios te ama tal como eres, pero te ama demasiado para dejarte así.",
+      author: "Max Lucado"
+    },
+    challenge: "Mírate al espejo y di: 'Soy amado/a incondicionalmente por Dios'. Deja que esa verdad baje a tu corazón.",
+    song: {
+      title: "Su Amor",
+      artist: "Hillsong Worship",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Su+Amor+Hillsong+Worship",
+      spotifyUrl: "https://open.spotify.com/search/Su%20Amor%20Hillsong%20Worship"
+    }
+  },
+  {
+    day: 114,
+    month: "Mes",
+    monthId: 1,
+    title: "Misericordia Eterna, Gratitud Constante",
+    verse: {
+      text: "Alabad a Jehová, porque él es bueno; Porque para siempre es su misericordia.",
+      reference: "Salmo 107:1"
+    },
+    reflection: "El Salmo 107:1 nos invita a alabar a Jehová por su bondad y su misericordia eterna. Esta verdad fundamental es el cimiento de nuestra gratitud. La misericordia de Dios no es un acto pasajero, sino una constante que perdura por siempre, manifestándose en cada aspecto de nuestras vidas. Desde el perdón de nuestros pecados hasta las pequeñas bendiciones diarias, su compasión nos envuelve. Reflexionar sobre esta misericordia inagotable nos impulsa a un agradecimiento profundo y genuino. Reconocer que, a pesar de nuestras fallas, su amor y bondad permanecen, transforma nuestra perspectiva y nos motiva a vivir en constante alabanza, reconociendo que todo lo bueno proviene de Él.",
+    quote: {
+      text: "La misericordia no es solo la labor del cristiano. La misericordia es la marca del cristiano.",
+      author: "Tim Keller"
+    },
+    challenge: "Hoy, agradece a Dios por una misericordia específica que recibiste y compártela con alguien.",
+    song: {
+      title: "Aquí Estoy",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    },
+  },  {
+    day: 115,
+    month: "Mes",
+    monthId: 1,
+    title: "Fidelidad: Ancla del Alma",
+    verse: {
+      text: "Porque recta es la palabra de Jehová, Y toda su obra es hecha con fidelidad.",
+      reference: "Salmos 33:4"
+    },
+    reflection: "El Salmo 33:4 nos recuerda que la palabra de Dios es recta y su obra es hecha con fidelidad. En un mundo lleno de incertidumbre y cambios, la verdad inmutable de Dios es un ancla para nuestra alma. Reflexionar sobre su fidelidad nos llena de una gratitud profunda. Cada promesa cumplida, cada acto de amor y cada guía en nuestra vida son testimonios de su carácter. Agradecer esta verdad nos permite confiar plenamente en Él, sabiendo que su amor y su plan son perfectos. Esta gratitud no es solo una emoción, sino una respuesta consciente a la bondad y la constancia de nuestro Creador, que se manifiesta en cada aspecto de nuestra existencia.",
+    quote: {
+      text: "La gratitud dice: \"Dios es tan bueno en darme esto\".",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, agradece la fidelidad de Dios compartiendo una verdad bíblica con alguien.",
+    song: {
+      title: "Fiel",
+      artist: "Majo y Dan",
+      youtubeUrl: "https://www.youtube.com/watch?v=w66bfbeKny0",
+      spotifyUrl: "https://open.spotify.com/track/3PeBbqI52bZK9rpcIDJcKy"
+    },
+  },  {
+    day: 116,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud: Pan de Vida Eterna",
+    verse: {
+      text: "Jesús les dijo: Yo soy el pan de vida; el que a mí viene, nunca tendrá hambre; y el que en mí cree, no tendrá sed jamás.",
+      reference: "Juan 6:35"
+    },
+    reflection: "La gratitud por el Pan de Vida, Jesucristo, transforma nuestra perspectiva. Él no solo sacia nuestra hambre física, sino que satisface la sed más profunda de nuestra alma. Reconocer que en Él encontramos plenitud y vida eterna nos impulsa a un agradecimiento constante. Cada día, al recordar su sacrificio y su presencia en nuestras vidas, somos llamados a vivir en una actitud de gratitud, no por lo que tenemos, sino por Quién nos sostiene. Su provisión espiritual es inagotable, un regalo que nos nutre y nos da esperanza, invitándonos a confiar plenamente en su amor y cuidado.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, agradece a Jesús por ser tu Pan de Vida. Comparte esta verdad con alguien que necesite esperanza.",
+    song: {
+      title: "Pan De Vida",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=Bdtlo2luEPo",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/5Y5LY9fy1kFwl71QHw4UEe"
+    },
+  },  {
+    day: 117,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Buen Pastor",
+    verse: {
+      text: "Jehová es mi pastor; nada me faltará.",
+      reference: "Salmo 23:1"
+    },
+    reflection: "No somos ovejas sin rumbo. Tenemos Pastor. Él nos guía, nos alimenta, nos protege y nos busca si nos perdemos. Agradecer por su liderazgo tierno y firme. No tenemos que saber todo el camino, solo seguir al Pastor. La gratitud nos da descanso en su cuidado.",
+    quote: {
+      text: "El Buen Pastor conoce a cada una de sus ovejas por nombre y da su vida por ellas.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Lee el Salmo 23 completo y conviértelo en una oración de gratitud personal.",
+    song: {
+      title: "El Señor es mi Pastor",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=El+Señor+es+mi+Pastor+Danilo+Montero",
+      spotifyUrl: "https://open.spotify.com/search/El%20Señor%20es%20mi%20Pastor%20Danilo%20Montero"
+    }
+  },
+  {
+    day: 118,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Roca",
+    verse: {
+      text: "Porque ¿quién es Dios sino solo Jehová? ¿Y qué roca hay fuera de nuestro Dios?",
+      reference: "Salmo 18:31"
+    },
+    reflection: "Todo en el mundo es arena movediza: la economía, la política, las emociones. Cristo es la Roca inconmovible. Agradecer por tener un fundamento sólido donde construir la vida. Cuando todo tiembla, la Roca permanece. Gracias Dios por tu estabilidad eterna.",
+    quote: {
+      text: "Sobre Cristo, la Roca sólida, estoy; todo otro suelo es arena movediza.",
+      author: "Edward Mote"
+    },
+    challenge: "Busca una piedra pequeña y ponla en tu bolsillo hoy como recordatorio de que Dios es tu Roca.",
+    song: {
+      title: "Roca Eterna",
+      artist: "Robert & Thalles",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Roca+Eterna+Robert+&+Thalles",
+      spotifyUrl: "https://open.spotify.com/search/Roca%20Eterna%20Robert%20&%20Thalles"
+    }
+  },
+  {
+    day: 119,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por la Intercesión del Espíritu",
+    verse: {
+      text: "El Espíritu nos ayuda en nuestra debilidad... intercede por nosotros con gemidos indecibles.",
+      reference: "Romanos 8:26"
+    },
+    reflection: "A veces duele tanto que no hay palabras. Agradecer porque el Espíritu Santo traduce nuestros gemidos en oraciones perfectas ante el Padre. No tienes que ser elocuente, solo sincero. Él te entiende. La gratitud por este auxilio divino nos consuela en el dolor profundo.",
+    quote: {
+      text: "La oración es el aliento del alma.",
+      author: "Anónimo"
+    },
+    challenge: "Si no sabes qué orar hoy, quédate en silencio y deja que el Espíritu interceda por ti. Agradece su ayuda.",
+    song: {
+      title: "Espíritu Ven",
+      artist: "Un Corazón",
+    },
+    movie: {
+      title: "Cuarto de Guerra (War Room) (2015)",
+      description: "Muestra el poder de la oración estratégica y cómo el Espíritu nos guía a pelear las batallas correctas de rodillas.",
+      platform: "Netflix / Prime",
+      youtubeUrl: "https://www.youtube.com/watch?v=mIl-XY9t_Lw"
+    }
+  },
+  {
+    day: 120,
+    month: "Abril",
+    monthId: 4,
+    title: "Gratitud por el Fin de la Historia",
+    verse: {
+      text: "Y enjugará Dios toda lágrima de los ojos de ellos; y ya no habrá muerte, ni habrá más llanto.",
+      reference: "Apocalipsis 21:4"
+    },
+    reflection: "Sabemos cómo termina el libro: ¡Dios gana! Agradecer por el final feliz garantizado. No importa cuán oscura sea la trama actual, el desenlace es glorioso. La gratitud por el triunfo final de Cristo nos da fuerzas para perseverar hoy. Somos del equipo ganador.",
+    quote: {
+      text: "La historia humana es la historia de Dios cumpliendo sus promesas.",
+      author: "Max Lucado"
+    },
+    challenge: "Lee los últimos dos capítulos de Apocalipsis y emociónate por lo que te espera. ¡Da gracias!",
+    song: {
+      title: "Día de Bodas",
+      artist: "Crystal Lewis",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Día+de+Bodas+Crystal+Lewis",
+      spotifyUrl: "https://open.spotify.com/search/Día%20de%20Bodas%20Crystal%20Lewis"
+    }
+  },
+  {
+    day: 121,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por el Nuevo Día",
+    verse: {
+      text: "Nuevas son cada mañana; grande es tu fidelidad.",
+      reference: "Lamentaciones 3:23"
+    },
+    reflection: "Cada amanecer es un regalo no merecido. Agradecer por despertar es el primer acto de adoración del día. No es 'otro día más', es una nueva oportunidad de gracia. La gratitud matutina establece el tono para las próximas 24 horas. Gracias Dios por el aire en mis pulmones.",
+    quote: {
+      text: "Cada nuevo día es una nueva misericordia de Dios, una nueva oportunidad para glorificarle.",
+      author: "John Piper"
+    },
+    challenge: "Mañana, antes de salir de la cama, di en voz alta: 'Gracias Dios por este nuevo día'.",
+    song: {
+      title: "Cada Mañana",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=rYPrMOVhzQc",
+      spotifyUrl: "https://open.spotify.com/track/1vYnFyKPqVZqFqkfJr3bfP"
+    },
+    movie: {
+      title: "Un Nuevo Comienzo (The Ultimate Gift) (2006)",
+      description: "Una historia sobre descubrir los verdaderos regalos de la vida, incluyendo el regalo de cada nuevo día y el trabajo.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=FQvo7X2mY2A"
+    }
+  },
+  {
+    day: 122,
+    month: "Mes",
+    monthId: 1,
+    title: "Trabajo: Gracia Diaria",
+    verse: {
+      text: "Y todo lo que hagan, de palabra o de obra, háganlo en el nombre del Señor Jesús, dando gracias a Dios el Padre por medio de él.",
+      reference: "Colosenses 3:17"
+    },
+    reflection: "Colosenses 3:17 nos invita a vivir cada aspecto de nuestra vida, incluyendo nuestro trabajo, bajo la perspectiva de la gratitud a Dios. Reconocer que cada tarea, cada esfuerzo y cada resultado provienen de Su gracia nos transforma. No se trata solo de agradecer por los frutos del trabajo, sino por el privilegio de trabajar, por las habilidades que Él nos ha dado y por la oportunidad de servir a otros a través de nuestras labores. Al dar gracias en todo lo que hacemos, nuestro trabajo se convierte en una ofrenda, un acto de adoración que glorifica a Dios y nos llena de un propósito más profundo y una alegría duradera.",
+    quote: {
+      text: "Lo que pienses o sepas no importa, a menos que te lleve a glorificar a Dios y ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, agradece a Dios por una tarea específica en tu trabajo, grande o pequeña.",
+    song: {
+      title: "Agradecido",
+      artist: "Danny Gokey, Alex Zurdo",
+      youtubeUrl: "https://www.youtube.com/watch?v=Jz_LbGdyx20",
+      spotifyUrl: "https://open.spotify.com/track/2LgV8qhIUvcQSHHz2o7s8O"
+    },
+  },  {
+    day: 123,
+    month: "Mes",
+    monthId: 1,
+    title: "Paz y Gratitud Divina",
+    verse: {
+      text: "No se inquieten por nada; más bien, en toda ocasión, con oración y ruego, presenten sus peticiones a Dios y denle gracias. Y la paz de Dios, que sobrepasa todo entendimiento, cuidará sus corazones y sus pensamientos en Cristo Jesús.",
+      reference: "Filipenses 4:6-7"
+    },
+    reflection: "En un mundo lleno de preocupaciones y ansiedades, la invitación de Filipenses 4:6-7 es un bálsamo para el alma. Se nos insta a no inquietarnos por nada, sino a presentar nuestras peticiones a Dios con acción de gracias. Esta es una clave poderosa para experimentar la paz que sobrepasa todo entendimiento. Cuando elegimos la gratitud en medio de nuestras circunstancias, reconocemos la soberanía de Dios y su cuidado constante. La gratitud nos permite descansar en la certeza de que Él tiene el control, liberándonos de la carga de la preocupación. Al agradecer, abrimos nuestro corazón para recibir la paz divina que guarda nuestros pensamientos y emociones en Cristo Jesús, permitiéndonos vivir en un estado de reposo espiritual.",
+    quote: {
+      text: "El camino de Dios hacia la paz está pavimentado con pensamientos de aprecio. Elige la gratitud.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, tómate un momento para agradecer a Dios por un área de tu vida donde experimentas su paz y descanso.",
+    song: {
+      title: "Digno y Santo",
+      artist: "Marco Barrientos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    },
+  },  {
+    day: 124,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por los Alimentos",
+    verse: {
+      text: "El que come, para el Señor come, porque da gracias a Dios.",
+      reference: "Romanos 14:6"
+    },
+    reflection: "A veces oramos por la comida mecánicamente. Hoy, detente y mira tu plato. Alguien lo cultivó, lo transportó, lo cocinó. Y Dios proveyó los recursos. Agradecer por el sustento diario nos conecta con la providencia divina. No es solo comida, es amor de Dios comestible.",
+    quote: {
+      text: "La gratitud es el condimento que hace que todo sepa mejor.",
+      author: "Anónimo"
+    },
+    challenge: "Ora por tus alimentos hoy con plena consciencia, agradeciendo por cada ingrediente.",
+    song: {
+      title: "Hosanna",
+      artist: "Hillsong en Español",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    }
+  },
+  {
+    day: 125,
+    month: "Mes",
+    monthId: 1,
+    title: "Hogar de Fe y Gratitud",
+    verse: {
+      text: "Y si mal os parece servir a Jehová, escogeos hoy a quién sirváis; si a los dioses a quienes sirvieron vuestros padres, cuando estuvieron al otro lado del río, o a los dioses de los amorreos en cuya tierra habitáis; pero yo y mi casa serviremos a Jehová.",
+      reference: "Josué 24:15"
+    },
+    reflection: "El hogar es mucho más que un simple techo; es el santuario donde la fe se nutre y la gratitud florece. Josué 24:15 nos confronta con una decisión fundamental: a quién serviremos. Elegir servir a Jehová en nuestro hogar es un acto de profunda gratitud por Su provisión y amor incondicional. Cuando nuestra casa se convierte en un lugar donde Dios es honrado, cada rincón se llena de Su presencia y bendición. La gratitud por nuestro hogar se manifiesta al cuidar de quienes lo habitan, al fomentar un ambiente de amor y respeto, y al reconocer que cada día bajo su techo es un regalo divino. Que nuestro hogar sea un testimonio vivo de nuestra fe y agradecimiento.",
+    quote: {
+      text: "El corazón agradecido es como un imán que recoge durante el día razones para estar agradecidos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece a cada miembro de tu hogar por una cualidad específica. Expresa tu gratitud con palabras sinceras y un gesto de amor.",
+    song: {
+      title: "Vivo Estás",
+      artist: "Hillsong Young & Free",
+      youtubeUrl: "https://www.youtube.com/watch?v=rB8vI9s4l8g",
+      spotifyUrl: "https://open.spotify.com/track/3LlGGGhby3Zy8KhCZCQzZ2"
+    },
+  },  {
+    day: 126,
+    month: "Mes",
+    monthId: 1,
+    title: "Salud Divina, Corazón Agradecido",
+    verse: {
+      text: "¡Alma mía, ya puedes estar tranquila, porque el Señor me ha tratado con bondad. Tú, Señor, me libraste de la muerte, enjugaste mis lágrimas y no me dejaste caer. Por eso, Señor, mientras tenga vida, viviré según tu voluntad.",
+      reference: "Salmos 116:7-9"
+    },
+    reflection: "El Salmo 116 nos recuerda la profunda bondad de Dios en tiempos de angustia y enfermedad. El salmista expresa su gratitud por haber sido librado de la muerte y por el consuelo recibido. Esta experiencia nos invita a reflexionar sobre nuestra propia salud, un regalo inestimable de Dios. A menudo, damos por sentada nuestra capacidad de movernos, respirar o simplemente vivir sin dolor. Sin embargo, cada día de bienestar es una manifestación de Su gracia y compasión. Al igual que el salmista, debemos recordar invocar Su nombre en todo momento y vivir de acuerdo a Su voluntad, reconociendo que cada latido y cada aliento son un motivo para un corazón agradecido. La gratitud por la salud no solo honra a Dios, sino que también transforma nuestra perspectiva, llenándonos de paz y esperanza.",
+    quote: {
+      text: "La gratitud dice: \"Dios es tan bueno en darme esto\".",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, agradece a Dios por cinco aspectos específicos de tu salud.",
+    song: {
+      title: "Toma Mi Vida",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=qv8TPdZqKWE",
+      spotifyUrl: "https://open.spotify.com/track/4pG2zNjxVv2RJl8LmQPQ0L"
+    },
+  },  {
+    day: 127,
+    month: "Mes",
+    monthId: 1,
+    title: "Vestidos de Gracia",
+    verse: {
+      text: "En gran manera me gozaré en Jehová, mi alma se alegrará en mi Dios; porque me vistió con vestiduras de salvación, me rodeó de manto de justicia, como a novio me atavió, y como a novia adornada con sus joyas.",
+      reference: "Isaías 61:10"
+    },
+    reflection: "La vestimenta, más allá de cubrirnos, es un recordatorio constante de la provisión y el cuidado de Dios. Isaías 61:10 nos habla de ser vestidos con vestiduras de salvación y mantos de justicia, una imagen poderosa de la gracia divina. Cada prenda que usamos puede ser un motivo para agradecer, no solo por su función práctica, sino por lo que simboliza: el amor de Dios que nos cubre y nos justifica. Esta gratitud nos lleva a reconocer que nuestra verdadera identidad no reside en lo que vestimos exteriormente, sino en la justicia de Cristo que nos ha sido otorgada. Al vestirnos cada día, recordemos que estamos envueltos en Su bondad y misericordia, lo que nos impulsa a vivir con un corazón agradecido y a compartir esa gracia con los demás.",
+    quote: {
+      text: "La gratitud eleva nuestros ojos de lo que nos falta para que podamos ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, al elegir tu ropa, agradece a Dios por cada prenda y por la salvación que te viste. Ora por quienes no tienen qué vestir.",
+    song: {
+      title: "Conectado",
+      artist: "Funky",
+      youtubeUrl: "https://www.youtube.com/watch?v=qv8TPdZqKWE",
+      spotifyUrl: "https://open.spotify.com/track/5YJnfKcnGxZBhLfIFWoGNu"
+    },
+  },  {
+    day: 128,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por el Transporte",
+    verse: {
+      text: "Jehová guardará tu salida y tu entrada desde ahora y para siempre.",
+      reference: "Salmo 121:8"
+    },
+    reflection: "Sea en auto propio, autobús, metro o bicicleta, poder moverse es libertad. Agradecer por los medios de transporte que nos llevan al trabajo, a la iglesia o a ver a la familia. La gratitud en el tráfico cambia nuestra actitud de impaciencia a alabanza.",
+    quote: {
+      text: "La vida es un viaje, disfruta el camino con gratitud.",
+      author: "Anónimo"
+    },
+    challenge: "En tu próximo trayecto, en lugar de quejarte del tráfico, usa ese tiempo para agradecer y orar.",
+    song: {
+      title: "Caminaré",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=veK2qUB6q9A",
+      spotifyUrl: "https://open.spotify.com/track/2ZKcZFTCFD7F6ijPWvJwq8"
+    },
+    movie: {
+      title: "Carros de Fuego (Chariots of Fire) (1981)",
+      description: "La historia real de dos corredores olímpicos que usan sus piernas y su velocidad para la gloria de Dios.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=odtqtlhsv4E"
+    }
+  },
+  {
+    day: 129,
+    month: "Mes",
+    monthId: 1,
+    title: "Tecnología: Un Don para Agradecer",
+    verse: {
+      text: "Estén siempre alegres, oren sin cesar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:16-18"
+    },
+    reflection: "La tecnología, en su esencia, es un reflejo de la creatividad divina en la humanidad. Nos permite conectar, aprender y servir de maneras inimaginables hace apenas unas décadas. Desde la comunicación instantánea con seres queridos hasta el acceso a vastos conocimientos, cada avance tecnológico puede ser visto como una bendición que facilita nuestra vida y expande nuestras capacidades. Sin embargo, como cristianos, nuestro llamado es a dar gracias en toda situación, reconociendo que Dios es el dador de todo buen don. La gratitud nos ayuda a usar la tecnología con sabiduría, discerniendo su propósito y evitando que se convierta en una distracción o ídolo. Al agradecer por estas herramientas, las elevamos a Dios, usándolas para Su gloria y para edificar Su reino, manteniendo siempre una perspectiva centrada en Él.",
+    quote: {
+      text: "El corazón agradecido es como un imán que barre el día, recogiendo razones para la gratitud.",
+      author: "Max Lucado"
+    },
+    challenge: "Dedica 15 minutos hoy a usar una herramienta tecnológica para bendecir a alguien o aprender algo nuevo que glorifique a Dios.",
+    song: {
+      title: "La Gloria de Dios",
+      artist: "Ricardo Montaner",
+      youtubeUrl: "https://www.youtube.com/watch?v=LRsgqFu5c1o",
+      spotifyUrl: "https://open.spotify.com/track/2SXA7iCdyfpIr2fpsYpf8U"
+    },
+  },  {
+    day: 130,
+    month: "Mes",
+    monthId: 1,
+    title: "Fuente de Vida y Gratitud",
+    verse: {
+      text: "Entrad por sus puertas con acción de gracias, Por sus atrios con alabanza; Alabadle, bendecid su nombre.",
+      reference: "Salmos 100:4"
+    },
+    reflection: "El Salmo 100:4 nos invita a entrar en la presencia de Dios con acción de gracias y alabanza. Al reflexionar sobre la provisión del agua, un elemento tan esencial para la vida, somos llamados a reconocer la bondad inagotable de nuestro Creador. Cada gota de agua que bebemos, cada lluvia que riega la tierra, es un recordatorio tangible de su fidelidad y amor. La gratitud por el agua se extiende a la gratitud por toda su provisión, reconociendo que cada bendición, grande o pequeña, proviene de su mano generosa. Que nuestros corazones se llenen de alabanza por su constante cuidado.",
+    quote: {
+      text: "La gratitud es la memoria del corazón.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, al beber agua, tómate un momento para agradecer a Dios por esta provisión vital y por su cuidado constante.",
+    song: {
+      title: "La Bendición",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=oInBW6w0UHM",
+      spotifyUrl: "https://open.spotify.com/track/5nAg0GAW8r1YEdBOG2aU67"
+    },
+  },  {
+    day: 131,
+    month: "Mes",
+    monthId: 1,
+    title: "Melodías de Gratitud Divina",
+    verse: {
+      text: "Entren por sus puertas con canciones de agradecimiento, y a sus patios con canciones de alabanza. Agradézcanle y alaben su nombre.",
+      reference: "Salmos 100:4"
+    },
+    reflection: "La música es un lenguaje universal que eleva el alma y nos conecta con lo divino. Salmos 100:4 nos invita a entrar en la presencia de Dios con agradecimiento y alabanza, sugiriendo que la música es un vehículo poderoso para expresar nuestra gratitud. Cuando cantamos o escuchamos melodías que honran a Dios, nuestro espíritu se llena de una profunda apreciación por Sus bondades. Esta gratitud no es solo un sentimiento, sino una acción que transforma nuestra perspectiva, recordándonos que cada día es un regalo y cada nota, una oportunidad para reconocer Su amor incondicional. A través de la música, podemos ofrecer a Dios un sacrificio de alabanza que brota de un corazón agradecido, fortaleciendo nuestra fe y llenándonos de gozo.",
+    quote: {
+      text: "La gratitud es una ofrenda preciosa a los ojos de Dios, y es una que el más pobre de nosotros puede hacer y no ser más pobre, sino más rico por haberla hecho.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Hoy, dedica un momento a escuchar una canción cristiana de gratitud. Canta con el corazón y permite que la melodía eleve tu espíritu en agradecimiento a Dios por Sus bendiciones.",
+    song: {
+      title: "Eres Todo Poderoso",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    },
+  },  {
+    day: 132,
+    month: "Mes",
+    monthId: 1,
+    title: "Risa, Don Divino",
+    verse: {
+      text: "Nuestra boca se llenó de risa, y nuestra lengua de cánticos de alegría; entonces dijeron entre las naciones: Grandes cosas ha hecho Jehová con estos.",
+      reference: "Salmos 126:2"
+    },
+    reflection: "La risa es un regalo divino, una manifestación del gozo que Dios nos concede. En medio de las pruebas, la capacidad de reír nos recuerda Su fidelidad y Su amor inagotable. Agradecer por la risa es reconocer que incluso en los momentos más simples, la presencia de Dios nos envuelve con alegría. Es un acto de fe que nos permite ver la luz en la oscuridad y encontrar motivos para celebrar Su bondad. Que nuestra gratitud se exprese en cada sonrisa, en cada carcajada, glorificando a Aquel que nos llena de gozo.",
+    quote: {
+      text: "La risa parece ser el eco del gozo de Dios en el alma.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, busca una oportunidad para reír a carcajadas y agradece a Dios por ese momento de alegría.",
+    song: {
+      title: "Mi Gozo",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/watch?v=IxD3JiOo9DY",
+      spotifyUrl: "https://open.spotify.com/track/5J4RMfjzVCfH1BEohUJ2zZ"
+    },
+  },  {
+    day: 133,
+    month: "Mes",
+    monthId: 1,
+    title: "Maravilla Sensorial: Un Don Divino",
+    verse: {
+      text: "Tú creaste mis entrañas; me formaste en el vientre de mi madre. ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas y esto lo sé muy bien!",
+      reference: "Salmo 139:13-14"
+    },
+    reflection: "El Salmo 139:13-14 nos recuerda la asombrosa obra de Dios al formarnos. Cada sentido —la vista que admira la creación, el oído que percibe la música y las voces amadas, el olfato que disfruta los aromas de la naturaleza, el gusto que saborea los alimentos y el tacto que siente el abrazo— es un regalo inmerecido. A través de ellos, experimentamos la belleza y la bondad de nuestro Creador. Reflexionar sobre cómo cada sentido nos conecta con el mundo y con Dios nos impulsa a una gratitud profunda. Reconocer estos dones nos lleva a alabarle por su sabiduría y amor infinitos, transformando nuestra percepción diaria en un acto de adoración.",
+    quote: {
+      text: "La gratitud es tener conciencia absoluta de los beneficios de la vida. Es la mayor de las virtudes.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, elige un sentido y úsalo conscientemente para apreciar algo hermoso o bueno que Dios ha creado. Agradece por ello.",
+    song: {
+      title: "Dios de la Creación",
+      artist: "Celinés, Eduard Muñoz",
+      youtubeUrl: "https://www.youtube.com/watch?v=tRZ2SjcfjX0",
+      spotifyUrl: "https://open.spotify.com/track/3mQMElST0FxB2BhkpesWhE"
+    },
+  },  {
+    day: 134,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por la Lectura",
+    verse: {
+      text: "Persiste en la lectura, en la exhortación y en la enseñanza.",
+      reference: "1 Timoteo 4:13"
+    },
+    reflection: "Poder leer es una llave al conocimiento. Agradecer por la alfabetización y por los buenos libros que nos edifican. A través de la lectura, dialogamos con grandes mentes y con Dios mismo. La gratitud por aprender nos mantiene creciendo.",
+    quote: {
+      text: "La lectura de la Palabra de Dios nos transforma y renueva nuestra mente día a día.",
+      author: "Billy Graham"
+    },
+    challenge: "Lee un artículo o página de un libro edificante y agradece por lo aprendido.",
+    song: {
+      title: "Tu Palabra",
+      artist: "Juan Carlos Alvarado",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Tu+Palabra+Juan+Carlos+Alvarado",
+      spotifyUrl: "https://open.spotify.com/search/Tu%20Palabra%20Juan%20Carlos%20Alvarado"
+    }
+  },
+  {
+    day: 135,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por el Dinero",
+    verse: {
+      text: "Sino acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas.",
+      reference: "Deuteronomio 8:18"
+    },
+    reflection: "El dinero no es malo; es una herramienta. Agradecer por los recursos económicos que Dios nos confía. Nos permite cubrir necesidades y bendecir a otros. La gratitud por el dinero (poco o mucho) rompe el espíritu de avaricia y activa la generosidad.",
+    quote: {
+      text: "No es cuánto tienes, sino cuánto disfrutas, lo que hace la felicidad.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Da una ofrenda o propina generosa hoy como acto de gratitud por la provisión de Dios.",
+    song: {
+      title: "Jehová Jireh",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=fCsH_TtZReY",
+      spotifyUrl: "https://open.spotify.com/track/6scdHV8ipaN4fvgf9see3w"
+    },
+    movie: {
+      title: "El Gran Pequeño (Little Boy) (2015)",
+      description: "Una película conmovedora sobre la fe imposible de un niño y cómo Dios provee milagrosamente en medio de la escasez y la guerra.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=b_BdzqsIX6A"
+    }
+  },
+  {
+    day: 136,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud en Cada Instante",
+    verse: {
+      text: "Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:18"
+    },
+    reflection: "El apóstol Pablo nos exhorta a dar gracias en todo, recordándonos que esta es la voluntad de Dios para nosotros en Cristo Jesús. En nuestro caminar diario, es fácil enfocarse en lo que falta o en las dificultades, olvidando las innumerables bendiciones que recibimos. La gratitud no es solo un sentimiento, sino una disciplina espiritual que transforma nuestra perspectiva. Reconocer que cada momento, cada experiencia, buena o desafiante, es parte del plan soberano de Dios, nos permite encontrar propósito y paz. Al agradecer en todo tiempo, no negamos las pruebas, sino que afirmamos la fidelidad de Dios en medio de ellas, cultivando un corazón que confía plenamente en Su amor y provisión.",
+    quote: {
+      text: "Cuando la alegría y la oración se casan, su primer hijo es la gratitud.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, dedica un momento a escribir tres cosas específicas por las que estás agradecido en tu vida, especialmente aquellas relacionadas con el tiempo.",
+    song: {
+      title: "Agradecido",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=hOZwYdGVqBs",
+      spotifyUrl: "https://open.spotify.com/track/4T0lFmU1COfW9VpD2OD86l"
+    },
+  },  {
+    day: 137,
+    month: "Mes",
+    monthId: 1,
+    title: "Libertad en Cristo: Agradecidos",
+    verse: {
+      text: "Estad, pues, firmes en la libertad con que Cristo nos hizo libres y no estéis otra vez sujetos al yugo de esclavitud.",
+      reference: "Gálatas 5:1"
+    },
+    reflection: "La libertad en Cristo es un regalo inestimable que a menudo damos por sentado. Gálatas 5:1 nos exhorta a mantenernos firmes en esa libertad, recordándonos que no es una licencia para el pecado, sino una liberación del yugo de la esclavitud. Esta libertad, obtenida a través del sacrificio de Jesús, nos permite vivir una vida plena y con propósito. Al reflexionar sobre esta verdad, nuestros corazones se llenan de una profunda gratitud. Agradecemos a Dios por habernos rescatado de la oscuridad y habernos dado una nueva identidad en Él. Esta gratitud nos impulsa a honrar Su sacrificio viviendo de una manera que refleje la verdadera libertad que hemos encontrado en Él, sirviendo a los demás con amor y viviendo en obediencia a Su Palabra.",
+    quote: {
+      text: "Quien vive en la ingratitud tiende a tomar y exigir, mientras que quien es agradecido es libre para dar.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece a Dios por una libertad específica que disfrutas en Cristo y compártela con alguien.",
+    song: {
+      title: "Hay Libertad",
+      artist: "Art Aguilera",
+      youtubeUrl: "https://www.youtube.com/watch?v=NrBQK-AjBq8",
+      spotifyUrl: "https://open.spotify.com/track/366xiSgvMCx2r68jeoJEKF"
+    },
+  },  {
+    day: 138,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por los Recuerdos",
+    verse: {
+      text: "Me acuerdo de los días antiguos; meditaba en todas tus obras.",
+      reference: "Salmo 143:5"
+    },
+    reflection: "La memoria es un regalo. Agradecer por los buenos recuerdos que nos alegran y por los malos de los que aprendimos. Recordar la fidelidad de Dios en el pasado nos da esperanza para el futuro. La gratitud es la memoria del corazón.",
+    quote: {
+      text: "Recordar las misericordias pasadas de Dios fortalece nuestra fe para los desafíos presentes.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Mira fotos antiguas hoy y agradece a Dios por su fidelidad a lo largo de los años.",
+    song: {
+      title: "Recuerdos",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Recuerdos+Alex+Campos",
+      spotifyUrl: "https://open.spotify.com/search/Recuerdos%20Alex%20Campos"
+    }
+  },
+  {
+    day: 139,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por la Creatividad",
+    verse: {
+      text: "Y lo he llenado del Espíritu de Dios... en ciencia y en todo arte.",
+      reference: "Éxodo 31:3"
+    },
+    reflection: "Somos hechos a imagen del Creador, por eso somos creativos. Agradecer por la capacidad de idear, solucionar problemas y crear belleza. Sea en la cocina, en la oficina o en el arte, tu creatividad glorifica a Dios. La gratitud desbloquea el flujo creativo.",
+    quote: {
+      text: "Toda creatividad humana es un reflejo pálido de la creatividad infinita de nuestro Dios.",
+      author: "Timothy Keller"
+    },
+    challenge: "Haz algo creativo hoy (dibuja, escribe, cocina algo nuevo) y dedícalo a Dios.",
+    song: {
+      title: "Creador",
+      artist: "Hillsong Worship",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Creador+Hillsong+Worship",
+      spotifyUrl: "https://open.spotify.com/search/Creador%20Hillsong%20Worship"
+    }
+  },
+  {
+    day: 140,
+    month: "Mes",
+    monthId: 1,
+    title: "Paz en la Quietud Divina",
+    verse: {
+      text: "Estad quietos, y conoced que yo soy Dios; Seré exaltado entre las naciones; enaltecido seré en la tierra.",
+      reference: "Salmo 46:10"
+    },
+    reflection: "En un mundo lleno de constante ruido y distracciones, el Salmo 46:10 nos invita a una pausa profunda: 'Estad quietos, y conoced que yo soy Dios'. Esta quietud no es pasividad, sino una invitación a la contemplación y al reconocimiento de la soberanía divina. Al silenciar el clamor exterior y el tumulto interior, abrimos espacio para escuchar la voz de Dios y percibir su presencia. Es en este espacio de paz donde la gratitud florece naturalmente. Agradecemos no solo por lo que Él hace, sino por quién es Él. La gratitud por el silencio nos permite valorar la paz que solo Dios puede ofrecer, transformando nuestra ansiedad en confianza y nuestra prisa en una serena adoración. Reconocer a Dios en la quietud es el fundamento de una gratitud profunda y duradera.",
+    quote: {
+      text: "Lo que he hecho no es digno de nada más que silencio y olvido, pero lo que Dios ha hecho por mí es digno de memoria eterna y agradecida.",
+      author: "Joseph Hall"
+    },
+    challenge: "Dedica 10 minutos hoy a la quietud. Silencia tu mente, agradece a Dios por su presencia y por la paz que te ofrece.",
+    song: {
+      title: "Silencio Interno",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=TSKG7W3WkQw",
+      spotifyUrl: "https://open.spotify.com/track/2Zkqfv1Li9JPZZ7nndiRI5"
+    },
+  },  {
+    day: 141,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por las Emociones",
+    verse: {
+      text: "Por la noche durará el lloro, y a la mañana vendrá la alegría.",
+      reference: "Salmo 30:5"
+    },
+    reflection: "No somos robots. Agradecer por la capacidad de sentir: alegría, tristeza, entusiasmo, compasión. Las emociones le dan color a la vida. Incluso las emociones 'negativas' son señales que nos alertan. La gratitud nos ayuda a gestionar nuestras emociones con sabiduría.",
+    quote: {
+      text: "Las emociones son buenos siervos pero malos amos.",
+      author: "Anónimo"
+    },
+    challenge: "Identifica cómo te sientes ahora mismo y preséntale esa emoción a Dios con gratitud.",
+    song: {
+      title: "Alma Mía",
+      artist: "Banda Montreal",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Alma+Mía+Banda+Montreal",
+      spotifyUrl: "https://open.spotify.com/search/Alma%20Mía%20Banda%20Montreal"
+    }
+  },
+  {
+    day: 142,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por los Sueños",
+    verse: {
+      text: "Y sucederá que... vuestros ancianos soñarán sueños, y vuestros jóvenes verán visiones.",
+      reference: "Joel 2:28"
+    },
+    reflection: "Dios nos da la capacidad de soñar con un futuro mejor. Agradecer por las metas y anhelos que Él pone en el corazón. Los sueños nos impulsan a avanzar. La gratitud por los sueños cumplidos y por los que están en proceso nos mantiene motivados.",
+    quote: {
+      text: "Los sueños que Dios pone en nuestro corazón son promesas disfrazadas de esperanza.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Escribe un sueño que tengas para el futuro y agradece a Dios como si ya estuviera hecho.",
+    song: {
+      title: "Sueños",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Talentos Ocultos (Hidden Figures) (2016)",
+      description: "La historia de mujeres que soñaron en grande y rompieron barreras raciales y de género para llevar al hombre al espacio.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=5wfrDhgUMGI"
+    }
+  },
+  {
+    day: 143,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por la Educación",
+    verse: {
+      text: "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+      reference: "Proverbios 22:6"
+    },
+    reflection: "Agradecer por los maestros, mentores y lecciones de la vida. La educación formal e informal nos moldea. Nunca dejamos de aprender. La gratitud por el conocimiento nos hace humildes y enseñables.",
+    quote: {
+      text: "La verdadera educación comienza con el temor del Señor y nos guía a toda sabiduría.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Envía un mensaje de agradecimiento a un maestro o mentor que haya marcado tu vida.",
+    song: {
+      title: "Enséñame",
+      artist: "Daniel Calveti",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Enséñame+Daniel+Calveti",
+      spotifyUrl: "https://open.spotify.com/search/Enséñame%20Daniel%20Calveti"
+    }
+  },
+  {
+    day: 144,
+    month: "Mes",
+    monthId: 1,
+    title: "Unidad en la Diversidad",
+    verse: {
+      text: "Porque así como el cuerpo es uno, y tiene muchos miembros, pero todos los miembros del cuerpo, siendo muchos, son un solo cuerpo, así también Cristo.",
+      reference: "1 Corintios 12:12"
+    },
+    reflection: "En 1 Corintios 12, Pablo nos recuerda que, aunque somos muchos y diversos, formamos un solo cuerpo en Cristo. Cada miembro, con sus dones y características únicas, es esencial y valioso. Esta diversidad no es una casualidad, sino un diseño divino que refleja la riqueza y la creatividad de nuestro Creador. La gratitud por esta diversidad nos lleva a apreciar las diferencias, a celebrar las distintas formas en que Dios se manifiesta a través de su pueblo y a buscar la unidad en medio de nuestras particularidades. Agradecer por la diversidad es reconocer la sabiduría de Dios al unirnos, fortaleciendo nuestro testimonio y amor mutuo.",
+    quote: {
+      text: "La diversidad y la armonía son para la gloria de Dios a Dios a través de Cristo.",
+      author: "John Piper"
+    },
+    challenge: "Hoy, agradece a Dios por la diversidad en tu iglesia o comunidad, y busca una forma de servir a alguien diferente a ti.",
+    song: {
+      title: "Cuerpo De Cristo",
+      artist: "Vive la Palabra",
+      youtubeUrl: "https://music.youtube.com/channel/UCWGoWwFLWLPCUQTTQh9RN6w",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/7xGMQX7IgXwA7qiOKgpdHs"
+    },
+  },  {
+    day: 145,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por el Orden",
+    verse: {
+      text: "Pero hágase todo decentemente y con orden.",
+      reference: "1 Corintios 14:40"
+    },
+    reflection: "Dios es un Dios de orden, no de confusión. Agradecer por las estructuras, leyes y rutinas que dan estabilidad a la vida. El orden trae paz mental. La gratitud nos motiva a ser organizados y eficientes.",
+    quote: {
+      text: "Dios es un Dios de orden, y cuando ordenamos nuestra vida reflejamos su carácter.",
+      author: "Rick Warren"
+    },
+    challenge: "Ordena un cajón o área desordenada hoy y agradece por la claridad que trae el orden.",
+    song: {
+      title: "Ordena Mis Pasos",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ordena+Mis+Pasos+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Ordena%20Mis%20Pasos%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 146,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por la Belleza",
+    verse: {
+      text: "Todo lo hizo hermoso en su tiempo.",
+      reference: "Eclesiastés 3:11"
+    },
+    reflection: "La belleza no es utilitaria, es un regalo para el alma. Agradecer por el arte, la naturaleza y la belleza humana. Dios es el Artista Supremo. La gratitud por la belleza nos inspira y nos eleva hacia Él.",
+    quote: {
+      text: "La belleza es la firma de Dios en la creación.",
+      author: "Anónimo"
+    },
+    challenge: "Detente a admirar algo hermoso hoy (una flor, un cuadro, un rostro) y da gracias al Artista.",
+    song: {
+      title: "Hermoso Eres",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hermoso+Eres+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Hermoso%20Eres%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 147,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por la Salud Mental",
+    verse: {
+      text: "Y la paz de Dios, que sobrepasa todo entendimiento, guardará vuestros corazones y vuestros pensamientos.",
+      reference: "Filipenses 4:7"
+    },
+    reflection: "La mente es un campo de batalla. Agradecer por los momentos de claridad, cordura y paz mental. Dios se interesa por nuestra salud integral. La gratitud es un gran protector de la salud mental, reduciendo la ansiedad y la depresión.",
+    quote: {
+      text: "La gratitud es la vacuna, la antitoxina y el antiséptico del alma.",
+      author: "John Henry Jowett"
+    },
+    challenge: "Haz una lista de 3 cosas que te dan paz mental y agradece por ellas.",
+    song: {
+      title: "Paz",
+      artist: "Marcelo Gándara",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Paz+Marcelo+Gándara",
+      spotifyUrl: "https://open.spotify.com/search/Paz%20Marcelo%20Gándara"
+    }
+  },
+  {
+    day: 148,
+    month: "Mes",
+    monthId: 1,
+    title: "Vecinos: Bendición Cercana",
+    verse: {
+      text: "Que gobierne en sus corazones la paz de Cristo, a la cual fueron llamados en un solo cuerpo. Y sean agradecidos.",
+      reference: "Colosenses 3:15"
+    },
+    reflection: "Colosenses 3:15 nos invita a permitir que la paz de Cristo reine en nuestros corazones y a vivir en constante gratitud. Esta gratitud se extiende a todas las áreas de nuestra vida, incluyendo nuestras relaciones con quienes nos rodean, nuestros vecinos. A menudo, damos por sentada la presencia de nuestros vecinos, o incluso podemos encontrar desafíos en la convivencia. Sin embargo, este versículo nos recuerda que somos parte de un solo cuerpo en Cristo, y que la paz y la gratitud deben ser los pilares de nuestras interacciones. Agradecer por nuestros vecinos, incluso por aquellos con quienes tenemos diferencias, es un acto de fe que reconoce la soberanía de Dios en cada relación. Al practicar la gratitud, transformamos nuestra perspectiva y abrimos la puerta a la paz y la bendición en nuestra comunidad.",
+    quote: {
+      text: "La acción de gracias a Dios por todas Sus bendiciones debería ser una de las marcas más distintivas del creyente en Jesucristo.",
+      author: "Billy Graham"
+    },
+    challenge: "Hoy, ora por tus vecinos. Agradece a Dios por su presencia en tu vida y busca una oportunidad para mostrarles amor y gratitud de manera práctica.",
+    song: {
+      title: "Dios Incomparable",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    },
+  },  {
+    day: 149,
+    month: "Mes",
+    monthId: 1,
+    title: "Bendición Celestial Renovada",
+    verse: {
+      text: "Alégrense, hijos de Sion, y gócense en Jehová su Dios; porque les ha dado la primera lluvia a su tiempo, y hará descender sobre ustedes lluvia temprana y tardía como al principio.",
+      reference: "Joel 2:23"
+    },
+    reflection: "La lluvia, a menudo vista como un simple fenómeno natural, es en la perspectiva cristiana un regalo directo de Dios, una manifestación tangible de Su fidelidad y provisión. Joel 2:23 nos invita a regocijarnos en el Señor por las lluvias que envía, reconociéndolas como una bendición oportuna que renueva la tierra y sustenta la vida. Esta gratitud va más allá de la mera apreciación por el agua; es un reconocimiento de la soberanía de Dios sobre la creación y Su cuidado constante por Su pueblo. Al reflexionar sobre cada gota de lluvia, podemos ver la mano de Dios obrando, recordándonos Su amor inagotable y Su promesa de proveer para nuestras necesidades. La gratitud por la lluvia nos enseña a confiar en Él en todas las estaciones de nuestra vida, sabiendo que Él siempre nos dará lo que necesitamos a Su debido tiempo.",
+    quote: {
+      text: "La gratitud nos eleva la vista de lo que nos falta para ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, al ver la lluvia o al beber agua, agradece a Dios por Su provisión y fidelidad constante.",
+    song: {
+      title: "Dios Manda Lluvia",
+      artist: "Ericson Alexander Molano",
+      youtubeUrl: "https://www.youtube.com/watch?v=lK8tABu9fRU",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/1ZjfE0rjZ79eZb8scsRpYF"
+    },
+  },  {
+    day: 150,
+    month: "Mayo",
+    monthId: 5,
+    title: "Gratitud por los Pequeños Detalles",
+    verse: {
+      text: "¿Quién despreció el día de las pequeñeces?",
+      reference: "Zacarías 4:10"
+    },
+    reflection: "La vida está hecha de momentos pequeños. Un café caliente, una sonrisa, encontrar un estacionamiento. Agradecer por lo minúsculo nos entrena para ver a Dios en todo. La gratitud convierte lo ordinario en extraordinario.",
+    quote: {
+      text: "Dios se revela en los detalles pequeños de la vida diaria, no solo en los grandes milagros.",
+      author: "Max Lucado"
+    },
+    challenge: "Encuentra 5 cosas muy pequeñas (un botón, una moneda, una hoja) y agradece por cada una.",
+    song: {
+      title: "Detalles",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Detalles+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Detalles%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 151,
+    month: "Mes",
+    monthId: 1,
+    title: "Corazón Agradecido Hoy",
+    verse: {
+      text: "Entrad por sus puertas con acción de gracias, Por sus atrios con alabanza; Alabadle, bendecid su nombre.",
+      reference: "Salmos 100:4"
+    },
+    reflection: "El Salmo 100:4 nos invita a iniciar nuestro día y acercarnos a Dios con un corazón lleno de gratitud y alabanza. No es una sugerencia, sino una exhortación a reconocer Su bondad y misericordia que perdura para siempre. La gratitud transforma nuestra perspectiva, permitiéndonos ver la mano de Dios en cada detalle de nuestra vida, incluso en medio de las dificultades. Al bendecir Su nombre, no solo expresamos agradecimiento por lo que hace, sino por quién es Él. Esta práctica diaria de gratitud nos conecta más profundamente con Su amor y propósito, recordándonos que cada aliento es un regalo y cada momento una oportunidad para honrarle. Cultivar un espíritu agradecido es un acto de fe que fortalece nuestra relación con el Creador y nos llena de paz.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, dedica 5 minutos a escribir 3 cosas por las que estás agradecido, grandes o pequeñas, y da gracias a Dios por ellas.",
+    song: {
+      title: "Hay Un Dios",
+      artist: "Tercer Cielo",
+      youtubeUrl: "https://www.youtube.com/watch?v=5Fy4pqGYYvYLcOqbmwxlIp",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    },
+  },  {
+    day: 152,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Cielo",
+    verse: {
+      text: "Los cielos cuentan la gloria de Dios, y el firmamento anuncia la obra de sus manos.",
+      reference: "Salmo 19:1"
+    },
+    reflection: "Mirar hacia arriba nos da perspectiva. El cielo infinito nos recuerda la grandeza de Dios y nuestra pequeñez. Agradecer por el azul del día y las estrellas de la noche. La gratitud por el cielo nos conecta con lo trascendente.",
+    quote: {
+      text: "Los cielos declaran la gloria de Dios, y cada estrella es un testimonio de su poder creador.",
+      author: "Charles Haddon Spurgeon"
+    },
+    challenge: "Sal y mira el cielo hoy (de día o de noche) y simplemente di: '¡Cuán grande eres, Dios!'.",
+    song: {
+      title: "Cuán Grande es Dios",
+      artist: "En Espíritu y En Verdad",
+    },
+    movie: {
+      title: "El Cielo es Real (Heaven is for Real) (2014)",
+      description: "La historia de un niño que visita el cielo y regresa para contarlo, recordándonos la realidad de nuestro hogar eterno.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=N-ewaCVARtM"
+    }
+  },
+  {
+    day: 153,
+    month: "Mes",
+    monthId: 1,
+    title: "Luz Divina, Corazón Agradecido",
+    verse: {
+      text: "Porque en ti está la fuente de la vida, y en tu luz podemos ver la luz.",
+      reference: "Salmo 36:9"
+    },
+    reflection: "El Salmo 36:9 nos recuerda que la verdadera fuente de vida y luz proviene de Dios. Así como el sol ilumina nuestro día, la luz divina disipa nuestras sombras y nos permite ver la vida con claridad. Esta luz no solo es física, sino espiritual, revelándonos las incontables bendiciones que a menudo damos por sentadas. La gratitud surge de reconocer que cada rayo de sol, cada aliento, cada momento de alegría es un regalo de Su amor inagotable. Al abrir nuestros ojos a Su luz, nuestro corazón se llena de un agradecimiento profundo que transforma nuestra perspectiva y nos impulsa a vivir con un espíritu de alabanza constante. Agradecer por la luz del sol es agradecer por la vida misma, por la presencia constante de Dios en cada detalle.",
+    quote: {
+      text: "El corazón agradecido es como un imán que recoge durante el día razones para estar agradecidos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, al ver la luz del sol, agradece a Dios por una bendición específica en tu vida y compártela con alguien.",
+    song: {
+      title: "Rendido Estoy",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=4kOtC0v_hhY",
+      spotifyUrl: "https://open.spotify.com/track/0YvQTmKVrQlqKQQQQQQQQQ"
+    }
+  },
+  {
+    day: 154,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Luna y las Estrellas",
+    verse: {
+      text: "Cuando veo tus cielos, obra de tus dedos, la luna y las estrellas que tú formaste...",
+      reference: "Salmo 8:3"
+    },
+    reflection: "En la oscuridad de la noche, Dios puso luces. Agradecer por la belleza nocturna que nos recuerda que Dios nunca duerme. Él gobierna incluso en la oscuridad. La gratitud nos da paz en las noches oscuras del alma.",
+    quote: {
+      text: "Dios puso las estrellas en el cielo para recordarnos que incluso en la noche más oscura, su luz permanece.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "Mira las estrellas esta noche y recuerda que Dios conoce a cada una por su nombre (y a ti también).",
+    song: {
+      title: "Estrellas",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Estrellas+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Estrellas%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 155,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Mar",
+    verse: {
+      text: "Tuyo es el mar, pues tú lo hiciste.",
+      reference: "Salmo 95:5"
+    },
+    reflection: "La inmensidad del mar nos habla del poder de Dios. Sus olas obedecen su voz. Agradecer por los océanos que regulan el clima y nos alimentan. El mar nos enseña sobre la profundidad de los juicios y la misericordia de Dios. La gratitud es profunda como el mar.",
+    quote: {
+      text: "El mar obedece la voz de su Creador, y nosotros debemos hacer lo mismo.",
+      author: "Andrew Murray"
+    },
+    challenge: "Mira una foto del mar o escucha sonidos de olas y agradece por la majestad de Dios.",
+    song: {
+      title: "Océanos",
+      artist: "Evan Craft",
+      youtubeUrl: "https://www.youtube.com/watch?v=dy9nwe9_xzw",
+      spotifyUrl: "https://open.spotify.com/track/5YJdF3Zqy0qAYbXnC9FXVG"
+    }
+  },
+  {
+    day: 156,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Montañas",
+    verse: {
+      text: "Alzaré mis ojos a los montes; ¿de dónde vendrá mi socorro?",
+      reference: "Salmo 121:1"
+    },
+    reflection: "Las montañas son símbolos de estabilidad y grandeza. Agradecer por los paisajes montañosos que nos invitan a subir más alto. Dios es nuestra Roca y nuestra fortaleza. La gratitud nos eleva por encima de los problemas del valle.",
+    quote: {
+      text: "Dios nos lleva a las alturas espirituales para que veamos su gloria y perspectiva eterna.",
+      author: "Hannah Whitall Smith"
+    },
+    challenge: "Ora hoy pidiendo a Dios que te lleve a 'lugares altos' espirituales.",
+    song: {
+      title: "Montaña",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Montaña+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Montaña%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 157,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por los Árboles",
+    verse: {
+      text: "Será como árbol plantado junto a corrientes de aguas.",
+      reference: "Salmo 1:3"
+    },
+    reflection: "Los árboles nos dan sombra, fruto y oxígeno. Agradecer por los bosques y selvas, pulmones del planeta. Nos enseñan sobre echar raíces profundas y dar fruto a su tiempo. La gratitud nos hace crecer fuertes y fructíferos como un roble.",
+    quote: {
+      text: "Como el árbol plantado junto a corrientes de aguas, el creyente que se arraiga en Dios dará fruto en su tiempo.",
+      author: "George Müller"
+    },
+    challenge: "Abraza un árbol (literalmente) o planta una semilla hoy como acto de gratitud por la naturaleza.",
+    song: {
+      title: "Como Árbol",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Como+Árbol+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Como%20Árbol%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 158,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Flores",
+    verse: {
+      text: "Considerad los lirios, cómo crecen... ni aun Salomón con toda su gloria se vistió como uno de ellos.",
+      reference: "Lucas 12:27"
+    },
+    reflection: "Las flores son la sonrisa de Dios. No son 'necesarias' para la supervivencia, pero sí para el deleite. Agradecer por los colores y fragancias que embellecen el mundo. Nos recuerdan que Dios cuida los detalles. La gratitud florece donde se riega.",
+    quote: {
+      text: "Si Dios viste así la hierba del campo, ¡cuánto más cuidará de ti!",
+      author: "Oswald Chambers"
+    },
+    challenge: "Compra o corta una flor para ti o para alguien más y agradece por la belleza efímera.",
+    song: {
+      title: "Jardín",
+      artist: "Hillsong United",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Jardín+Hillsong+United",
+      spotifyUrl: "https://open.spotify.com/search/Jardín%20Hillsong%20United"
+    }
+  },
+  {
+    day: 159,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud en la Creación Animal",
+    verse: {
+      text: "»Observa a los animales, y aprende de ellos; Mira a las aves en los cielos, y oye lo que te dicen. Habla con la tierra, para que te enseñe; hasta los peces te lo han de contar. ¿Habrá entre estos alguien que no sepa que todo esto lo hizo la mano del Señor? La vida de todo ser está en Sus manos; ¡Él infunde vida a toda la humanidad!",
+      reference: "Job 12:7-10"
+    },
+    reflection: "La creación de Dios es un testimonio constante de Su amor y providencia. Al observar a los animales, desde la majestuosidad de un león hasta la delicadeza de un colibrí, somos recordados de la sabiduría y el poder del Creador. Job 12:7-10 nos invita a aprender de ellos, reconociendo que cada criatura es una obra de Sus manos. Esta contemplación nos lleva a una profunda gratitud, no solo por la existencia de estas maravillosas vidas, sino también por el cuidado que Dios tiene por cada detalle de Su creación. Al ver cómo Él sustenta a los animales, nuestra fe se fortalece y nuestra gratitud se desborda, sabiendo que si Él cuida de ellos, cuánto más nos cuidará a nosotros. Agradecer por los animales es agradecer por la vida misma, por la belleza y el equilibrio que Dios ha puesto en el mundo.",
+    quote: {
+      text: "Si tengo éxito, daré gracias. Si fracaso, buscaré Su gracia.",
+      author: "Max Lucado"
+    },
+    challenge: "Dedica un momento hoy a observar a un animal. Agradece a Dios por su existencia y por la belleza que añade a Su creación.",
+    song: {
+      title: "Hay Un Río",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    },
+  },  {
+    day: 160,
+    month: "Mes",
+    monthId: 1,
+    title: "Sabiduría Divina en Cada Estación",
+    verse: {
+      text: "¡Cuán innumerables son tus obras, oh Jehová! Hiciste todas ellas con sabiduría; La tierra está llena de tus beneficios.",
+      reference: "Salmos 104:24"
+    },
+    reflection: "Salmos 104:24 nos invita a contemplar la magnitud de las obras de Dios, destacando la sabiduría con la que todo ha sido creado y cómo la tierra está llena de sus beneficios. En este día, en el que reflexionamos sobre la gratitud por las estaciones, este versículo nos recuerda que cada ciclo de la naturaleza, cada cambio de estación, es una manifestación del diseño perfecto de nuestro Creador. Desde la floración de la primavera hasta el reposo invernal, cada etapa tiene un propósito y nos provee de innumerables bendiciones. La gratitud surge al reconocer que no somos meros espectadores, sino beneficiarios de esta obra divina. Agradecer por las estaciones es agradecer por la provisión constante, la belleza inmutable y la sabiduría infinita de un Dios que sostiene todo con amor y propósito.",
+    quote: {
+      text: "No es cuánto tenemos, sino cuánto disfrutamos, lo que nos da la felicidad.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Dedica un momento hoy a observar la naturaleza y agradecer a Dios por la sabiduría en su creación, reconociendo sus beneficios.",
+    song: {
+      title: "Gratitud a Dios",
+      artist: "La Rondalla Cristiana Sinaí",
+      youtubeUrl: "https://www.youtube.com/watch?v=iJbHSlAwshw",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/43FfLmVpAyiMbI8Z0DQ3Pd"
+    },
+  },  {
+    day: 161,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Viento",
+    verse: {
+      text: "El viento sopla de donde quiere... así es todo aquel que es nacido del Espíritu.",
+      reference: "Juan 3:8"
+    },
+    reflection: "No vemos el viento, pero sentimos sus efectos. Agradecer por el aire que mueve las nubes y refresca la tierra. Es símbolo del Espíritu Santo: invisible pero poderoso. La gratitud es dejarse llevar por el viento del Espíritu.",
+    quote: {
+      text: "El Espíritu Santo sopla donde quiere, y nosotros debemos ajustar nuestras velas para seguir su dirección.",
+      author: "R.A. Torrey"
+    },
+    challenge: "Sal afuera, siente la brisa en tu cara y agradece por el aliento de vida.",
+    song: {
+      title: "Sopla",
+      artist: "New Wine",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sopla+New+Wine",
+      spotifyUrl: "https://open.spotify.com/search/Sopla%20New%20Wine"
+    }
+  },
+  {
+    day: 162,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud por la Creación Divina",
+    verse: {
+      text: "Porque todas las cosas proceden de él, y existen por él y para él. ¡A él sea la gloria por siempre! Amén.",
+      reference: "Romanos 11:36"
+    },
+    reflection: "La gratitud por la tierra es una extensión natural de nuestra gratitud a Dios. Cada montaña, cada océano, cada ser vivo es un testimonio del poder y amor de nuestro Creador. Al observar la majestuosidad de la creación, recordamos que todo proviene de Él y existe para Su gloria. Esta perspectiva nos invita a cuidar y valorar el mundo que nos ha sido confiado, no como dueños, sino como administradores agradecidos. Que nuestra gratitud se manifieste en acciones concretas de preservación y respeto por la tierra, reconociendo en cada elemento la firma de nuestro Padre celestial. Al hacerlo, no solo honramos a Dios, sino que también cultivamos un corazón más humilde y consciente de nuestra dependencia de Él para todas las cosas.",
+    quote: {
+      text: "La clave para abrir un corazón de gratitud y superar la amargura, la fealdad, la falta de respeto y la violencia es una fuerte creencia en Dios.",
+      author: "John Piper"
+    },
+    challenge: "Dedica tiempo hoy a caminar al aire libre. Observa detenidamente la naturaleza que te rodea y da gracias a Dios por cinco creaciones específicas que llamen tu atención. Considera cómo puedes contribuir a su cuidado.",
+    song: {
+      title: "Eres Mi Respirar",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=ABLtKWIWTw4",
+      spotifyUrl: "https://open.spotify.com/track/1kXvLdwQEQVcZ4zLZQZQ0Q"
+    },
+  },  {
+    day: 163,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por los Frutos",
+    verse: {
+      text: "Mas el fruto del Espíritu es amor, gozo, paz...",
+      reference: "Gálatas 5:22"
+    },
+    reflection: "Agradecer por las frutas deliciosas de la tierra, pero también por los frutos espirituales en nuestra vida. Dios quiere que seamos productivos y dulces. La gratitud es el fertilizante que hace crecer el fruto del Espíritu.",
+    quote: {
+      text: "El fruto del Espíritu es la evidencia visible de una vida transformada por Cristo.",
+      author: "Jerry Bridges"
+    },
+    challenge: "Come tu fruta favorita hoy y agradece a Dios por su dulzura y provisión.",
+    song: {
+      title: "Fruto de Labios",
+      artist: "Juan Carlos Alvarado",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fruto+de+Labios+Juan+Carlos+Alvarado",
+      spotifyUrl: "https://open.spotify.com/search/Fruto%20de%20Labios%20Juan%20Carlos%20Alvarado"
+    }
+  },
+  {
+    day: 164,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Lluvia Temprana y Tardía",
+    verse: {
+      text: "Y os hará descender lluvia, la lluvia temprana y la tardía.",
+      reference: "Joel 2:23"
+    },
+    reflection: "Dios provee en el momento justo. La lluvia temprana para sembrar y la tardía para cosechar. Agradecer por el 'timing' perfecto de Dios. Él sabe cuándo enviar lo que necesitamos. La gratitud confía en el calendario de Dios.",
+    quote: {
+      text: "Dios nunca llega tarde ni temprano, siempre llega en el momento perfecto.",
+      author: "Joni Eareckson Tada"
+    },
+    challenge: "Agradece por una oración contestada 'a tiempo' en tu pasado.",
+    song: {
+      title: "Lluvia de Gracia",
+      artist: "Himno Tradicional",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Lluvia+de+Gracia+Himno+Tradicional",
+      spotifyUrl: "https://open.spotify.com/search/Lluvia%20de%20Gracia%20Himno%20Tradicional"
+    }
+  },
+  {
+    day: 165,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Arcoíris",
+    verse: {
+      text: "Mi arco he puesto en las nubes, el cual será por señal del pacto.",
+      reference: "Génesis 9:13"
+    },
+    reflection: "Después de la tormenta, viene la promesa. Agradecer por el arcoíris que nos recuerda que Dios cumple sus pactos y no destruirá. Es un símbolo de esperanza y color tras el gris. La gratitud ve el arcoíris incluso antes de que salga.",
+    quote: {
+      text: "El arcoíris es la firma de Dios en el cielo, recordándonos que sus promesas son eternas.",
+      author: "Warren Wiersbe"
+    },
+    challenge: "Busca colores hoy y agradece a Dios por sus promesas fieles.",
+    song: {
+      title: "Promesas",
+      artist: "Maverick City Music",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Promesas+Maverick+City+Music",
+      spotifyUrl: "https://open.spotify.com/search/Promesas%20Maverick%20City%20Music"
+    }
+  },
+  {
+    day: 166,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Aves",
+    verse: {
+      text: "Mirad las aves del cielo, que no siembran, ni siegan... y vuestro Padre celestial las alimenta.",
+      reference: "Mateo 6:26"
+    },
+    reflection: "Los pájaros cantan cada mañana sin preocuparse por la economía. Agradecer por su lección de confianza y alegría. Si Dios cuida de un gorrión, ¡cuánto más de ti! La gratitud nos libera de la ansiedad por el sustento.",
+    quote: {
+      text: "Si Dios cuida de las aves del cielo, podemos confiar que cuidará de nosotros con mucho más amor.",
+      author: "Hudson Taylor"
+    },
+    challenge: "Escucha el canto de los pájaros y únete a ellos en alabanza.",
+    song: {
+      title: "El Cuidado de Dios",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "El Gran Año (The Big Year) (2011)",
+      description: "Una comedia sobre la observación de aves que, sutilmente, nos enseña a detenernos y apreciar la belleza de la creación que a menudo ignoramos.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=JCBAP2wId5M"
+    }
+  },
+  {
+    day: 167,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Desierto",
+    verse: {
+      text: "Y te acordarás de todo el camino por donde te ha traído Jehová tu Dios estos cuarenta años en el desierto.",
+      reference: "Deuteronomio 8:2"
+    },
+    reflection: "El desierto es seco pero necesario. Allí Dios nos prueba y nos habla al corazón. Agradecer por las etapas de desierto porque allí se forma el carácter y se conoce al Proveedor. La gratitud en el desierto hace florecer la vida.",
+    quote: {
+      text: "En el desierto aprendemos que Dios es suficiente, incluso cuando todo lo demás falta.",
+      author: "Amy Carmichael"
+    },
+    challenge: "Si estás pasando por un desierto, agradece hoy por el maná diario que Dios te da.",
+    song: {
+      title: "Desierto",
+      artist: "Lead",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Desierto+Lead",
+      spotifyUrl: "https://open.spotify.com/search/Desierto%20Lead"
+    }
+  },
+  {
+    day: 168,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por los Ríos",
+    verse: {
+      text: "Junto a aguas de reposo me pastoreará.",
+      reference: "Salmo 23:2"
+    },
+    reflection: "Los ríos fluyen, no se estancan. Llevan vida a donde van. Agradecer por el fluir del Espíritu en nosotros. No somos cisternas rotas, somos canales de bendición. La gratitud mantiene el flujo de la gracia corriendo a través de nosotros.",
+    quote: {
+      text: "El creyente debe ser como un río, siempre fluyendo con la gracia de Dios hacia otros.",
+      author: "Smith Wigglesworth"
+    },
+    challenge: "Sé un río hoy: deja que una bendición fluya de ti hacia otra persona.",
+    song: {
+      title: "Río de Dios",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Río+de+Dios+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Río%20de%20Dios%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 169,
+    month: "Mes",
+    monthId: 1,
+    title: "Cosecha de Corazones Agradecidos",
+    verse: {
+      text: "Dios, que da la semilla que se siembra y el alimento que se come, les dará a ustedes todo lo necesario para su siembra, y la hará crecer, y hará que la generosidad de ustedes produzca una gran cosecha. Así tendrán ustedes toda clase de riquezas y podrán dar generosamente.",
+      reference: "2 Corintios 9:10-11"
+    },
+    reflection: "La generosidad de Dios se manifiesta en cada semilla que siembra en nuestras vidas, prometiendo una cosecha abundante no solo de bienes materiales, sino de bendiciones espirituales. Al dar con alegría, reflejamos Su carácter y abrimos el camino para que Su gracia se derrame aún más. Esta gratitud activa nos transforma, permitiéndonos ser canales de Su provisión y amor para otros, y así, la acción de gracias se multiplica, glorificando a Dios en cada acto de generosidad.",
+    quote: {
+      text: "La gratitud es una ofrenda preciosa a los ojos de Dios, y es una que el más pobre de nosotros puede hacer y no ser más pobre, sino más rico por haberla hecho.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Hoy, agradece a Dios por una bendición inesperada y compártela con alguien, extendiendo la cadena de gratitud.",
+    song: {
+      title: "Bendito Jesús",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=9h3aIazbteQ",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    },
+  },  {
+    day: 170,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Piedras",
+    verse: {
+      text: "Y Josué erigió en Gilgal las doce piedras que habían traído del Jordán.",
+      reference: "Josué 4:20"
+    },
+    reflection: "Las piedras sirven para construir altares y recordar milagros. Agradecer por los hitos en nuestra vida, esos momentos sólidos donde vimos la mano de Dios. Son nuestras 'piedras de memoria'. La gratitud construye monumentos a la fidelidad de Dios.",
+    quote: {
+      text: "Levantemos altares de memoria para recordar las victorias que Dios nos ha dado.",
+      author: "E.M. Bounds"
+    },
+    challenge: "Escribe una fecha importante de un milagro pasado y agradécelo de nuevo.",
+    song: {
+      title: "Piedras Vivas",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Piedras+Vivas+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Piedras%20Vivas%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 171,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Fuego",
+    verse: {
+      text: "Porque nuestro Dios es fuego consumidor.",
+      reference: "Hebreos 12:29"
+    },
+    reflection: "El fuego purifica, calienta e ilumina. Agradecer por el fuego del Espíritu que quema lo malo en nosotros y nos enciende de pasión. No queremos ser tibios. La gratitud aviva la llama del primer amor.",
+    quote: {
+      text: "El fuego del Espíritu Santo consume todo lo que no es de Dios y enciende nuestra pasión por Él.",
+      author: "Kathryn Kuhlman"
+    },
+    challenge: "Pide a Dios que encienda el fuego de tu pasión por Él hoy. Agradece por su calor.",
+    song: {
+      title: "Fuego",
+      artist: "Marco Barrientos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fuego+Marco+Barrientos",
+      spotifyUrl: "https://open.spotify.com/search/Fuego%20Marco%20Barrientos"
+    }
+  },
+  {
+    day: 172,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Nieve",
+    verse: {
+      text: "Venid luego, dice Jehová, y estemos a cuenta: si vuestros pecados fueren como la grana, como la nieve serán emblanquecidos.",
+      reference: "Isaías 1:18"
+    },
+    reflection: "La nieve cubre todo de blanco y silencio. Agradecer por la pureza que Dios nos da. Él cubre nuestras faltas y nos hace nuevos. La nieve también riega la tierra lentamente. La gratitud por el perdón nos hace sentir limpios y frescos.",
+    quote: {
+      text: "La pureza que Dios nos da es como la nieve: cubre completamente nuestro pasado pecaminoso.",
+      author: "Dwight L. Moody"
+    },
+    challenge: "Vístete de blanco hoy (o usa algo blanco) como símbolo de gratitud por tu limpieza espiritual.",
+    song: {
+      title: "Blanco como la Nieve",
+      artist: "Himno Tradicional",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Blanco+como+la+Nieve+Himno+Tradicional",
+      spotifyUrl: "https://open.spotify.com/search/Blanco%20como%20la%20Nieve%20Himno%20Tradicional"
+    }
+  },
+  {
+    day: 173,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Tormentas",
+    verse: {
+      text: "Él cambia la tempestad en sosiego, y se apaciguan sus ondas.",
+      reference: "Salmo 107:29"
+    },
+    reflection: "Nadie quiere tormentas, pero ellas limpian la atmósfera y prueban los cimientos. Agradecer porque Dios es el Capitán en la tormenta. Él tiene el control. La gratitud en medio de la tormenta es el ancla que evita que naufraguemos.",
+    quote: {
+      text: "Las tormentas de la vida revelan la firmeza de nuestros cimientos en Cristo.",
+      author: "Dietrich Bonhoeffer"
+    },
+    challenge: "Agradece por una dificultad actual, confiando en que Dios la usará para bien.",
+    song: {
+      title: "Paz en la Tormenta",
+      artist: "René González",
+    },
+    movie: {
+      title: "La Tormenta Perfecta (The Perfect Storm) (2000)",
+      description: "Aunque trágica, nos enseña sobre la fuerza incontrolable de la naturaleza y nuestra necesidad de un ancla espiritual más fuerte que cualquier tormenta.",
+      platform: "HBO Max",
+      youtubeUrl: "https://www.youtube.com/watch?v=RZvljNvnd18"
+    }
+  },
+  {
+    day: 174,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Rocío",
+    verse: {
+      text: "Yo seré a Israel como rocío; él florecerá como lirio.",
+      reference: "Oseas 14:5"
+    },
+    reflection: "El rocío aparece silenciosamente en la mañana y refresca las plantas. Agradecer por las bendiciones silenciosas y sutiles de Dios. No siempre hay truenos, a veces es solo rocío fresco. La gratitud nos hace sensibles a su toque suave.",
+    quote: {
+      text: "La gracia de Dios cae silenciosamente como el rocío, refrescando nuestras almas cada mañana.",
+      author: "F.B. Meyer"
+    },
+    challenge: "Levántate temprano mañana y agradece por la frescura de la presencia de Dios.",
+    song: {
+      title: "Rocío",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Rocío+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Rocío%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 175,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por las Semillas",
+    verse: {
+      text: "Si tuviereis fe como un grano de mostaza...",
+      reference: "Mateo 17:20"
+    },
+    reflection: "Todo gran árbol comenzó como una semilla. Agradecer por los comienzos pequeños y por el potencial que hay dentro de nosotros. Dios ve el bosque en la semilla. La gratitud riega las semillas de fe en nuestro corazón.",
+    quote: {
+      text: "No cuentes los días, haz que los días cuenten. Siembra hoy.",
+      author: "Muhammad Ali"
+    },
+    challenge: "Siembra una 'semilla' hoy: una palabra amable, una ofrenda o una oración.",
+    song: {
+      title: "Semilla de Fe",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Semilla+de+Fe+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Semilla%20de%20Fe%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 176,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Universo",
+    verse: {
+      text: "En el principio creó Dios los cielos y la tierra.",
+      reference: "Génesis 1:1"
+    },
+    reflection: "El universo es vasto y misterioso. Agradecer porque el Dios que sostiene las galaxias te sostiene a ti. No somos un accidente cósmico, somos diseño divino. La gratitud nos llena de asombro ante la majestad del Creador.",
+    quote: {
+      text: "El mismo Dios que creó el universo te conoce por nombre y cuenta cada cabello de tu cabeza.",
+      author: "Louie Giglio"
+    },
+    challenge: "Mira fotos del espacio (NASA) y alaba a Dios por su poder infinito.",
+    song: {
+      title: "Indescriptible",
+      artist: "Chris Tomlin (Español)",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Indescriptible+Chris+Tomlin+(Español)",
+      spotifyUrl: "https://open.spotify.com/search/Indescriptible%20Chris%20Tomlin%20(Español)"
+    }
+  },
+  {
+    day: 177,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Sombra",
+    verse: {
+      text: "El que habita al abrigo del Altísimo morará bajo la sombra del Omnipotente.",
+      reference: "Salmo 91:1"
+    },
+    reflection: "Cuando el sol de la prueba quema, Dios es nuestra sombra. Agradecer por su protección y refugio. En su sombra hay descanso y frescura. La gratitud nos mantiene cerca del Omnipotente, bajo su cobertura.",
+    quote: {
+      text: "Bajo la sombra del Todopoderoso encontramos refugio seguro de toda tormenta.",
+      author: "A.B. Simpson"
+    },
+    challenge: "Lee el Salmo 91 y agradece por ser tu refugio seguro.",
+    song: {
+      title: "Bajo Tu Sombra",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Bajo+Tu+Sombra+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Bajo%20Tu%20Sombra%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 178,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Trueno",
+    verse: {
+      text: "Voz de Jehová sobre las aguas; truena el Dios de gloria.",
+      reference: "Salmo 29:3"
+    },
+    reflection: "El trueno impone respeto. Agradecer por el poder y la autoridad de Dios. Él no es un Dios domesticado; es el Rey de Gloria. El temor reverente mezclado con gratitud es la postura correcta ante su majestad.",
+    quote: {
+      text: "Dios susurra en nuestros placeres, pero grita en nuestros dolores; es su megáfono para despertar a un mundo sordo.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Reconoce hoy la autoridad de Dios sobre tu vida y dale gracias por ser el Rey.",
+    song: {
+      title: "Rey de Gloria",
+      artist: "Marco Barrientos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Rey+de+Gloria+Marco+Barrientos",
+      spotifyUrl: "https://open.spotify.com/search/Rey%20de%20Gloria%20Marco%20Barrientos"
+    }
+  },
+  {
+    day: 179,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Niebla",
+    verse: {
+      text: "Porque ¿qué es vuestra vida? Ciertamente es neblina que se aparece por un poco de tiempo, y luego se desvanece.",
+      reference: "Santiago 4:14"
+    },
+    reflection: "La niebla nos recuerda la brevedad de la vida. Agradecer por cada momento, sabiendo que es efímero. Esto nos enseña a vivir con urgencia y propósito. La gratitud nos ayuda a aprovechar bien nuestra 'neblina' aquí en la tierra.",
+    quote: {
+      text: "Solo una vida, pronto pasará; solo lo hecho por Cristo durará.",
+      author: "C.T. Studd"
+    },
+    challenge: "Pregúntate: 'Si mi vida terminara hoy, ¿estoy satisfecho con lo que hice por Dios?'. Agradece por el tiempo que te queda.",
+    song: {
+      title: "Enséñanos a Contar",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Enséñanos+a+Contar+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Enséñanos%20a%20Contar%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 180,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por el Equilibrio",
+    verse: {
+      text: "Peso y balanzas justas son de Jehová.",
+      reference: "Proverbios 16:11"
+    },
+    reflection: "La naturaleza busca equilibrio (homeostasis). Agradecer porque Dios pone orden en nuestro caos. Él equilibra justicia y misericordia, trabajo y descanso. La gratitud nos ayuda a vivir una vida balanceada y centrada en Él.",
+    quote: {
+      text: "El equilibrio no es algo que encuentras, es algo que creas.",
+      author: "Jana Kingsford"
+    },
+    challenge: "Revisa si hay desequilibrio en tu vida (mucho trabajo, poca oración, etc.) y pide a Dios que te ayude a ajustar.",
+    song: {
+      title: "Centro de Mi Vida",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "El Equilibrista (Man on Wire) (2008)",
+      description: "Documental sobre el increíble cruce entre las Torres Gemelas. Nos habla de fe, enfoque y el equilibrio precario de la vida.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=EIawNRm9NWM"
+    }
+  },
+  {
+    day: 181,
+    month: "Junio",
+    monthId: 6,
+    title: "Gratitud por la Creación Completa",
+    verse: {
+      text: "Y vio Dios todo lo que había hecho, y he aquí que era bueno en gran manera.",
+      reference: "Génesis 1:31"
+    },
+    reflection: "Cerramos el mes de la creación celebrando todo lo creado. Tú eres parte de esa creación 'buena en gran manera'. Agradecer por el mundo y por tu propia vida. Eres una obra maestra de Dios. La gratitud es el aplauso de la criatura al Creador.",
+    quote: {
+      text: "Cada parte de la creación declara la sabiduría y el poder infinito de nuestro Dios.",
+      author: "Jonathan Edwards"
+    },
+    challenge: "Sal a un parque o lugar natural y ten un tiempo de adoración solo por la creación.",
+    song: {
+      title: "Creación",
+      artist: "New Wine",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Creación+New+Wine",
+      spotifyUrl: "https://open.spotify.com/search/Creación%20New%20Wine"
+    }
+  },
+  {
+    day: 182,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Libertad",
+    verse: {
+      text: "Estad, pues, firmes en la libertad con que Cristo nos hizo libres.",
+      reference: "Gálatas 5:1"
+    },
+    reflection: "Comenzamos el mes de la libertad celebrando nuestra emancipación espiritual. Cristo rompió las cadenas del pecado. Agradecer porque ya no somos esclavos del temor ni de la culpa. La gratitud es el himno de los libres.",
+    quote: {
+      text: "La libertad en Cristo no es libertad para pecar, sino libertad del pecado.",
+      author: "John MacArthur"
+    },
+    challenge: "Escribe en un papel una 'cadena' que Dios rompió en tu vida y rómpelo como símbolo de gratitud.",
+    song: {
+      title: "Bueno Es Dios",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=RjLuF-0Y8RI",
+      spotifyUrl: "https://open.spotify.com/track/3LlGGGhby3Zy8KhCZCQzZ2"
+    },
+    movie: {
+      title: "Libertad (Freedom) (2014)",
+      description: "Dos historias paralelas separadas por 100 años: un esclavo buscando libertad y el capitán de un barco de esclavos (John Newton) que escribe 'Sublime Gracia'.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=Upf5DGJOzdE"
+    }
+  },
+  {
+    day: 183,
+    month: "Mes",
+    monthId: 1,
+    title: "Gracia Inmerecida, Gratitud Eterna",
+    verse: {
+      text: "Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:18"
+    },
+    reflection: "La gratitud es una respuesta natural y espiritual a la gracia inmerecida de Dios. En 1 Tesalonicenses 5:18, se nos exhorta a dar gracias en toda circunstancia, no solo por las bendiciones evidentes, sino también en medio de las pruebas. Esta actitud de agradecimiento no surge de nuestras propias fuerzas, sino del reconocimiento profundo de la soberanía y el amor de Dios. Su gracia nos ha salvado, nos sostiene cada día y nos da esperanza. Al recordar que todo lo que tenemos y somos proviene de Él, nuestro corazón se inclina a la gratitud, transformando nuestra perspectiva y permitiéndonos ver Su mano en cada detalle de nuestra vida. Es un acto de fe que nos conecta con Su voluntad.",
+    quote: {
+      text: "Si tengo éxito, daré gracias. Si fracaso, buscaré Su gracia.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece a Dios por tres cosas inesperadas que ocurran, reconociendo Su gracia en cada una.",
+    song: {
+      title: "Dios de Pactos",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=qv8TPdZqKWE",
+      spotifyUrl: "https://open.spotify.com/track/5YJnfKcnGxZBhLfIFWoGNu"
+    },
+  },  {
+    day: 184,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Identidad",
+    verse: {
+      text: "Mas a todos los que le recibieron... les dio potestad de ser hechos hijos de Dios.",
+      reference: "Juan 1:12"
+    },
+    reflection: "Ya no somos huérfanos, somos hijos. Agradecer por nuestra nueva identidad en Cristo. Tenemos un Padre que nos ama y nos acepta. La gratitud nos da seguridad en quiénes somos.",
+    quote: {
+      text: "Nuestra identidad en Cristo es más real que cualquier etiqueta que el mundo nos ponga.",
+      author: "Neil T. Anderson"
+    },
+    challenge: "Mírate al espejo y di: 'Gracias Dios porque soy tu hijo/a amado/a'.",
+    song: {
+      title: "No Soy Esclavo",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Soy+Esclavo+Christine+D'Clario",
+      spotifyUrl: "https://open.spotify.com/search/No%20Soy%20Esclavo%20Christine%20D'Clario"
+    }
+  },
+  {
+    day: 185,
+    month: "Mes",
+    monthId: 1,
+    title: "Perdón: Fuente de Gratitud",
+    verse: {
+      text: "Así perseverarán con paciencia en toda situación, dando gracias con alegría al Padre. Él los ha facultado para participar de la herencia de los santos en el reino de la luz. Él nos libró del dominio de la oscuridad y nos trasladó al reino de su amado Hijo, en quien tenemos redención, el perdón de pecados.",
+      reference: "Colosenses 1:11b-14"
+    },
+    reflection: "El perdón de Dios es la base de nuestra gratitud. Colosenses 1:11b-14 nos recuerda que fuimos rescatados de la oscuridad y trasladados al reino de Su Hijo, donde encontramos redención y el perdón de nuestros pecados. Esta verdad profunda nos invita a una gratitud inquebrantable. Al experimentar la magnitud de Su misericordia, nuestros corazones se llenan de alegría y paciencia, incluso en las situaciones más difíciles. Reconocer que somos perdonados nos capacita para perdonar a otros, reflejando el amor de Cristo. Esta libertad del peso del pecado y la culpa es un regalo inefable que transforma nuestra perspectiva y nos impulsa a vivir con un corazón agradecido, siempre conscientes de la herencia que tenemos en Él.",
+    quote: {
+      text: "Todos piensan que el perdón es una idea encantadora… hasta que tienen algo que perdonar.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Hoy, perdona a alguien que te haya ofendido y agradece a Dios por la libertad que trae el perdón.",
+    song: {
+      title: "Nada Me Faltará",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=KJFp69BZ1p4",
+      spotifyUrl: "https://open.spotify.com/track/1kXvLdwQEQVcZ4zLZQZQ0Q"
+    },
+  },  {
+    day: 186,
+    month: "Mes",
+    monthId: 1,
+    title: "Verdad Eterna, Gratitud Profunda",
+    verse: {
+      text: "Porque Jehová es bueno; para siempre es su misericordia, Y su verdad por todas las generaciones.",
+      reference: "Salmo 100:5"
+    },
+    reflection: "En este día 186, reflexionamos sobre la inmutable verdad de Dios y cómo esta verdad es un fundamento para nuestra gratitud. El Salmo 100:5 nos recuerda que la bondad, la misericordia y la verdad de Jehová perduran por todas las generaciones. Esta constancia divina nos invita a una gratitud profunda, no solo por lo que Él hace, sino por quién es Él. Max Lucado nos enseña que la gratitud es una lente que nos permite ver las bendiciones que ya poseemos, en lugar de enfocarnos en lo que nos falta. Cuando reconocemos la verdad de Su carácter y Su fidelidad a través de los tiempos, nuestra perspectiva cambia. La verdad de Dios nos libera para vivir en un estado de agradecimiento constante, sabiendo que Su amor y Su palabra son firmes. Agradecer por Su verdad es reconocer que en Él encontramos estabilidad y esperanza, sin importar las circunstancias. Esta verdad es un ancla para el alma, un motivo inagotable para dar gracias.",
+    quote: {
+      text: "La gratitud eleva nuestros ojos de lo que nos falta para que podamos ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, dedica un momento a meditar en una verdad bíblica que te dé esperanza y agradece a Dios por ella. Compártela con alguien.",
+    song: {
+      title: "Grande y Fuerte",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    },
+  },  {
+    day: 187,
+    month: "Mes",
+    monthId: 1,
+    title: "Paz Interior y Gratitud",
+    verse: {
+      text: "Y la paz de Dios gobierne en vuestros corazones, a la que asimismo fuisteis llamados en un solo cuerpo; y sed agradecidos.",
+      reference: "Colosenses 3:15"
+    },
+    reflection: "La paz de Cristo es un regalo inestimable que habita en nuestros corazones, incluso cuando el mundo exterior se agita. Colosenses 3:15 nos invita a permitir que esta paz gobierne nuestras vidas y, en respuesta, a ser agradecidos. Esta gratitud no es superficial, sino una profunda apreciación por la presencia constante de Dios que nos sostiene. Al reconocer que la verdadera paz proviene de Él, nuestra perspectiva cambia, permitiéndonos encontrar motivos para agradecer en cada circunstancia. Cultivar esta gratitud por la paz divina nos fortalece y nos permite vivir con una serenidad que trasciende cualquier entendimiento humano.",
+    quote: {
+      text: "La paz no viene por la ausencia de problemas sino de la presencia de Dios.",
+      author: "Alexander Maclaren"
+    },
+    challenge: "Hoy, agradece a Dios por la paz en tu corazón, incluso en medio de las dificultades. Comparte esa paz con alguien.",
+    song: {
+      title: "Ven a Cristo",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=oPr8ZqRHTQo",
+      spotifyUrl: "https://open.spotify.com/track/2kFODwkQX3v8f3xT0E9PNc"
+    },
+  },  {
+    day: 188,
+    month: "Mes",
+    monthId: 1,
+    title: "Perseverar con Gratitud",
+    verse: {
+      text: "Así perseverarán con paciencia en toda situación, dando gracias con alegría al Padre. Él los ha facultado para participar de la herencia de los santos en el reino de la luz. Él nos libró del dominio de la oscuridad y nos trasladó al reino de su amado Hijo, en quien tenemos redención, el perdón de pecados.",
+      reference: "Colosenses 1:11b-14"
+    },
+    reflection: "Colosenses 1:11b-14 nos invita a perseverar con gratitud, reconociendo la obra de Dios en nuestras vidas. En medio de cualquier circunstancia, nuestra alegría y agradecimiento al Padre provienen de saber que Él nos ha capacitado para ser parte de Su reino de luz. Hemos sido liberados de la oscuridad y trasladados al reino de Su Hijo amado, donde encontramos redención y perdón. Esta verdad profunda nos da una esperanza inquebrantable y nos impulsa a vivir con un corazón agradecido, confiando en que Su propósito se cumple en cada paso de nuestro camino. La gratitud no niega las dificultades, sino que las transforma al enfocarnos en la fidelidad de Dios.",
+    quote: {
+      text: "La vida del cristiano debe ser de gratitud a Dios.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, agradece a Dios por una situación difícil que te enseñó algo valioso.",
+    song: {
+      title: "Es Por Tu Gracia",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/watch?v=K3UdiqIR920",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/2eraB6aW3YLpAJO22mO4GW"
+    },
+  },  {
+    day: 189,
+    month: "Mes",
+    monthId: 1,
+    title: "Gozo en la Gratitud Divina",
+    verse: {
+      text: "Estén siempre alegres, oren sin cesar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:16-18"
+    },
+    reflection: "El gozo cristiano no es una emoción superficial que depende de las circunstancias, sino una profunda convicción que nace de la gratitud hacia Dios. En 1 Tesalonicenses, se nos exhorta a vivir en un estado constante de alegría y oración, culminando en un agradecimiento ininterrumpido. Esta gratitud no es condicional; se nos pide dar gracias 'en toda situación'. Reconocer la soberanía de Dios y su amor inmutable, incluso en medio de las pruebas, nos permite experimentar un gozo que trasciende el entendimiento humano. Es un recordatorio de que nuestra fe nos ancla en una esperanza eterna, y esa verdad es la fuente inagotable de nuestro gozo y nuestra gratitud.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, busca tres cosas por las que sentir gratitud, incluso si son pequeñas, y exprésalas en voz alta a Dios.",
+    song: {
+      title: "Agradecido",
+      artist: "Danny Gokey ft. Alex Zurdo",
+      youtubeUrl: "https://www.youtube.com/watch?v=Jz_LbGdyx20",
+      spotifyUrl: "https://open.spotify.com/track/4oui4DGF163Vc22PVajbPz"
+    },
+  },  {
+    day: 190,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Justicia",
+    verse: {
+      text: "Bienaventurados los que tienen hambre y sed de justicia, porque ellos serán saciados.",
+      reference: "Mateo 5:6"
+    },
+    reflection: "Dios es justo y nos ha justificado. Agradecer porque un día Él pondrá todo en orden. No tenemos que vengarnos, somos libres de la amargura. La gratitud confía en el Juez Justo.",
+    quote: {
+      text: "La justicia de Dios es perfecta; podemos confiar en que Él hará lo correcto siempre.",
+      author: "A.W. Pink"
+    },
+    challenge: "Ora por una situación injusta en el mundo y agradece porque Dios tiene la última palabra.",
+    song: {
+      title: "Dios de Justicia",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/watch?v=7PqQb5fMXYk",
+      spotifyUrl: "https://open.spotify.com/track/3bfPCVLsK0zYqVZqFqkfJr"
+    }
+  },
+  {
+    day: 191,
+    month: "Mes",
+    monthId: 1,
+    title: "Misericordia Eterna, Gratitud Constante",
+    verse: {
+      text: "Porque Jehová es bueno; para siempre es su misericordia, Y su verdad por todas las generaciones.",
+      reference: "Salmo 100:5"
+    },
+    reflection: "El Salmo 100:5 nos recuerda la inagotable bondad y misericordia de Dios, que perdura por siempre. Esta verdad fundamental es el cimiento de nuestra gratitud. En un mundo lleno de incertidumbre y desafíos, saber que la misericordia divina es constante nos brinda paz y esperanza. Cada día es una oportunidad para reconocer las innumerables formas en que Dios extiende su gracia sobre nosotros, desde las pequeñas bendiciones diarias hasta los grandes actos de redención. La gratitud por su misericordia no es solo un sentimiento, sino una respuesta activa de adoración y confianza en su carácter fiel. Al reflexionar sobre su amor inmutable, nuestros corazones se llenan de un agradecimiento que trasciende las circunstancias, impulsándonos a vivir en alabanza y a compartir esa misma misericordia con los demás.",
+    quote: {
+      text: "Una acción de gracias sensata por las misericordias recibidas es una poderosa oración en el Espíritu de Dios.",
+      author: "John Bunyan"
+    },
+    challenge: "Hoy, identifica tres actos de misericordia divina en tu vida y agradécele a Dios por cada uno. Comparte una de estas bendiciones con alguien.",
+    song: {
+      title: "Tu Misericordia",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=gTxhOtB8SDQ",
+      spotifyUrl: "https://open.spotify.com/track/1Edv9Zmni2Blv8FjiWURNi"
+    },
+  },  {
+    day: 192,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Santidad",
+    verse: {
+      text: "Sed santos, porque yo soy santo.",
+      reference: "1 Pedro 1:16"
+    },
+    reflection: "La libertad no es para pecar, es para ser santos. Agradecer porque Dios nos apartó para Él. La santidad es hermosa y nos evita muchos dolores. La gratitud nos motiva a vivir en pureza.",
+    quote: {
+      text: "La santidad no es el camino a Cristo; Cristo es el camino a la santidad.",
+      author: "Spurgeon"
+    },
+    challenge: "Renuncia a un hábito impuro hoy como ofrenda de gratitud.",
+    song: {
+      title: "Santo",
+      artist: "Coalo Zamorano",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Santo+Coalo+Zamorano",
+      spotifyUrl: "https://open.spotify.com/search/Santo%20Coalo%20Zamorano"
+    }
+  },
+  {
+    day: 193,
+    month: "Mes",
+    monthId: 1,
+    title: "Amor Agradecido",
+    verse: {
+      text: "Estén siempre alegres, oren sin cesar, den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:16-18"
+    },
+    reflection: "La gratitud es una actitud del corazón que transforma nuestra perspectiva. Pablo nos exhorta en 1 Tesalonicenses 5:16-18 a estar siempre gozosos, orar sin cesar y dar gracias en todo. Esto no significa ignorar las dificultades, sino reconocer la soberanía de Dios y su amor inmutable en medio de ellas. Cuando cultivamos un corazón agradecido, incluso en los momentos desafiantes, experimentamos una paz que sobrepasa todo entendimiento. Agradecer a Dios por su amor constante nos permite ver su mano en cada detalle de nuestra vida, fortaleciendo nuestra fe y recordándonos que su voluntad es buena, agradable y perfecta. La gratitud nos conecta más profundamente con Él y nos capacita para amar a los demás con el mismo amor que hemos recibido.",
+    quote: {
+      text: "Mantendría que las gracias son la forma más elevada de pensamiento, y que la gratitud es felicidad duplicada por el asombro.",
+      author: "G. K. Chesterton"
+    },
+    challenge: "Hoy, escribe tres cosas por las que estás agradecido y compártelas con alguien.",
+    song: {
+      title: "Gracias",
+      artist: "Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=0h3212b2h2g",
+      spotifyUrl: "https://open.spotify.com/track/622v90117y3X49z0y06t02"
+    },
+  },  {
+    day: 194,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Fe",
+    verse: {
+      text: "Es, pues, la fe la certeza de lo que se espera, la convicción de lo que no se ve.",
+      reference: "Hebreos 11:1"
+    },
+    reflection: "La fe es el boleto a la libertad. Agradecer por el don de creer. Sin fe es imposible agradar a Dios. La fe ve lo invisible y cree lo imposible. La gratitud fortalece nuestros músculos de fe.",
+    quote: {
+      text: "La fe ve lo invisible, cree lo increíble y recibe lo imposible.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "Declara con fe una promesa de Dios sobre tu vida hoy.",
+    song: {
+      title: "Fe",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fe+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Fe%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 195,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Oración",
+    verse: {
+      text: "Clama a mí, y yo te responderé.",
+      reference: "Jeremías 33:3"
+    },
+    reflection: "Tenemos libre acceso al Trono. Agradecer porque podemos hablar con el Creador del universo en cualquier momento. La oración cambia las cosas. La gratitud convierte la oración en una conversación dulce.",
+    quote: {
+      text: "La oración no cambia a Dios, nos cambia a nosotros y nos alinea con su voluntad.",
+      author: "Søren Kierkegaard"
+    },
+    challenge: "Dedica 10 minutos hoy solo a agradecer en oración, sin pedir nada.",
+    song: {
+      title: "Al Estar Aquí",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Al+Estar+Aquí+Danilo+Montero",
+      spotifyUrl: "https://open.spotify.com/search/Al%20Estar%20Aquí%20Danilo%20Montero"
+    }
+  },
+  {
+    day: 196,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Adoración",
+    verse: {
+      text: "Mas la hora viene... cuando los verdaderos adoradores adorarán al Padre en espíritu y en verdad.",
+      reference: "Juan 4:23"
+    },
+    reflection: "Fuimos creados para adorar. Agradecer por el privilegio de exaltar a Dios. La adoración nos libera del egocentrismo. Cuando adoramos, somos libres de verdad. La gratitud es el corazón de la adoración.",
+    quote: {
+      text: "La adoración es la sumisión de toda nuestra naturaleza a Dios.",
+      author: "William Temple"
+    },
+    challenge: "Pon tu canción de adoración favorita y cántala a todo pulmón para Dios.",
+    song: {
+      title: "Quiero Llenar Tu Trono",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Vencedor (Overcomer) (2019)",
+      description: "Una película sobre encontrar nuestra identidad en Cristo. Muestra cómo saber quiénes somos nos libera para perdonar y avanzar.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=Le05vmahdXQ"
+    }
+  },
+  {
+    day: 197,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Biblia",
+    verse: {
+      text: "Lámpara es a mis pies tu palabra, y lumbrera a mi camino.",
+      reference: "Salmo 119:105"
+    },
+    reflection: "Tenemos el mapa de la libertad. Agradecer por las Escrituras que nos guían y nos corrigen. Es la carta de amor de Dios para nosotros. La gratitud atesora cada versículo.",
+    quote: {
+      text: "La Biblia es el único libro cuyo Autor está siempre presente cuando lo lees.",
+      author: "Stanley Jones"
+    },
+    challenge: "Memoriza un versículo nuevo hoy.",
+    song: {
+      title: "Canto de Júbilo",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    }
+  },
+  {
+    day: 198,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Iglesia",
+    verse: {
+      text: "Y sobre esta roca edificaré mi iglesia; y las puertas del Hades no prevalecerán contra ella.",
+      reference: "Mateo 16:18"
+    },
+    reflection: "No somos libres solos, somos una familia. Agradecer por la comunidad de fe, con sus virtudes y defectos. Nos necesitamos unos a otros. La gratitud ama a la Esposa de Cristo.",
+    quote: {
+      text: "La iglesia no es un museo de santos, es un hospital para pecadores.",
+      author: "Abigail Van Buren (adaptación cristiana)"
+    },
+    challenge: "Envía un mensaje de ánimo a tu pastor o a un líder de tu iglesia.",
+    song: {
+      title: "Somos el Pueblo de Dios",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=0kKkWqHZQqc",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    }
+  },
+  {
+    day: 199,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por el Bautismo",
+    verse: {
+      text: "Sepultados con él en el bautismo, en el cual fuisteis también resucitados con él.",
+      reference: "Colosenses 2:12"
+    },
+    reflection: "El bautismo es el sello público de nuestra libertad. Agradecer por ese momento en que declaramos nuestra fe al mundo. Morimos al viejo yo y nacimos de nuevo. La gratitud recuerda nuestro pacto.",
+    quote: {
+      text: "El bautismo es la señal externa de una realidad interna: hemos muerto y resucitado con Cristo.",
+      author: "John Stott"
+    },
+    challenge: "Recuerda la fecha de tu bautismo (o planéalo si no lo has hecho) y agradece por ese paso de obediencia.",
+    song: {
+      title: "Bautízame",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Bautízame+Miel+San+Marcos",
+      spotifyUrl: "https://open.spotify.com/search/Bautízame%20Miel%20San%20Marcos"
+    }
+  },
+  {
+    day: 200,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Santa Cena",
+    verse: {
+      text: "Haced esto en memoria de mí.",
+      reference: "Lucas 22:19"
+    },
+    reflection: "La mesa está servida para los libres. Agradecer por el pan y el vino que nos recuerdan el precio de nuestra libertad: el cuerpo y la sangre de Jesús. La gratitud se sienta a la mesa del Señor con reverencia.",
+    quote: {
+      text: "La comunión es el memorial más sagrado que Cristo nos dejó para recordar su sacrificio.",
+      author: "J.C. Ryle"
+    },
+    challenge: "La próxima vez que tomes la Santa Cena, hazlo con una consciencia profunda de gratitud.",
+    song: {
+      title: "En Memoria de Mí",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=En+Memoria+de+Mí+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/En%20Memoria%20de%20Mí%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 201,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por los Dones Espirituales",
+    verse: {
+      text: "Pero a cada uno le es dada la manifestación del Espíritu para provecho.",
+      reference: "1 Corintios 12:7"
+    },
+    reflection: "Dios nos equipó para la libertad. Agradecer por los talentos y dones que el Espíritu nos ha dado. No son para lucirnos, son para servir. La gratitud usa los dones para la gloria del Dador.",
+    quote: {
+      text: "Los dones espirituales son herramientas que Dios nos da para edificar su iglesia.",
+      author: "Wayne Grudem"
+    },
+    challenge: "Identifica un don que tienes y úsalo hoy para bendecir a alguien.",
+    song: {
+      title: "Usa Mi Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Usa+Mi+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Usa%20Mi%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 202,
+    month: "Mes",
+    monthId: 1,
+    title: "Sabiduría Divina, Corazón Agradecido",
+    verse: {
+      text: "Porque el Señor da la sabiduría; conocimiento e inteligencia brotan de sus labios.",
+      reference: "Proverbios 2:6"
+    },
+    reflection: "La sabiduría es un don precioso que proviene directamente de Dios, como nos recuerda Proverbios 2:6. No es simplemente acumulación de conocimiento, sino la habilidad de aplicar ese conocimiento con discernimiento y entendimiento divino. Cuando reconocemos que cada destello de sabiduría en nuestras vidas es una manifestación de la gracia de Dios, nuestro corazón se llena de una profunda gratitud. Agradecer por la sabiduría nos permite ver las situaciones desde una perspectiva celestial, tomar decisiones que honran a Dios y vivir una vida que refleja Su carácter. Esta gratitud nos impulsa a buscar más de Su sabiduría y a compartirla con otros, transformando cada experiencia en una oportunidad para alabarle.",
+    quote: {
+      text: "La gratitud eleva nuestros ojos de lo que nos falta para ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece a Dios por una decisión sabia que tomaste o por la sabiduría que recibiste en una situación difícil.",
+    song: {
+      title: "Agradecido (Español)",
+      artist: "Danny Gokey ft. Alex Zurdo",
+      youtubeUrl: "https://www.youtube.com/watch?v=XY08Ptnu28Q",
+      spotifyUrl: "https://open.spotify.com/track/2LgV8qhIUvcQSHHz2o7s8O"
+    },
+  },  {
+    day: 203,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Providencia",
+    verse: {
+      text: "Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien.",
+      reference: "Romanos 8:28"
+    },
+    reflection: "Dios orquesta todo para nuestro bien. Agradecer por su mano invisible que mueve los hilos de la historia y de nuestra vida. Nada es casualidad. La gratitud confía en el Guionista de nuestra historia.",
+    quote: {
+      text: "La providencia de Dios es su cuidado constante sobre todas las cosas que Él ha creado.",
+      author: "Louis Berkhof"
+    },
+    challenge: "Piensa en una 'coincidencia' del pasado que te bendijo y dale gracias a Dios por su providencia.",
+    song: {
+      title: "Soberano",
+      artist: "Miel San Marcos",
+    },
+    movie: {
+      title: "Dios no está muerto (God's Not Dead) (2014)",
+      description: "Una serie de historias entrelazadas que muestran cómo la fe y la providencia de Dios actúan en la vida de diferentes personas.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=j2KDj7qxnds"
+    }
+  },
+  {
+    day: 204,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Protección",
+    verse: {
+      text: "Jehová te guardará de todo mal; Él guardará tu alma.",
+      reference: "Salmo 121:7"
+    },
+    reflection: "Somos libres y estamos seguros. Agradecer por las veces que Dios nos libró de peligros que ni siquiera vimos. Sus ángeles acampan alrededor. La gratitud nos hace sentir seguros en sus manos.",
+    quote: {
+      text: "Ningún mal puede tocar al creyente sin que primero pase por las manos de Dios.",
+      author: "Jerry Bridges"
+    },
+    challenge: "Ora agradeciendo por la protección sobre tu familia y hogar.",
+    song: {
+      title: "Ángeles",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ángeles+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Ángeles%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 205,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Sanidad",
+    verse: {
+      text: "Yo soy Jehová tu sanador.",
+      reference: "Éxodo 15:26"
+    },
+    reflection: "Él sana nuestras dolencias físicas y del alma. Agradecer por la salud y por los milagros de sanidad. También por la sanidad emocional. La gratitud es medicina para los huesos.",
+    quote: {
+      text: "Dios puede sanar instantáneamente, pero a menudo sana gradualmente para enseñarnos dependencia.",
+      author: "Francis MacNutt"
+    },
+    challenge: "Ora por la salud de alguien enfermo hoy.",
+    song: {
+      title: "Levanto Mis Manos",
+      artist: "Samuel Hernández",
+      youtubeUrl: "https://www.youtube.com/watch?v=xz2LZzJvFMI",
+      spotifyUrl: "https://open.spotify.com/track/6Y0NNVBW0cDCvWp3lYyWbE"
+    }
+  },
+  {
+    day: 206,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Restauración",
+    verse: {
+      text: "Restauraré el año que comió la oruga.",
+      reference: "Joel 2:25"
+    },
+    reflection: "Dios es experto en restaurar lo roto. Agradecer porque Él puede arreglar lo que nosotros arruinamos. Nos devuelve el gozo y la dignidad. La gratitud celebra las segundas oportunidades.",
+    quote: {
+      text: "Dios se especializa en tomar nuestros fracasos y convertirlos en testimonios de su gracia.",
+      author: "Tony Evans"
+    },
+    challenge: "Agradece por algo que pensaste que estaba perdido y Dios restauró.",
+    song: {
+      title: "Restaurarás",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Restaurarás+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Restaurarás%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 207,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Victoria",
+    verse: {
+      text: "Mas a Dios gracias, que nos da la victoria por medio de nuestro Señor Jesucristo.",
+      reference: "1 Corintios 15:57"
+    },
+    reflection: "No peleamos por la victoria, peleamos desde la victoria. Agradecer porque Cristo ya venció al mundo, al pecado y a la muerte. Somos más que vencedores. La gratitud es el grito de triunfo del creyente.",
+    quote: {
+      text: "La batalla ya está ganada; solo necesitamos caminar en la victoria que Cristo ya obtuvo.",
+      author: "Derek Prince"
+    },
+    challenge: "Declara victoria sobre un problema que te preocupa hoy.",
+    song: {
+      title: "Vencedor",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Vv6S4oeHPU0",
+      spotifyUrl: "https://open.spotify.com/track/2JZ9xtZrEvZ76cbiKwySUf"
+    }
+  },
+  {
+    day: 208,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por el Consolador",
+    verse: {
+      text: "Y yo rogaré al Padre, y os dará otro Consolador, para que esté con vosotros para siempre.",
+      reference: "Juan 14:16"
+    },
+    reflection: "Nunca estamos solos. Agradecer por el Espíritu Santo, nuestro Ayudador y Consolador. Él nos guía a toda verdad y nos da poder. La gratitud es ser sensibles a su voz suave.",
+    quote: {
+      text: "El Espíritu Santo es el poder de Dios operando en la vida del creyente.",
+      author: "Billy Graham"
+    },
+    challenge: "Pide al Espíritu Santo que te guíe en cada decisión de hoy.",
+    song: {
+      title: "Llena Mi Copa",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    }
+  },
+  {
+    day: 209,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por la Eternidad",
+    verse: {
+      text: "Y esta es la promesa que él nos hizo, la vida eterna.",
+      reference: "1 Juan 2:25"
+    },
+    reflection: "Nuestra libertad es para siempre. Agradecer porque esta vida es solo el prólogo. Nos espera una eternidad con Dios sin dolor ni llanto. La gratitud pone la mirada en las cosas de arriba.",
+    quote: {
+      text: "El cielo no es solo nuestro destino futuro, es nuestra esperanza presente.",
+      author: "Randy Alcorn"
+    },
+    challenge: "Medita por 5 minutos en cómo será el cielo y da gracias.",
+    song: {
+      title: "Cielo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cielo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Cielo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 210,
+    month: "Mes",
+    monthId: 1,
+    title: "El Poder de la Gratitud en Jesús",
+    verse: {
+      text: "Y todo lo que hagan, de palabra o de obra, háganlo en el nombre del Señor Jesús, dando gracias a Dios el Padre por medio de él.",
+      reference: "Colosenses 3:17"
+    },
+    reflection: "La gratitud es una expresión profunda de nuestra fe, especialmente cuando reconocemos que todo lo que hacemos, decimos y somos, es posible gracias a Jesús. Colosenses 3:17 nos insta a realizar cada acción en Su nombre, ofreciendo así un agradecimiento constante a Dios Padre. Esta perspectiva transforma nuestras tareas diarias en actos de adoración. Al vivir con un corazón agradecido, no solo honramos a Dios, sino que también cultivamos una paz interior que trasciende las circunstancias. Recordar que Jesús es el centro de nuestra gratitud nos permite ver las bendiciones incluso en los desafíos, fortaleciendo nuestra relación con el Creador y recordándonos el inmenso amor que nos ha sido dado.",
+    quote: {
+      text: "La gratitud es una ofrenda preciosa a los ojos de Dios, y es una que el más pobre de nosotros puede hacer.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Hoy, elige una acción cotidiana y realízala conscientemente en el nombre de Jesús, dando gracias a Dios por la oportunidad. Observa cómo cambia tu perspectiva.",
+    song: {
+      title: "El Nombre De Jesús",
+      artist: "Redimi2, Christine D'Clario",
+      youtubeUrl: "https://www.youtube.com/watch?v=bQNikeLRJQw",
+      spotifyUrl: "https://open.spotify.com/track/1T2Q9IzgGK3eyPUWFD4C1U"
+    },
+  },  {
+    day: 211,
+    month: "Mes",
+    monthId: 1,
+    title: "Gratitud Eterna por Su Sangre",
+    verse: {
+      text: "En él tenemos la redención mediante su sangre, el perdón de nuestros pecados, conforme a las riquezas de su gracia.",
+      reference: "Efesios 1:7"
+    },
+    reflection: "Efesios 1:7 nos revela la profundidad del amor de Dios: en Cristo, a través de su sangre derramada, hemos sido redimidos y nuestros pecados perdonados. Esta verdad fundamental es el cimiento de nuestra fe y la fuente inagotable de nuestra gratitud. No hay mayor regalo que la libertad del pecado y la reconciliación con nuestro Creador, un regalo que solo fue posible por el sacrificio perfecto de Jesús. Reflexionar sobre el costo de nuestra redención, la sangre de Cristo, nos impulsa a vivir una vida de constante agradecimiento. Cada día es una oportunidad para reconocer esta gracia inmerecida y responder con un corazón lleno de alabanza y adoración por tan inmenso amor.",
+    quote: {
+      text: "La solución de Dios para cualquier reto es simplemente esta: un espíritu agradecido.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, agradece a Jesús por el perdón de tus pecados. Comparte esta gratitud con alguien, testificando de Su amor y sacrificio.",
+    song: {
+      title: "La Sangre De Jesús",
+      artist: "Generación 12 Ft. Marco Barrientos",
+      youtubeUrl: "https://www.youtube.com/watch?v=S6VZGRutCMQ",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/0Ye5qupIHoDGqRzi1hjLTG"
+    },
+  },  {
+    day: 212,
+    month: "Julio",
+    monthId: 7,
+    title: "Gratitud por Ser Libres para Servir",
+    verse: {
+      text: "Porque vosotros, hermanos, a libertad fuisteis llamados; solamente que no uséis la libertad como ocasión para la carne, sino servíos por amor los unos a los otros.",
+      reference: "Gálatas 5:13"
+    },
+    reflection: "Cerramos el mes recordando el propósito de la libertad: servir. No somos libres para hacer lo que queramos, sino para hacer lo correcto. Agradecer por la libertad de amar y servir. La gratitud se convierte en servicio.",
+    quote: {
+      text: "El servicio es el alquiler que pagamos por estar en la tierra.",
+      author: "Muhammad Ali"
+    },
+    challenge: "Haz un acto de servicio desinteresado hoy como muestra de tu libertad.",
+    song: {
+      title: "Heme Aquí",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Heme+Aquí+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Heme%20Aquí%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 213,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Servicio",
+    verse: {
+      text: "Servid a Jehová con alegría.",
+      reference: "Salmo 100:2"
+    },
+    reflection: "Comenzamos el mes del servicio. Servir no es una carga, es un privilegio. Agradecer por la oportunidad de ser útiles en el Reino. La gratitud transforma la obligación en devoción.",
+    quote: {
+      text: "El que no vive para servir, no sirve para vivir.",
+      author: "Madre Teresa"
+    },
+    challenge: "Haz una tarea doméstica que nadie quiera hacer hoy, con una sonrisa.",
+    song: {
+      title: "Heme Aquí",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Manos Milagrosas (Gifted Hands) (2009)",
+      description: "La historia del Dr. Ben Carson, quien usó sus talentos dados por Dios para servir a otros a través de la medicina, superando grandes obstáculos.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=t0vSS_hCsMc"
+    }
+  },
+  {
+    day: 214,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Talentos",
+    verse: {
+      text: "Porque el reino de los cielos es como un hombre que... entregó sus bienes.",
+      reference: "Mateo 25:14"
+    },
+    reflection: "Dios nos confió talentos. Agradecer por las habilidades únicas que tienes. No las escondas por miedo. La gratitud invierte los talentos para que se multipliquen.",
+    quote: {
+      text: "Dios no te llama porque eres capaz, te capacita porque te llamó.",
+      author: "Paul David Tripp"
+    },
+    challenge: "Identifica tu talento principal y agradece a Dios por él.",
+    song: {
+      title: "Avívanos",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3L9pqYxZqQVJQQWQqQQWQQ"
+    }
+  },
+  {
+    day: 215,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Oportunidad",
+    verse: {
+      text: "Así que, según tengamos oportunidad, hagamos bien a todos.",
+      reference: "Gálatas 6:10"
+    },
+    reflection: "Cada día trae oportunidades de servir. Agradecer por las puertas abiertas para bendecir a otros. A veces las oportunidades vienen disfrazadas de problemas. La gratitud tiene los ojos abiertos para ver la necesidad.",
+    quote: {
+      text: "Las oportunidades son responsabilidades disfrazadas.",
+      author: "Leonard Ravenhill"
+    },
+    challenge: "Busca activamente una oportunidad para ayudar a alguien hoy.",
+    song: {
+      title: "Úsame",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Úsame+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Úsame%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 216,
+    month: "Mes",
+    monthId: 1,
+    title: "Honrando a Nuestros Guías",
+    verse: {
+      text: "Os rogamos, hermanos, que reconozcáis a los que trabajan entre vosotros, y os presiden en el Señor, y os amonestan; y que los tengáis en mucha estima y amor por causa de su obra. Tened paz entre vosotros.",
+      reference: "1 Tesalonicenses 5:12-13"
+    },
+    reflection: "En nuestro caminar de fe, los líderes espirituales son faros que nos guían, nos enseñan y nos exhortan con amor. Este versículo nos llama a reconocer su arduo trabajo y a tenerlos en alta estima. La gratitud por su dedicación y servicio es fundamental para la salud de la comunidad. Al mostrar aprecio por quienes nos pastorean, no solo los animamos, sino que también honramos a Dios, quien los ha puesto en esa posición. Reflexionemos hoy sobre cómo podemos expresar nuestro agradecimiento de manera tangible, apoyando su labor y orando por ellos, fomentando así un ambiente de paz y unidad en la iglesia.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, envía un mensaje de agradecimiento o haz una oración específica por un líder espiritual que haya impactado tu vida.",
+    song: {
+      title: "Aquí Estoy",
+      artist: "Hillsong Worship",
+      youtubeUrl: "https://www.youtube.com/watch?v=fWC_ubPRdHo",
+      spotifyUrl: "https://open.spotify.com/track/1KxwZYyzWNyZSRyErj2ojT"
+    },
+  },  {
+    day: 217,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Trabajo",
+    verse: {
+      text: "Y todo lo que hagáis, hacedlo de corazón, como para el Señor.",
+      reference: "Colosenses 3:23"
+    },
+    reflection: "Nuestro trabajo secular también es servicio. Agradecer por el empleo o la ocupación diaria. Es nuestro campo de misión. La gratitud convierte la rutina laboral en adoración.",
+    quote: {
+      text: "El trabajo hecho para Dios nunca es en vano.",
+      author: "Oswald Chambers"
+    },
+    challenge: "Llega a tu trabajo o estudios hoy con una actitud de gratitud y excelencia.",
+    song: {
+      title: "Toma Mi Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Toma+Mi+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Toma%20Mi%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 218,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Humildad",
+    verse: {
+      text: "Porque el Hijo del Hombre no vino para ser servido, sino para servir.",
+      reference: "Marcos 10:45"
+    },
+    reflection: "Para servir hay que agacharse. Agradecer por el ejemplo de Jesús lavando los pies. La humildad nos libera de la necesidad de ser importantes. La gratitud prefiere dar que recibir.",
+    quote: {
+      text: "La humildad no es pensar menos de ti mismo, es pensar menos en ti mismo.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Haz un acto de servicio anónimo hoy (que nadie sepa que fuiste tú).",
+    song: {
+      title: "Vengo a Adorarte",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Vengo+a+Adorarte+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Vengo%20a%20Adorarte%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 219,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Fuerza",
+    verse: {
+      text: "Todo lo puedo en Cristo que me fortalece.",
+      reference: "Filipenses 4:13"
+    },
+    reflection: "Servir cansa. Agradecer porque Dios renueva nuestras fuerzas como las del búfalo. Cuando servimos en sus fuerzas, no nos quemamos. La gratitud es la vitamina del servidor.",
+    quote: {
+      text: "La fuerza de Dios es perfecta en nuestra debilidad.",
+      author: "Joni Eareckson Tada"
+    },
+    challenge: "Si te sientes cansado de servir, descansa hoy en la presencia de Dios y agradécele por su fuerza.",
+    song: {
+      title: "Bendecido",
+      artist: "Alex Zurdo",
+      youtubeUrl: "https://www.youtube.com/watch?v=a-3gkE0Qo5I",
+      spotifyUrl: "https://open.spotify.com/track/5YJnfKcnGxZBhLfIFWoGNu"
+    }
+  },
+  {
+    day: 220,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Compañeros",
+    verse: {
+      text: "Mejores son dos que uno... porque si cayeren, el uno levantará a su compañero.",
+      reference: "Eclesiastés 4:9-10"
+    },
+    reflection: "Servir en equipo es mejor. Agradecer por los compañeros de milicia, los que cargan el peso con nosotros. La amistad en el servicio es un regalo. La gratitud valora el trabajo en equipo.",
+    quote: {
+      text: "El ministerio en solitario es un ministerio en peligro.",
+      author: "John Piper"
+    },
+    challenge: "Dile a un compañero de servicio cuánto aprecias su ayuda.",
+    song: {
+      title: "Somos el Pueblo de Dios",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Hasta el Último Hombre (Hacksaw Ridge) (2016)",
+      description: "La historia real de Desmond Doss, quien sirvió en la guerra salvando vidas sin portar armas. Un ejemplo extremo de servicio sacrificial.",
+      platform: "HBO Max",
+      youtubeUrl: "https://www.youtube.com/watch?v=s2-1hz1juBI"
+    }
+  },
+  {
+    day: 221,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Generosidad",
+    verse: {
+      text: "Dios ama al dador alegre.",
+      reference: "2 Corintios 9:7"
+    },
+    reflection: "Servir es dar: tiempo, recursos, vida. Agradecer por la capacidad de dar. La generosidad rompe el espíritu de mamón. La gratitud abre la mano para dar y recibir.",
+    quote: {
+      text: "Damos porque Dios nos dio primero.",
+      author: "R.C. Sproul"
+    },
+    challenge: "Da una ofrenda especial o ayuda económica a alguien hoy.",
+    song: {
+      title: "Doy Gracias",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Doy+Gracias+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Doy%20Gracias%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 222,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Frutos del Servicio",
+    verse: {
+      text: "Vuestro trabajo en el Señor no es en vano.",
+      reference: "1 Corintios 15:58"
+    },
+    reflection: "A veces no vemos resultados inmediatos. Agradecer por la promesa de que nada de lo que hacemos por Dios se pierde. Él lleva la cuenta. La gratitud confía en la cosecha futura.",
+    quote: {
+      text: "El servicio fiel siempre tiene recompensa eterna.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Agradece por una persona que hayas visto crecer o cambiar gracias a tu servicio.",
+    song: {
+      title: "Recompensa",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Recompensa+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Recompensa%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 223,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Disposición",
+    verse: {
+      text: "Heme aquí, envíame a mí.",
+      reference: "Isaías 6:8"
+    },
+    reflection: "Lo más importante no es la habilidad, sino la disponibilidad. Agradecer porque Dios usa a quien dice 'sí'. La gratitud nos mantiene con el corazón dispuesto.",
+    quote: {
+      text: "Dios no busca habilidad, busca disponibilidad.",
+      author: "Henry Blackaby"
+    },
+    challenge: "Dile a Dios hoy: 'Estoy disponible para lo que quieras'.",
+    song: {
+      title: "Envíame a Mí",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Envíame+a+Mí+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Envíame%20a%20Mí%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 224,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Cansancio Santo",
+    verse: {
+      text: "Gastaré lo mío, y aun yo mismo me gastaré del todo por amor de vuestras almas.",
+      reference: "2 Corintios 12:15"
+    },
+    reflection: "Hay un cansancio que da satisfacción: el de haber servido bien. Agradecer por poder 'gastarnos' en algo que vale la pena. Mejor gastarse que oxidarse. La gratitud encuentra descanso en Dios.",
+    quote: {
+      text: "Prefiero desgastarme por Dios que oxidarme por el mundo.",
+      author: "George Whitefield"
+    },
+    challenge: "Si terminas el día cansado de hacer el bien, agradece por ese 'buen cansancio'.",
+    song: {
+      title: "Cansado del Camino",
+      artist: "Jesús Adrián Romero",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cansado+del+Camino+Jesús+Adrián+Romero",
+      spotifyUrl: "https://open.spotify.com/search/Cansado%20del%20Camino%20Jesús%20Adrián%20Romero"
+    }
+  },
+  {
+    day: 225,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Pequeños Comienzos",
+    verse: {
+      text: "Porque ¿quién menospreció el día de las pequeñeces?",
+      reference: "Zacarías 4:10"
+    },
+    reflection: "Todo gran ministerio empezó pequeño. Agradecer por los inicios humildes. No menosprecies lo poco. La gratitud es fiel en lo poco para que Dios la ponga en lo mucho.",
+    quote: {
+      text: "Haz cosas pequeñas con gran amor.",
+      author: "Madre Teresa"
+    },
+    challenge: "Haz una tarea pequeña con excelencia hoy.",
+    song: {
+      title: "Poco a Poco",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Poco+a+Poco+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Poco%20a%20Poco%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 226,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Inspiración",
+    verse: {
+      text: "El espíritu de Dios me hizo, y el soplo del Omnipotente me dio vida.",
+      reference: "Job 33:4"
+    },
+    reflection: "Para servir necesitamos creatividad e ideas. Agradecer por la inspiración divina para resolver problemas y servir mejor. Dios es el Creador creativo. La gratitud desbloquea la creatividad.",
+    quote: {
+      text: "La creatividad es un regalo de Dios; úsala para su gloria.",
+      author: "Francis Schaeffer"
+    },
+    challenge: "Pide a Dios una idea creativa para servir a alguien hoy.",
+    song: {
+      title: "Sopla en Mí",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sopla+en+Mí+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sopla%20en%20Mí%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 227,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Dones de Otros",
+    verse: {
+      text: "De manera que, teniendo diferentes dones...",
+      reference: "Romanos 12:6"
+    },
+    reflection: "No tenemos todos los dones, y eso es bueno. Agradecer por lo que otros pueden hacer y yo no. Eso nos hace cuerpo. La gratitud elimina la envidia y celebra el éxito ajeno.",
+    quote: {
+      text: "Celebra los dones de otros como si fueran tuyos.",
+      author: "Christine Caine"
+    },
+    challenge: "Elogia sinceramente el talento de otra persona hoy.",
+    song: {
+      title: "Cuerpo de Cristo",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Talentos Ocultos (Hidden Figures) (2016)",
+      description: "La historia de tres mujeres afroamericanas brillantes en la NASA. Celebra cómo los dones diversos (y a menudo ignorados) son esenciales para el éxito colectivo.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=5wfrDhgUMGI"
+    }
+  },
+  {
+    day: 228,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Perseverancia",
+    verse: {
+      text: "No nos cansemos, pues, de hacer bien.",
+      reference: "Gálatas 6:9"
+    },
+    reflection: "El servicio es una maratón, no un sprint. Agradecer por la capacidad de seguir adelante cuando queremos renunciar. La perseverancia trae recompensa. La gratitud nos da aliento para un kilómetro más.",
+    quote: {
+      text: "La perseverancia es la marca de un verdadero discípulo.",
+      author: "Warren Wiersbe"
+    },
+    challenge: "Si has pensado en dejar un servicio, decide hoy perseverar un poco más y agradece.",
+    song: {
+      title: "No Me Soltarás",
+      artist: "Rojo",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Me+Soltarás+Rojo",
+      spotifyUrl: "https://open.spotify.com/search/No%20Me%20Soltarás%20Rojo"
+    }
+  },
+  {
+    day: 229,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Ejemplo de Pablo",
+    verse: {
+      text: "He peleado la buena batalla, he acabado la carrera, he guardado la fe.",
+      reference: "2 Timoteo 4:7"
+    },
+    reflection: "Pablo sirvió hasta el final. Agradecer por los héroes de la fe que nos inspiran. Queremos terminar bien nuestra carrera. La gratitud nos ayuda a mantener la vista en la meta.",
+    quote: {
+      text: "Solo una vida, pronto pasará...",
+      author: "C.T. Studd"
+    },
+    challenge: "Lee sobre la vida de un misionero hoy y agradece por su legado.",
+    song: {
+      title: "La Carrera",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=La+Carrera+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/La%20Carrera%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 230,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Hospitalidad",
+    verse: {
+      text: "No os olvidéis de la hospitalidad, porque por ella algunos, sin saberlo, hospedaron ángeles.",
+      reference: "Hebreos 13:2"
+    },
+    reflection: "Abrir nuestra casa es un ministerio. Agradecer por tener un techo que compartir. La hospitalidad refleja el corazón acogedor de Dios. La gratitud convierte una casa en un hogar abierto.",
+    quote: {
+      text: "La hospitalidad es el arte de hacer que otros se sientan bienvenidos en la casa de Dios.",
+      author: "Karen Mains"
+    },
+    challenge: "Invita a alguien a comer o tomar café en tu casa pronto.",
+    song: {
+      title: "Bienvenido a Este Lugar",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Bienvenido+a+Este+Lugar+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Bienvenido%20a%20Este%20Lugar%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 231,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Recursos",
+    verse: {
+      text: "Mía es la plata, y mío es el oro, dice Jehová de los ejércitos.",
+      reference: "Hageo 2:8"
+    },
+    reflection: "Para servir a veces necesitamos recursos materiales. Agradecer porque Dios es el dueño de todo y provee para su obra. Él financia lo que ordena. La gratitud administra bien los recursos del Reino.",
+    quote: {
+      text: "Donde Dios guía, Dios provee.",
+      author: "William Carey"
+    },
+    challenge: "Agradece por los recursos materiales que tienes para servir a Dios.",
+    song: {
+      title: "Jehová Jireh",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/watch?v=fCsH_TtZReY",
+      spotifyUrl: "https://open.spotify.com/track/6scdHV8ipaN4fvgf9see3w"
+    }
+  },
+  {
+    day: 232,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Compasión",
+    verse: {
+      text: "Y al ver las multitudes, tuvo compasión de ellas.",
+      reference: "Mateo 9:36"
+    },
+    reflection: "El servicio sin amor es ruido. Agradecer por la compasión que nos mueve a actuar. Sentir el dolor del otro es un regalo de Dios. La gratitud ablanda el corazón.",
+    quote: {
+      text: "La compasión es el corazón de Dios en acción.",
+      author: "Bob Pierce"
+    },
+    challenge: "Pide a Dios que te rompa el corazón por lo que rompe el suyo.",
+    song: {
+      title: "Dame Tus Ojos",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Dame+Tus+Ojos+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Dame%20Tus%20Ojos%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 233,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Influencia",
+    verse: {
+      text: "Vosotros sois la sal de la tierra... Vosotros sois la luz del mundo.",
+      reference: "Mateo 5:13-14"
+    },
+    reflection: "Todos influimos en alguien. Agradecer por la plataforma que Dios nos da, sea grande o pequeña. Somos sal y luz. La gratitud usa la influencia para apuntar a Cristo.",
+    quote: {
+      text: "El liderazgo es influencia.",
+      author: "John C. Maxwell"
+    },
+    challenge: "Usa tu influencia hoy para hablar bien de Dios a alguien.",
+    song: {
+      title: "Sal y Luz",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sal+y+Luz+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sal%20y%20Luz%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 234,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Descanso",
+    verse: {
+      text: "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.",
+      reference: "Mateo 11:28"
+    },
+    reflection: "El servidor necesita reposo. Agradecer porque no somos máquinas. Dios instituyó el día de reposo. Descansar también es un acto de fe y gratitud.",
+    quote: {
+      text: "El descanso es un acto de fe en la soberanía de Dios.",
+      author: "Pete Scazzero"
+    },
+    challenge: "Tómate un tiempo real de descanso hoy sin culpa, agradeciendo a Dios.",
+    song: {
+      title: "Descanso en Ti",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Carros de Fuego (Chariots of Fire) (1981)",
+      description: "La historia de Eric Liddell, quien se negó a correr en domingo para honrar a Dios. Nos enseña sobre prioridades y honrar el descanso sagrado.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=odtqtlhsv4E"
+    }
+  },
+  {
+    day: 235,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Misión",
+    verse: {
+      text: "Id por todo el mundo y predicad el evangelio.",
+      reference: "Marcos 16:15"
+    },
+    reflection: "Tenemos una misión global. Agradecer por ser parte del plan de redención mundial. No estamos aquí solo para pasar el tiempo. La gratitud nos hace misioneros donde estemos.",
+    quote: {
+      text: "La misión de la iglesia es misiones.",
+      author: "Oswald J. Smith"
+    },
+    challenge: "Ora por un país donde el evangelio es perseguido hoy.",
+    song: {
+      title: "Id y Haced Discípulos",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Id+y+Haced+Discípulos+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Id%20y%20Haced%20Discípulos%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 236,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Fracasos",
+    verse: {
+      text: "Porque siete veces cae el justo, y vuelve a levantarse.",
+      reference: "Proverbios 24:16"
+    },
+    reflection: "En el servicio también fallamos. Agradecer por los fracasos que nos enseñan humildad y dependencia. No es el fin, es aprendizaje. La gratitud se levanta del polvo y sigue sirviendo.",
+    quote: {
+      text: "Los fracasos son oportunidades para que Dios muestre su poder.",
+      author: "Priscilla Shirer"
+    },
+    challenge: "Agradece por un error pasado que te enseñó una lección valiosa.",
+    song: {
+      title: "Levántate",
+      artist: "Miel San Marcos",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/3MHkeMZGfp6hNB5rsrEnBa"
+    }
+  },
+  {
+    day: 237,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Unción",
+    verse: {
+      text: "Pero vosotros tenéis la unción del Santo, y conocéis todas las cosas.",
+      reference: "1 Juan 2:20"
+    },
+    reflection: "La unción es la capacidad sobrenatural para servir. Agradecer porque no servimos en nuestra carne. Su Espíritu nos capacita. La gratitud valora la unción fresca.",
+    quote: {
+      text: "La unción no es para impresionar, es para impactar.",
+      author: "T.D. Jakes"
+    },
+    challenge: "Pide una unción fresca para tu vida hoy.",
+    song: {
+      title: "Unción",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Unción+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Unción%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 238,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Llamado",
+    verse: {
+      text: "Irrevocables son los dones y el llamamiento de Dios.",
+      reference: "Romanos 11:29"
+    },
+    reflection: "Dios te llamó por tu nombre. Agradecer porque Él no se arrepiente de haberte elegido. Tu llamado sigue vigente. La gratitud responde al llamado cada día.",
+    quote: {
+      text: "El lugar donde Dios te llama es donde tu alegría profunda y el hambre profunda del mundo se encuentran.",
+      author: "Frederick Buechner"
+    },
+    challenge: "Reafirma tu compromiso con tu llamado hoy.",
+    song: {
+      title: "Te Seguiré",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Te+Seguiré+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Te%20Seguiré%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 239,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por la Fidelidad de Dios",
+    verse: {
+      text: "Fiel es el que os llama, el cual también lo hará.",
+      reference: "1 Tesalonicenses 5:24"
+    },
+    reflection: "Él es fiel para sostenernos en el servicio. Agradecer porque su fidelidad no depende de la nuestra. Él completará la obra. La gratitud descansa en su fidelidad.",
+    quote: {
+      text: "La fidelidad de Dios nunca falla, incluso cuando la nuestra lo hace.",
+      author: "Charles Swindoll"
+    },
+    challenge: "Canta 'Tu Fidelidad' hoy como oración.",
+    song: {
+      title: "Ven Señor Jesús",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=RjLuF-0Y8RI",
+      spotifyUrl: "https://open.spotify.com/track/3LlGGGhby3Zy8KhCZCQzZ2"
+    }
+  },
+  {
+    day: 240,
+    month: "Mes",
+    monthId: 1,
+    title: "Regalo Divino: Hijos",
+    verse: {
+      text: "He aquí, herencia de Jehová son los hijos; Cosa de estima el fruto del vientre.",
+      reference: "Salmo 127:3"
+    },
+    reflection: "Los hijos son un don precioso de Dios, una herencia que enriquece nuestras vidas de maneras incalculables. Salmo 127:3 nos recuerda que cada niño es un regalo del Señor, un fruto del vientre que debe ser valorado y apreciado. La gratitud por nuestros hijos no solo se manifiesta en palabras, sino en la forma en que los criamos, los amamos y los guiamos en los caminos del Señor. Reconocer esta bendición divina nos impulsa a dar gracias constantemente, viendo en cada etapa de su crecimiento una oportunidad para alabar a Dios por su fidelidad y amor. Agradecer por los niños es agradecer por la vida, la esperanza y el futuro que representan en el plan de Dios para nuestras familias y para el mundo.",
+    quote: {
+      text: "La gratitud eleva nuestros ojos de lo que nos falta para que podamos ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, dedica un momento para agradecer a Dios por cada uno de tus hijos, orando por su bienestar y futuro.",
+    song: {
+      title: "Demos Gracias al Señor",
+      artist: "CANCIONES CRISTIANAS INFANTILES",
+      youtubeUrl: "https://www.youtube.com/watch?v=folH7VfZb9I",
+      spotifyUrl: "https://open.spotify.com/intl-es/track/6c7pSlp6tlVBNr2HR6FFRu"
+    },
+  },  {
+    day: 241,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por los Ancianos",
+    verse: {
+      text: "Delante de las canas te levantarás, y honrarás el rostro del anciano.",
+      reference: "Levítico 19:32"
+    },
+    reflection: "Servir a los ancianos es honrar la sabiduría y la historia. Agradecer por sus vidas y legado. No los olvidemos. La gratitud respeta y cuida a los mayores.",
+    quote: {
+      text: "La vejez es una corona de gloria cuando se vive en los caminos de Dios.",
+      author: "Elisabeth Elliot"
+    },
+    challenge: "Llama o visita a un anciano hoy y escúchalo con atención.",
+    song: {
+      title: "Hasta la Vejez",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Up (2009)",
+      description: "Una hermosa película animada que nos enseña a valorar a los ancianos, sus historias y que nunca es tarde para una nueva aventura (o servicio).",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=HWEW_qTLSEE"
+    }
+  },
+  {
+    day: 242,
+    month: "Mes",
+    monthId: 1,
+    title: "Dar con Gratitud: Bendición Mayor",
+    verse: {
+      text: "En todo os he enseñado que, trabajando así, se debe ayudar a los necesitados, y recordar las palabras del Señor Jesús, que dijo: Más bienaventurado es dar que recibir.",
+      reference: "Hechos 20:35"
+    },
+    reflection: "La gratitud no solo se expresa en palabras, sino también en acciones, especialmente hacia aquellos que más lo necesitan. El apóstol Pablo nos recuerda las palabras de Jesús en Hechos 20:35, destacando que hay mayor bienaventuranza en dar que en recibir. Esta verdad nos invita a una profunda reflexión: ¿cómo nuestra gratitud a Dios se traduce en generosidad hacia el prójimo? Reconocer las bendiciones en nuestra vida nos impulsa a compartir, a extender una mano amiga y a aliviar la carga de los menos afortunados. Al dar, no solo proveemos para otros, sino que experimentamos una alegría y un propósito que superan cualquier satisfacción personal. Es en el acto de servir donde nuestra gratitud se vuelve tangible y transformadora, reflejando el amor incondicional de Cristo.",
+    quote: {
+      text: "Dios nos ha dado dos manos, una para recibir y otra para dar.",
+      author: "Billy Graham"
+    },
+    challenge: "Hoy, busca una oportunidad para ayudar a alguien necesitado, ya sea con tu tiempo, recursos o una palabra de aliento. Hazlo con un corazón agradecido.",
+    song: {
+      title: "Ven Espíritu Santo",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    },
+  },  {
+    day: 243,
+    month: "Agosto",
+    monthId: 8,
+    title: "Gratitud por el Privilegio de Servir",
+    verse: {
+      text: "Si alguno me sirve, sígame; y donde yo estuviere, allí también estará mi servidor.",
+      reference: "Juan 12:26"
+    },
+    reflection: "Cerramos el mes del servicio. No hay honor más alto que ser siervo del Rey de reyes. Agradecer porque nos permite colaborar con Él. Servir es reinar. La gratitud dice: 'Gracias por usarme'.",
+    quote: {
+      text: "El verdadero liderazgo es servicio.",
+      author: "Rick Warren"
+    },
+    challenge: "Termina el mes renovando tu voto de servicio al Señor.",
+    song: {
+      title: "Siervo Fiel",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Siervo+Fiel+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Siervo%20Fiel%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 244,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Palabra",
+    verse: {
+      text: "La hierba se seca, y la flor se marchita, mas la palabra del Dios nuestro permanece para siempre.",
+      reference: "Isaías 40:8"
+    },
+    reflection: "Comenzamos el mes de la Biblia. Agradecer por el Libro de los libros. Todo cambia, pero su Palabra es eterna. Es nuestra ancla en tiempos de cambio. La gratitud ama la Biblia.",
+    quote: {
+      text: "La Biblia es el fundamento de toda verdad.",
+      author: "John Wesley"
+    },
+    challenge: "Lee el Salmo 119 (o una parte) y agradece por la Palabra.",
+    song: {
+      title: "Tu Palabra",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "Pablo, Apóstol de Cristo (Paul, Apostle of Christ) (2018)",
+      description: "Muestra el poder de la Palabra y el testimonio en medio de la persecución. Nos inspira a valorar el Evangelio por el que muchos dieron su vida.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=LyOqQZUDdO4"
+    }
+  },
+  {
+    day: 245,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Inspiración Divina",
+    verse: {
+      text: "Toda la Escritura es inspirada por Dios.",
+      reference: "2 Timoteo 3:16"
+    },
+    reflection: "La Biblia no es un libro humano. Agradecer porque Dios sopló su vida en estas páginas. No son letras muertas, son espíritu y vida. La gratitud lee con reverencia.",
+    quote: {
+      text: "La Biblia es la carta de amor de Dios para la humanidad.",
+      author: "Billy Graham"
+    },
+    challenge: "Agradece a Dios por haber inspirado a los autores bíblicos.",
+    song: {
+      title: "Espíritu de Dios",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Espíritu+de+Dios+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Espíritu%20de%20Dios%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 246,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Instrucción",
+    verse: {
+      text: "Útil para enseñar, para redargüir, para corregir, para instruir en justicia.",
+      reference: "2 Timoteo 3:16"
+    },
+    reflection: "La Biblia es nuestro manual de instrucciones. Agradecer porque nos enseña cómo vivir, cómo amar y cómo ser justos. Nos ahorra muchos dolores de cabeza. La gratitud sigue las instrucciones.",
+    quote: {
+      text: "La Biblia nos mantiene alejados del pecado, o el pecado nos mantendrá alejados de la Biblia.",
+      author: "D.L. Moody"
+    },
+    challenge: "Busca una instrucción bíblica sobre un tema que te preocupe y síguela.",
+    song: {
+      title: "Enséñame Tu Camino",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Enséñame+Tu+Camino+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Enséñame%20Tu%20Camino%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 247,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por las Promesas",
+    verse: {
+      text: "Porque todas las promesas de Dios son en él Sí, y en él Amén.",
+      reference: "2 Corintios 1:20"
+    },
+    reflection: "La Biblia está llena de cheques en blanco firmados por Dios. Agradecer por sus promesas fieles. Él cumple lo que promete. La gratitud cobra las promesas con fe.",
+    quote: {
+      text: "El futuro es tan brillante como las promesas de Dios.",
+      author: "Adoniram Judson"
+    },
+    challenge: "Encuentra una promesa bíblica para tu situación actual y agradécela.",
+    song: {
+      title: "Promesas",
+      artist: "Maverick City Música",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Promesas+Maverick+City+Música",
+      spotifyUrl: "https://open.spotify.com/search/Promesas%20Maverick%20City%20Música"
+    }
+  },
+  {
+    day: 248,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por el Pan de Vida",
+    verse: {
+      text: "No solo de pan vivirá el hombre, sino de toda palabra que sale de la boca de Dios.",
+      reference: "Mateo 4:4"
+    },
+    reflection: "Nuestra alma necesita comer. Agradecer por el alimento espiritual diario. La Palabra nos nutre y nos da fuerzas. La gratitud no se salta las comidas espirituales.",
+    quote: {
+      text: "Descuidar la Palabra de Dios es descuidar tu propia alma.",
+      author: "Matthew Henry"
+    },
+    challenge: "No comas físicamente hoy hasta que hayas 'comido' espiritualmente (leído la Biblia).",
+    song: {
+      title: "Pan de Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Pan+de+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Pan%20de%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 249,
+    month: "Mes",
+    monthId: 1,
+    title: "Luz de Gratitud",
+    verse: {
+      text: "Porque contigo está el manantial de la vida; en tu luz veremos la luz.",
+      reference: "Salmos 36:9"
+    },
+    reflection: "En Salmos 36:9, encontramos una profunda verdad: en la luz de Dios, nosotros también vemos la luz. Esta luz no es solo física, sino espiritual, una revelación de Su bondad y provisión constante. La gratitud surge naturalmente cuando reconocemos que la fuente de toda vida y entendimiento proviene de Él. A menudo, en medio de las sombras de nuestras preocupaciones, olvidamos que Dios es el manantial inagotable que nos sustenta. Al igual que Max Lucado nos recuerda, la gratitud nos permite elevar la mirada de lo que nos falta para apreciar las innumerables bendiciones que ya poseemos. Ver la luz de Dios es ver Su amor, Su gracia y Su fidelidad en cada detalle de nuestra existencia, transformando nuestra perspectiva y llenándonos de un agradecimiento genuino que ilumina nuestro camino.",
+    quote: {
+      text: "La gratitud eleva nuestros ojos de lo que nos falta para ver las bendiciones que poseemos.",
+      author: "Max Lucado"
+    },
+    challenge: "Hoy, tómate un momento para identificar tres \"luces\" en tu vida y agradece a Dios por cada una de ellas.",
+    song: {
+      title: "Él Vive",
+      artist: "Danilo Montero",
+      youtubeUrl: "https://www.youtube.com/watch?v=gCJd5RfN-Nk",
+      spotifyUrl: "https://open.spotify.com/track/4pG2zNjxVv2RJl8LmQPQ0L"
+    },
+  },  {
+    day: 250,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Espada",
+    verse: {
+      text: "Y la espada del Espíritu, que es la palabra de Dios.",
+      reference: "Efesios 6:17"
+    },
+    reflection: "Estamos en una batalla espiritual. Agradecer porque tenemos un arma ofensiva poderosa. Con la Palabra vencemos la tentación y la mentira. La gratitud empuña la espada con valentía.",
+    quote: {
+      text: "La Palabra de Dios es el arma más poderosa contra las mentiras del enemigo.",
+      author: "Beth Moore"
+    },
+    challenge: "Memoriza un versículo para usarlo como 'espada' contra una tentación recurrente.",
+    song: {
+      title: "Poderoso Guerrero",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Poderoso+Guerrero+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Poderoso%20Guerrero%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 251,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por el Espejo",
+    verse: {
+      text: "Porque si alguno es oidor de la palabra pero no hacedor, éste es semejante al hombre que considera en un espejo su rostro natural.",
+      reference: "Santiago 1:23"
+    },
+    reflection: "La Biblia nos muestra tal como somos. Agradecer por su honestidad brutal que nos revela nuestras manchas para que podamos limpiarnos. La gratitud acepta la corrección.",
+    quote: {
+      text: "La Palabra de Dios no solo nos muestra quiénes somos, sino quiénes podemos llegar a ser.",
+      author: "Kay Arthur"
+    },
+    challenge: "Pide a Dios que te muestre algo que debes cambiar hoy mientras lees.",
+    song: {
+      title: "Reflejo",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "El Libro de Eli (The Book of Eli) (2010)",
+      description: "En un mundo post-apocalíptico, un hombre protege el último ejemplar de la Biblia. Nos hace valorar el tesoro que es tener acceso a la Palabra.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=zSMHmtaoXtI"
+    }
+  },
+  {
+    day: 252,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por el Consuelo",
+    verse: {
+      text: "Este es mi consuelo en mi aflicción: que tu dicho me ha vivificado.",
+      reference: "Salmo 119:50"
+    },
+    reflection: "En tiempos de dolor, la Biblia abraza. Agradecer por los versículos que han secado nuestras lágrimas. Sus palabras dan vida cuando estamos muertos de tristeza. La gratitud halla refugio en las Escrituras.",
+    quote: {
+      text: "En los momentos más oscuros, las promesas de Dios brillan con mayor intensidad.",
+      author: "David Jeremiah"
+    },
+    challenge: "Comparte un versículo de consuelo con alguien que esté triste hoy.",
+    song: {
+      title: "Consolador",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Consolador+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Consolador%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 253,
+    month: "Mes",
+    monthId: 1,
+    title: "Sabiduría Divina, Corazón Agradecido",
+    verse: {
+      text: "Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios, quien da a todos abundantemente y sin reproche, y le será dada.",
+      reference: "Santiago 1:5"
+    },
+    reflection: "La sabiduría, un don precioso de Dios, nos guía en cada paso de la vida. Santiago 1:5 nos invita a pedirla con fe, confiando en que Él la otorga generosamente. Al reconocer que toda sabiduría proviene de nuestro Creador, nuestro corazón se llena de gratitud. Esta gratitud no es solo por el conocimiento adquirido, sino por la dirección divina que nos permite discernir lo correcto, tomar decisiones acertadas y vivir conforme a Su voluntad. Agradecer por la sabiduría es reconocer la mano de Dios en nuestra inteligencia y capacidad de entendimiento, fortaleciendo nuestra fe y dependencia en Él.",
+    quote: {
+      text: "Lo que pienses o lo que sepas no importa, a menos que te lleve a glorificar a Dios y a ser agradecido.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Hoy, agradece a Dios por una decisión sabia que tomaste o por la sabiduría que te dio para superar un desafío.",
+    song: {
+      title: "Gratitud",
+      artist: "Iliana Beilis",
+      youtubeUrl: "https://www.youtube.com/watch?v=gSNp8xkyfeY",
+      spotifyUrl: "https://open.spotify.com/track/3b86u6AhOr0oIZ45neb9G5"
+    },
+  },  {
+    day: 254,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por los Salmos",
+    verse: {
+      text: "Cantad alegres a Dios, habitantes de toda la tierra.",
+      reference: "Salmo 66:1"
+    },
+    reflection: "Los Salmos nos enseñan a orar y adorar. Agradecer por este himnario divino que expresa todas las emociones humanas ante Dios. La gratitud canta salmos.",
+    quote: {
+      text: "Los Salmos son el espejo del alma.",
+      author: "Juan Calvino"
+    },
+    challenge: "Escribe tu propio 'Salmo' de gratitud hoy (4-5 líneas).",
+    song: {
+      title: "Salmo 23",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Salmo+23+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Salmo%2023%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 255,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por los Evangelios",
+    verse: {
+      text: "Estas cosas se han escrito para que creáis que Jesús es el Cristo.",
+      reference: "Juan 20:31"
+    },
+    reflection: "Los Evangelios nos muestran a Jesús. Agradecer por Mateo, Marcos, Lucas y Juan. Gracias a ellos conocemos la vida del Maestro. La gratitud se enamora de Jesús al leerlos.",
+    quote: {
+      text: "Los Evangelios no son solo relatos históricos, son invitaciones a un encuentro personal con Jesús.",
+      author: "N.T. Wright"
+    },
+    challenge: "Lee una historia de Jesús en los evangelios e imagínate allí.",
+    song: {
+      title: "Jesús",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Jesús+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Jesús%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 256,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por las Cartas",
+    verse: {
+      text: "Os escribo estas cosas para que vuestro gozo sea cumplido.",
+      reference: "1 Juan 1:4"
+    },
+    reflection: "Las epístolas nos explican la fe. Agradecer por Pablo, Pedro, Juan y los demás apóstoles que nos dejaron doctrina sólida. La gratitud valora la teología que transforma.",
+    quote: {
+      text: "La teología es doxología (alabanza).",
+      author: "J.I. Packer"
+    },
+    challenge: "Lee una carta corta del Nuevo Testamento completa hoy (ej. Filemón, Judas, 2 Juan).",
+    song: {
+      title: "Creo en Ti",
+      artist: "Julio Melgar",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Creo+en+Ti+Julio+Melgar",
+      spotifyUrl: "https://open.spotify.com/search/Creo%20en%20Ti%20Julio%20Melgar"
+    }
+  },
+  {
+    day: 257,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Profecía",
+    verse: {
+      text: "Tenemos también la palabra profética más segura.",
+      reference: "2 Pedro 1:19"
+    },
+    reflection: "La Biblia nos cuenta el final de la historia. Agradecer porque sabemos que Dios gana. La profecía nos da esperanza y nos advierte. La gratitud espera el regreso del Rey.",
+    quote: {
+      text: "La historia humana es la historia de Dios cumpliendo sus promesas.",
+      author: "Max Lucado"
+    },
+    challenge: "Lee Apocalipsis 21 y agradece por el cielo nuevo y la tierra nueva.",
+    song: {
+      title: "El Rey Ya Viene",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=El+Rey+Ya+Viene+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/El%20Rey%20Ya%20Viene%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 258,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por los Traductores",
+    verse: {
+      text: "Y cómo oirán sin haber quien les predique?",
+      reference: "Romanos 10:14"
+    },
+    reflection: "Tenemos la Biblia en nuestro idioma. Agradecer por hombres como Casiodoro de Reina y Cipriano de Valera, y tantos otros que dieron su vida para traducir la Palabra. La gratitud valora el acceso a la Biblia.",
+    quote: {
+      text: "Si Dios me da vida, haré que el niño que ara los campos sepa más de las Escrituras que el Papa.",
+      author: "William Tyndale"
+    },
+    challenge: "Agradece hoy específicamente por tener una Biblia en español.",
+    song: {
+      title: "Abre Mis Ojos",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "La Pasión de Cristo (The Passion of the Christ) (2004)",
+      description: "Una representación visual impactante de los evangelios. Nos recuerda que la Palabra se hizo carne y habitó entre nosotros.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=K83366UdtXw"
+    }
+  },
+  {
+    day: 259,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Memorización",
+    verse: {
+      text: "En mi corazón he guardado tus dichos, para no pecar contra ti.",
+      reference: "Salmo 119:11"
+    },
+    reflection: "Podemos llevar la Biblia en la mente. Agradecer por la capacidad de memorizar. Cuando no tengamos el libro, tendremos la Palabra dentro. La gratitud graba la verdad en el corazón.",
+    quote: {
+      text: "La Biblia que permanece cerrada es solo un libro; la Biblia que se lee es una voz viva.",
+      author: "Andrew Murray"
+    },
+    challenge: "Repasa los versículos que has memorizado este año.",
+    song: {
+      title: "Tu Ley",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Tu+Ley+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Tu%20Ley%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 260,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Meditación",
+    verse: {
+      text: "Sino que en la ley de Jehová está su delicia, y en su ley medita de día y de noche.",
+      reference: "Salmo 1:2"
+    },
+    reflection: "No solo leemos, rumiamos la Palabra. Agradecer por los momentos de reflexión profunda donde Dios nos habla al susurro. La gratitud saborea cada palabra.",
+    quote: {
+      text: "Meditar en la Palabra es rumiar la verdad hasta que nutra el alma.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Toma un solo versículo y medita en él durante 15 minutos hoy.",
+    song: {
+      title: "Meditaré",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Meditaré+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Meditaré%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 261,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Autoridad Bíblica",
+    verse: {
+      text: "El cielo y la tierra pasarán, pero mis palabras no pasarán.",
+      reference: "Mateo 24:35"
+    },
+    reflection: "La Biblia es nuestra autoridad final. Agradecer porque tenemos un estándar objetivo, no dependemos de opiniones humanas cambiantes. La gratitud se somete a la autoridad de Dios.",
+    quote: {
+      text: "La autoridad de la Escritura no depende de nuestra aceptación, sino de su origen divino.",
+      author: "R.C. Sproul"
+    },
+    challenge: "Somete una opinión personal a la autoridad de la Biblia hoy.",
+    song: {
+      title: "Roca Eterna",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Roca+Eterna+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Roca%20Eterna%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 262,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Transformación",
+    verse: {
+      text: "Transformaos por medio de la renovación de vuestro entendimiento.",
+      reference: "Romanos 12:2"
+    },
+    reflection: "La Biblia nos cambia la mente. Agradecer porque ya no pensamos como el mundo. La Palabra nos lava el cerebro de la suciedad del sistema. La gratitud celebra el cambio de mentalidad.",
+    quote: {
+      text: "La Biblia no fue dada para aumentar nuestro conocimiento, sino para cambiar nuestra vida.",
+      author: "D.L. Moody"
+    },
+    challenge: "Identifica un área donde tu forma de pensar ha cambiado gracias a la Biblia y agradece.",
+    song: {
+      title: "Renuévame",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=7PqQb5fMXYk",
+      spotifyUrl: "https://open.spotify.com/track/3bfPCVLsK0zYqVZqFqkfJr"
+    }
+  },
+  {
+    day: 263,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por los Maestros",
+    verse: {
+      text: "Y a otros, pastores y maestros.",
+      reference: "Efesios 4:11"
+    },
+    reflection: "Necesitamos guías. Agradecer por los maestros de Escuela Dominical, teólogos y predicadores que nos explican la Palabra. La gratitud honra a quienes enseñan bien.",
+    quote: {
+      text: "Los maestros fieles de la Palabra son regalos de Dios para edificar su iglesia.",
+      author: "John MacArthur"
+    },
+    challenge: "Agradece a alguien que te haya enseñado algo de la Biblia.",
+    song: {
+      title: "Maestro",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Maestro+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Maestro%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 264,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Accesibilidad",
+    verse: {
+      text: "La palabra está muy cerca de ti, en tu boca y en tu corazón.",
+      reference: "Deuteronomio 30:14"
+    },
+    reflection: "Hoy tenemos Biblias en el celular, en audio, en internet. Agradecer por la facilidad de acceso. No tenemos excusa. La gratitud aprovecha la tecnología para la Palabra.",
+    quote: {
+      text: "Vivimos en una era de acceso sin precedentes a la Biblia, pero con una hambre sin precedentes por ella.",
+      author: "Tim Keller"
+    },
+    challenge: "Escucha la Biblia en audio mientras haces otra cosa hoy.",
+    song: {
+      title: "Cerca de Ti",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cerca+de+Ti+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Cerca%20de%20Ti%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 265,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por los Testimonios",
+    verse: {
+      text: "Ellos le han vencido por medio de la sangre del Cordero y de la palabra del testimonio de ellos.",
+      reference: "Apocalipsis 12:11"
+    },
+    reflection: "La Biblia está llena de historias reales. Agradecer por los testimonios de fe de hombres y mujeres imperfectos usados por Dios. Nos dan esperanza. La gratitud aprende de la historia.",
+    quote: {
+      text: "Tu historia de cómo Dios te transformó puede ser la llave que abra el corazón de otro.",
+      author: "Christine Caine"
+    },
+    challenge: "Lee la historia de un personaje bíblico con el que te identifiques.",
+    song: {
+      title: "Testimonio",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Cuarto de Guerra (War Room) (2015)",
+      description: "Muestra cómo la oración basada en la Palabra puede transformar familias. Nos enseña a pelear nuestras batallas de rodillas con la Biblia en mano.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=mIl-XY9t_Lw"
+    }
+  },
+  {
+    day: 266,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Unidad Bíblica",
+    verse: {
+      text: "Un Señor, una fe, un bautismo.",
+      reference: "Efesios 4:5"
+    },
+    reflection: "66 libros, un solo mensaje. Agradecer por la coherencia perfecta de la Biblia. Desde Génesis hasta Apocalipsis, todo apunta a Jesús. La gratitud se maravilla del plan maestro.",
+    quote: {
+      text: "La Biblia es una sinfonía divina donde cada libro es un instrumento que toca la misma melodía: la gloria de Dios.",
+      author: "Max Lucado"
+    },
+    challenge: "Busca a Jesús en un pasaje del Antiguo Testamento hoy.",
+    song: {
+      title: "Alfa y Omega",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Alfa+y+Omega+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Alfa%20y%20Omega%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 267,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Corrección",
+    verse: {
+      text: "Hijo mío, no menosprecies la disciplina del Señor.",
+      reference: "Proverbios 3:11"
+    },
+    reflection: "La Biblia nos disciplina porque Dios nos ama. Agradecer cuando un versículo nos 'golpea' y nos corrige el rumbo. Es amor paternal. La gratitud acepta la reprensión.",
+    quote: {
+      text: "La corrección de Dios es una prueba de su amor paternal.",
+      author: "Jerry Bridges"
+    },
+    challenge: "Agradece a Dios por una vez que su Palabra te corrigió y te salvó de un error.",
+    song: {
+      title: "Corrígeme",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Corrígeme+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Corrígeme%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 268,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Inspiración Diaria",
+    verse: {
+      text: "Danos hoy nuestro pan de cada día.",
+      reference: "Mateo 6:11"
+    },
+    reflection: "La Biblia es fresca cada mañana. Agradecer porque siempre tiene algo nuevo que decirnos, aunque hayamos leído el pasaje mil veces. Es inagotable. La gratitud busca el maná fresco.",
+    quote: {
+      text: "La Palabra de Dios es un tesoro inagotable; cada vez que la lees, encuentras nuevas riquezas.",
+      author: "John Piper"
+    },
+    challenge: "Pide a Dios que te muestre algo nuevo en un pasaje conocido.",
+    song: {
+      title: "Cada Mañana",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/watch?v=rYPrMOVhzQc",
+      spotifyUrl: "https://open.spotify.com/track/1vYnFyKPqVZqFqkfJr3bfP"
+    }
+  },
+  {
+    day: 269,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Defensa de la Fe",
+    verse: {
+      text: "Estad siempre preparados para presentar defensa con mansedumbre.",
+      reference: "1 Pedro 3:15"
+    },
+    reflection: "La Biblia nos da argumentos. Agradecer porque nuestra fe es racional y verdadera. Podemos responder a quien demanda razón de nuestra esperanza. La gratitud no se avergüenza del Evangelio.",
+    quote: {
+      text: "La fe cristiana no es un salto irracional, es una respuesta razonable a la revelación de Dios.",
+      author: "Ravi Zacharias"
+    },
+    challenge: "Aprende un argumento bíblico para defender tu fe hoy.",
+    song: {
+      title: "No Me Avergüenzo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Me+Avergüenzo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/No%20Me%20Avergüenzo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 270,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Paz que da la Palabra",
+    verse: {
+      text: "Mucha paz tienen los que aman tu ley, y no hay para ellos tropiezo.",
+      reference: "Salmo 119:165"
+    },
+    reflection: "Amar la Biblia trae paz. Agradecer por la estabilidad emocional que da vivir según sus principios. Nada nos hace tropezar fácilmente. La gratitud camina segura.",
+    quote: {
+      text: "La paz verdadera nace de confiar en las promesas inmutables de Dios.",
+      author: "Charles Stanley"
+    },
+    challenge: "Si estás ansioso, recita promesas bíblicas hasta que llegue la paz.",
+    song: {
+      title: "Paz en la Tormenta",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Paz+en+la+Tormenta+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Paz%20en%20la%20Tormenta%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 271,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por la Eternidad de la Palabra",
+    verse: {
+      text: "Para siempre, oh Jehová, permanece tu palabra en los cielos.",
+      reference: "Salmo 119:89"
+    },
+    reflection: "Todo pasa, la Palabra queda. Agradecer porque construimos nuestra vida sobre algo que nunca dejará de ser. Es el único fundamento seguro. La gratitud se aferra a lo eterno.",
+    quote: {
+      text: "La Palabra de Dios permanece para siempre, es el único fundamento inquebrantable.",
+      author: "Billy Graham"
+    },
+    challenge: "Agradece porque la Biblia que lees hoy será verdad dentro de un millón de años.",
+    song: {
+      title: "Eterno",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Eterno+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Eterno%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 272,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por el Autor",
+    verse: {
+      text: "Y el Verbo era Dios.",
+      reference: "Juan 1:1"
+    },
+    reflection: "Amamos el libro porque amamos al Autor. Agradecer a Dios por revelarse a nosotros. No se escondió, nos habló. La gratitud busca el rostro de Dios en cada página.",
+    quote: {
+      text: "La Biblia no es un ídolo para adorar, sino una ventana para ver a Dios.",
+      author: "Eugene Peterson"
+    },
+    challenge: "Dile a Dios: 'Gracias por hablarme' antes de cerrar tu Biblia hoy.",
+    song: {
+      title: "Te Amo Dios",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "El Progreso del Peregrino (2019)",
+      description: "Recordamos esta película porque el protagonista lleva un Libro que es su guía. Sin el Libro, no llegaría a la Ciudad Celestial.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=04WXlAcOtS0"
+    }
+  },
+  {
+    day: 273,
+    month: "Septiembre",
+    monthId: 9,
+    title: "Gratitud por Compartir la Palabra",
+    verse: {
+      text: "Lo que hemos visto y oído, eso os anunciamos.",
+      reference: "1 Juan 1:3"
+    },
+    reflection: "Cerramos el mes de la Biblia. No podemos callar lo que hemos leído. Agradecer por el privilegio de compartir las Buenas Nuevas. La gratitud se multiplica cuando se comparte.",
+    quote: {
+      text: "El evangelio es solo una buena noticia si llega a tiempo.",
+      author: "Carl F.H. Henry"
+    },
+    challenge: "Regala una Biblia o comparte un versículo con alguien que no conoce a Dios hoy.",
+    song: {
+      title: "Hablaré de Ti",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hablaré+de+Ti+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Hablaré%20de%20Ti%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 274,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Cosecha",
+    verse: {
+      text: "Y la fiesta de la cosecha, de los primeros frutos de tus labores.",
+      reference: "Éxodo 23:16"
+    },
+    reflection: "Iniciamos el mes de la cosecha. Agradecer por los frutos de nuestro trabajo. Dios es quien da el crecimiento. No damos por sentado el pan en la mesa. La gratitud celebra la provisión.",
+    quote: {
+      text: "Cada fruto que cosechamos es un recordatorio de la fidelidad de Dios.",
+      author: "Max Lucado"
+    },
+    challenge: "Haz una lista de 3 frutos (logros) de este año y agradece por ellos.",
+    song: {
+      title: "Demos Gracias",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Demos+Gracias+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Demos%20Gracias%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 275,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Siembra",
+    verse: {
+      text: "El que siembra escasamente, también segará escasamente.",
+      reference: "2 Corintios 9:6"
+    },
+    reflection: "Antes de la cosecha hubo siembra. Agradecer por las semillas que pudimos plantar (esfuerzo, tiempo, amor). Sin siembra no hay fruto. La gratitud valora el proceso, no solo el resultado.",
+    quote: {
+      text: "Siembra en fe, riega con oración, y confía en Dios para la cosecha.",
+      author: "Max Lucado"
+    },
+    challenge: "Siembra una 'semilla' hoy (un acto de bondad) esperando la cosecha de Dios.",
+    song: {
+      title: "Sembraré",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sembraré+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sembraré%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 276,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Lluvia",
+    verse: {
+      text: "Daré la lluvia de vuestra tierra a su tiempo.",
+      reference: "Deuteronomio 11:14"
+    },
+    reflection: "El agricultor trabaja, pero Dios manda la lluvia. Agradecer por la gracia que hace crecer nuestros esfuerzos. Sin su bendición, trabajamos en vano. La gratitud reconoce la dependencia de Dios.",
+    quote: {
+      text: "La gracia de Dios es como la lluvia que transforma el desierto en jardín.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Agradece por una 'lluvia' (ayuda inesperada) que recibiste recientemente.",
+    song: {
+      title: "Lluvia de Gracia",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Lluvia+de+Gracia+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Lluvia%20de%20Gracia%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 277,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Sol",
+    verse: {
+      text: "Porque sol y escudo es Jehová Dios.",
+      reference: "Salmo 84:11"
+    },
+    reflection: "El sol madura el fruto. Agradecer por los tiempos de alegría y claridad que nos han hecho madurar. Dios es nuestro sol. La gratitud disfruta del calor de su presencia.",
+    quote: {
+      text: "Cuando mantienes tus ojos en Jesús, las sombras quedan atrás.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "Sal al sol unos minutos, cierra los ojos y agradece por la luz de Dios.",
+    song: {
+      title: "Brilla Jesús",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Brilla+Jesús+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Brilla%20Jesús%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 278,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Paciencia",
+    verse: {
+      text: "Mirad cómo el labrador espera el precioso fruto de la tierra, aguardando con paciencia.",
+      reference: "Santiago 5:7"
+    },
+    reflection: "La cosecha requiere espera. Agradecer por el tiempo de maduración. Dios trabaja en nosotros mientras esperamos. La paciencia produce carácter. La gratitud sabe esperar.",
+    quote: {
+      text: "La paciencia no es la capacidad de esperar, sino la actitud mientras se espera.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Si estás esperando algo, agradece hoy por el tiempo de espera.",
+    song: {
+      title: "Mientras Espero",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/watch?v=pxNYzR7JqcI",
+      spotifyUrl: "https://open.spotify.com/track/4KoQPSqWLPLqGnZrFfYbVh"
+    }
+  },
+  {
+    day: 279,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Abundancia",
+    verse: {
+      text: "Y comeréis hasta saciaros, y alabaréis el nombre de Jehová vuestro Dios.",
+      reference: "Joel 2:26"
+    },
+    reflection: "A veces la cosecha es abundante. Agradecer cuando Dios nos da más de lo que necesitamos. La abundancia es para compartir, no solo para acumular. La gratitud es generosa.",
+    quote: {
+      text: "La verdadera abundancia no se mide por lo que tienes, sino por lo que puedes dar.",
+      author: "Rick Warren"
+    },
+    challenge: "Comparte algo de tu abundancia con alguien hoy.",
+    song: {
+      title: "Agradecido",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/watch?v=Nco69szMp0Y",
+      spotifyUrl: "https://open.spotify.com/track/2qOX7QF8w8nCcrMH4AFEDM"
+    }
+  },
+  {
+    day: 280,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud en la Escasez",
+    verse: {
+      text: "Aunque la higuera no florezca... con todo, yo me alegraré en Jehová.",
+      reference: "Habacuc 3:17-18"
+    },
+    reflection: "A veces la cosecha es poca. Agradecer incluso cuando falta el fruto visible. Dios sigue siendo fiel. Nuestra alegría no depende de la cosecha, sino del Dios de la cosecha. La gratitud es incondicional.",
+    quote: {
+      text: "La fe es estar seguro de lo que esperamos y cierto de lo que no vemos.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Agradece por 3 cosas que NO tienes pero que Dios ha suplido de otra forma.",
+    song: {
+      title: "Aunque la Higuera",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Faith Like Potatoes (Fe como Papas) (2006)",
+      description: "Basada en una historia real de un granjero que aprende a confiar en Dios para la cosecha, incluso en tiempos imposibles. Inspira fe y gratitud en la provisión divina.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=C8YAzrssT8c"
+    }
+  },
+  {
+    day: 281,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Trabajo",
+    verse: {
+      text: "Y que todo hombre coma y beba, y goce el bien de toda su labor, es don de Dios.",
+      reference: "Eclesiastés 3:13"
+    },
+    reflection: "El trabajo es un regalo, no un castigo. Agradecer por tener manos para trabajar y mente para crear. A través del trabajo servimos y proveemos. La gratitud dignifica la labor.",
+    quote: {
+      text: "El trabajo hecho para Dios nunca es en vano.",
+      author: "Oswald Chambers"
+    },
+    challenge: "Agradece explícitamente por tu trabajo o estudios hoy.",
+    song: {
+      title: "Manos Trabajadoras",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Manos+Trabajadoras+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Manos%20Trabajadoras%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 282,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Descanso",
+    verse: {
+      text: "Seis días trabajarás, mas el séptimo día descansarás.",
+      reference: "Éxodo 34:21"
+    },
+    reflection: "Después de la cosecha viene el reposo. Agradecer por el descanso que renueva fuerzas. No somos máquinas. Dios instituyó el descanso para nuestro bien. La gratitud reposa.",
+    quote: {
+      text: "El descanso es un regalo de Dios para renovar nuestras fuerzas y restaurar nuestra alma.",
+      author: "Max Lucado"
+    },
+    challenge: "Tómate un tiempo real de descanso hoy y agradécelo.",
+    song: {
+      title: "Descanso en Ti",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Descanso+en+Ti+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Descanso%20en%20Ti%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 283,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por los Colaboradores",
+    verse: {
+      text: "Nosotros somos colaboradores de Dios.",
+      reference: "1 Corintios 3:9"
+    },
+    reflection: "Nadie cosecha solo. Agradecer por quienes trabajan a nuestro lado. Compañeros, familia, iglesia. Juntos logramos más. La gratitud valora el equipo.",
+    quote: {
+      text: "El ministerio en solitario es un ministerio en peligro.",
+      author: "John Piper"
+    },
+    challenge: "Envía un mensaje de agradecimiento a un compañero de trabajo o ministerio.",
+    song: {
+      title: "Somos el Pueblo de Dios",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Somos+el+Pueblo+de+Dios+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Somos%20el%20Pueblo%20de%20Dios%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 284,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por las Estaciones",
+    verse: {
+      text: "Mientras la tierra permanezca, no cesarán la sementera y la siega, el frío y el calor.",
+      reference: "Génesis 8:22"
+    },
+    reflection: "La vida tiene ciclos. Agradecer por el cambio de estaciones. Cada etapa tiene su propósito y belleza. No siempre es verano, no siempre es invierno. La gratitud fluye con los tiempos de Dios.",
+    quote: {
+      text: "Dios tiene un tiempo perfecto para cada etapa de nuestra vida.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Identifica en qué 'estación' de vida estás y agradece por ella.",
+    song: {
+      title: "Tiempos",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Tiempos+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Tiempos%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 285,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Semilla de la Palabra",
+    verse: {
+      text: "La semilla es la palabra de Dios.",
+      reference: "Lucas 8:11"
+    },
+    reflection: "La cosecha más importante es la espiritual. Agradecer porque la Palabra fue sembrada en nuestro corazón y dio vida. Cuidemos esa siembra. La gratitud da fruto espiritual.",
+    quote: {
+      text: "La Palabra de Dios es semilla viva que crece en el corazón preparado.",
+      author: "Billy Graham"
+    },
+    challenge: "Riega la semilla de la Palabra hoy con oración.",
+    song: {
+      title: "Semilla de Mostaza",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Semilla+de+Mostaza+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Semilla%20de%20Mostaza%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 286,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por los Frutos del Espíritu",
+    verse: {
+      text: "Mas el fruto del Espíritu es amor, gozo, paz...",
+      reference: "Gálatas 5:22"
+    },
+    reflection: "Dios busca carácter, no solo logros. Agradecer por el amor, gozo y paz que Él produce en nosotros. Esa es la verdadera cosecha de una vida cristiana. La gratitud cultiva el carácter.",
+    quote: {
+      text: "El fruto del Espíritu es el carácter de Cristo manifestándose en nosotros.",
+      author: "John MacArthur"
+    },
+    challenge: "Pide a Dios que madure un fruto específico del Espíritu en ti hoy.",
+    song: {
+      title: "Fruto de Amor",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fruto+de+Amor+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Fruto%20de%20Amor%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 287,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por Compartir el Pan",
+    verse: {
+      text: "Compartirás tu pan con el hambriento.",
+      reference: "Isaías 58:7"
+    },
+    reflection: "La cosecha es para bendecir. Agradecer por tener para dar. El milagro ocurre cuando compartimos. La gratitud abre la mano al necesitado.",
+    quote: {
+      text: "La generosidad no empobrece, enriquece el alma del que da.",
+      author: "Elisabeth Elliot"
+    },
+    challenge: "Invita a comer a alguien o dona alimentos hoy.",
+    song: {
+      title: "Hazme un Instrumento",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Los Miserables (2012)",
+      description: "Aunque es un musical clásico, muestra poderosamente cómo un acto de generosidad y gracia (compartir lo que se tiene) puede transformar una vida entera y generar una cadena de redención.",
+      platform: "Netflix / Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=IuEFm84s4oI"
+    }
+  },
+  {
+    day: 288,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Provisión Diaria",
+    verse: {
+      text: "El pan nuestro de cada día, dánoslo hoy.",
+      reference: "Mateo 6:11"
+    },
+    reflection: "Dios provee día a día. Agradecer por lo básico, lo cotidiano. No necesitamos acumular para años para estar agradecidos hoy. La gratitud confía en el mañana.",
+    quote: {
+      text: "Dios suple todas nuestras necesidades conforme a sus riquezas en gloria.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Agradece por cada comida que tomes hoy.",
+    song: {
+      title: "Temprano Yo Te Buscaré",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    }
+  },
+  {
+    day: 289,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Salud",
+    verse: {
+      text: "Amado, yo deseo que tú seas prosperado en todas las cosas, y que tengas salud.",
+      reference: "3 Juan 1:2"
+    },
+    reflection: "Para cosechar se necesita fuerza. Agradecer por la salud que nos permite trabajar y disfrutar. A veces solo la valoramos cuando falta. La gratitud cuida el templo del Espíritu.",
+    quote: {
+      text: "La salud es un regalo de Dios que debemos cuidar con gratitud.",
+      author: "Max Lucado"
+    },
+    challenge: "Haz algo saludable por tu cuerpo hoy como acto de gratitud.",
+    song: {
+      title: "Sana Nuestra Tierra",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sana+Nuestra+Tierra+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sana%20Nuestra%20Tierra%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 290,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Tierra",
+    verse: {
+      text: "De Jehová es la tierra y su plenitud.",
+      reference: "Salmo 24:1"
+    },
+    reflection: "Vivimos en un mundo hermoso creado por Dios. Agradecer por la naturaleza, el suelo, el agua. Somos mayordomos de su creación. La gratitud cuida el planeta.",
+    quote: {
+      text: "Toda la creación declara la gloria de su Creador.",
+      author: "Francis Schaeffer"
+    },
+    challenge: "Recoge basura o planta algo; cuida la creación de Dios.",
+    song: {
+      title: "Cuán Grande es Él",
+      artist: "Himno",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cuán+Grande+es+Él+Himno",
+      spotifyUrl: "https://open.spotify.com/search/Cuán%20Grande%20es%20Él%20Himno"
+    }
+  },
+  {
+    day: 291,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por las Herramientas",
+    verse: {
+      text: "Si se embotare el hierro, y no se le sacare filo... la sabiduría es provechosa.",
+      reference: "Eclesiastés 10:10"
+    },
+    reflection: "Tenemos recursos para trabajar. Agradecer por la tecnología, los libros, las herramientas que facilitan nuestra labor. Son dones para ser más efectivos. La gratitud usa bien los recursos.",
+    quote: {
+      text: "La preparación espiritual es más importante que la actividad ministerial.",
+      author: "Leonard Ravenhill"
+    },
+    challenge: "Agradece por una herramienta (computadora, auto, etc.) que usas a diario.",
+    song: {
+      title: "Instrumento de Tu Paz",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Instrumento+de+Tu+Paz+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Instrumento%20de%20Tu%20Paz%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 292,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Crecimiento Oculto",
+    verse: {
+      text: "La semilla brota y crece sin que él sepa cómo.",
+      reference: "Marcos 4:27"
+    },
+    reflection: "Mucho pasa bajo tierra. Agradecer por lo que Dios está haciendo aunque no lo veamos. El crecimiento invisible es real. La gratitud confía en el proceso oculto.",
+    quote: {
+      text: "El crecimiento más profundo ocurre en los momentos ocultos con Dios.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Agradece por un área de tu vida donde sientes que 'no pasa nada', confiando que Dios trabaja.",
+    song: {
+      title: "Dios Imparable",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Dios+Imparable+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Dios%20Imparable%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 293,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Primera Lluvia y la Tardía",
+    verse: {
+      text: "Alegraos... porque os ha dado la primera lluvia a su tiempo, y la lluvia tardía.",
+      reference: "Joel 2:23"
+    },
+    reflection: "Dios da lo necesario al principio y al final. Agradecer por su provisión oportuna en cada etapa del proyecto. Él empieza y Él termina. La gratitud celebra los ciclos completos.",
+    quote: {
+      text: "Dios siempre llega a tiempo, nunca temprano, nunca tarde.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "Recuerda un momento donde Dios llegó justo a tiempo y agradécelo.",
+    song: {
+      title: "A Su Tiempo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=A+Su+Tiempo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/A%20Su%20Tiempo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 294,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Siega con Gozo",
+    verse: {
+      text: "Los que sembraron con lágrimas, con regocijo segarán.",
+      reference: "Salmo 126:5"
+    },
+    reflection: "A veces sembrar duele. Agradecer porque el dolor no es el final. La alegría viene en la mañana. Dios transforma lágrimas en frutos. La gratitud anticipa el gozo.",
+    quote: {
+      text: "Las lágrimas sembradas en fe producirán una cosecha de gozo.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Si estás pasando un momento difícil, declara en fe: 'Cosecharé con alegría'.",
+    song: {
+      title: "Cantad Alegres",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "En Busca de la Felicidad (2006)",
+      description: "Un ejemplo moderno de sembrar con lágrimas y esfuerzo incansable para finalmente cosechar con gozo. Nos enseña a no rendirnos y agradecer cada pequeño avance.",
+      platform: "Netflix / Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=DMOBlEcRuw8"
+    }
+  },
+  {
+    day: 295,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Grano",
+    verse: {
+      text: "El grano de trigo... si muere, lleva mucho fruto.",
+      reference: "Juan 12:24"
+    },
+    reflection: "Para dar vida hay que morir. Agradecer por el sacrificio de Jesús, el Grano que murió por nosotros. Y por las veces que morimos al yo para dar fruto. La gratitud es sacrificial.",
+    quote: {
+      text: "Morir a nosotros mismos es el camino hacia la vida verdadera en Cristo.",
+      author: "Dietrich Bonhoeffer"
+    },
+    challenge: "Renuncia a un 'derecho' hoy por amor a otro.",
+    song: {
+      title: "Grano de Mostaza",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Grano+de+Mostaza+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Grano%20de%20Mostaza%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 296,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por los Graneros",
+    verse: {
+      text: "Jehová mandará que la bendición sea contigo en tus graneros.",
+      reference: "Deuteronomio 28:8"
+    },
+    reflection: "Dios bendice el ahorro y la administración. Agradecer por la capacidad de guardar para el futuro. La sabiduría financiera es un don. La gratitud administra bien.",
+    quote: {
+      text: "La administración fiel de los recursos es un acto de adoración a Dios.",
+      author: "Randy Alcorn"
+    },
+    challenge: "Revisa tus finanzas y agradece por lo que tienes ahorrado, poco o mucho.",
+    song: {
+      title: "Dueño de Todo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Dueño+de+Todo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Dueño%20de%20Todo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 297,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Fiesta",
+    verse: {
+      text: "Y te alegrarás en tu fiesta.",
+      reference: "Deuteronomio 16:14"
+    },
+    reflection: "Dios ordenó fiestas. Agradecer por los tiempos de celebración. La vida cristiana no es solo trabajo y seriedad, es gozo. La gratitud sabe celebrar.",
+    quote: {
+      text: "El gozo del Señor es nuestra fortaleza y nuestra bandera de victoria.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Celebra algo hoy, aunque sea pequeño. Comprate un helado o canta.",
+    song: {
+      title: "Celebrare",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Celebrare+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Celebrare%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 298,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Generosidad de Dios",
+    verse: {
+      text: "Abres tu mano, y colmas de bendición a todo ser viviente.",
+      reference: "Salmo 145:16"
+    },
+    reflection: "Dios no es tacaño. Agradecer por su generosidad desbordante. Él da abundantemente. La naturaleza refleja su corazón dadivoso. La gratitud imita su generosidad.",
+    quote: {
+      text: "La generosidad de Dios no tiene límites ni condiciones.",
+      author: "Max Lucado"
+    },
+    challenge: "Sé extravagante en generosidad con alguien hoy (en halagos, tiempo o dinero).",
+    song: {
+      title: "Bondad de Dios",
+      artist: "Bethel Music",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Bondad+de+Dios+Bethel+Music",
+      spotifyUrl: "https://open.spotify.com/search/Bondad%20de%20Dios%20Bethel%20Music"
+    }
+  },
+  {
+    day: 299,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Sustento",
+    verse: {
+      text: "Susténtame con pasas, confórtame con manzanas.",
+      reference: "Cantares 2:5"
+    },
+    reflection: "Dios nos sustenta cuando estamos débiles. Agradecer por el consuelo y la fuerza renovada. Él sabe lo que necesitamos para seguir. La gratitud se apoya en Él.",
+    quote: {
+      text: "En nuestra debilidad, la fuerza de Dios se perfecciona.",
+      author: "Joni Eareckson Tada"
+    },
+    challenge: "Pide sustento a Dios para tu área más débil hoy.",
+    song: {
+      title: "Sustento",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sustento+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sustento%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 300,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Fidelidad en lo Poco",
+    verse: {
+      text: "Bien, buen siervo y fiel; sobre poco has sido fiel, sobre mucho te pondré.",
+      reference: "Mateo 25:21"
+    },
+    reflection: "La gran cosecha empieza cuidando lo pequeño. Agradecer por las tareas pequeñas. Son el entrenamiento para lo grande. La gratitud no menosprecia los comienzos humildes.",
+    quote: {
+      text: "Haz las cosas pequeñas con gran amor.",
+      author: "Madre Teresa"
+    },
+    challenge: "Haz una tarea pequeña con excelencia hoy como ofrenda a Dios.",
+    song: {
+      title: "Fiel",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fiel+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Fiel%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 301,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Siega Espiritual",
+    verse: {
+      text: "Alzad vuestros ojos y mirad los campos, porque ya están blancos para la siega.",
+      reference: "Juan 4:35"
+    },
+    reflection: "Hay almas listas para conocer a Dios. Agradecer por la oportunidad de evangelizar. La mayor cosecha son personas. La gratitud comparte la fe.",
+    quote: {
+      text: "La cosecha espiritual es abundante, pero necesita obreros dispuestos.",
+      author: "Billy Graham"
+    },
+    challenge: "Ora por 3 personas que no conocen a Jesús.",
+    song: {
+      title: "Heme Aquí",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "El Caso de Cristo (The Case for Christ) (2017)",
+      description: "La historia real de un periodista ateo que busca desacreditar el cristianismo y termina siendo 'cosechado' por la verdad. Inspira gratitud por la verdad del Evangelio.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=On6RM27qSFc"
+    }
+  },
+  {
+    day: 302,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Dueño de la Mies",
+    verse: {
+      text: "Rogad, pues, al Señor de la mies, que envíe obreros a su mies.",
+      reference: "Mateo 9:38"
+    },
+    reflection: "La cosecha es de Dios, no nuestra. Agradecer porque Él es el Señor del trabajo. Nosotros solo somos obreros. Él lleva la carga pesada. La gratitud descansa en el Jefe.",
+    quote: {
+      text: "Servir a Dios es el privilegio más grande que podemos tener.",
+      author: "John Piper"
+    },
+    challenge: "Ora pidiendo más obreros para la obra de Dios.",
+    song: {
+      title: "Obreros",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Obreros+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Obreros%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 303,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por el Pan Compartido",
+    verse: {
+      text: "Partían el pan en las casas, y comían juntos con alegría y sencillez de corazón.",
+      reference: "Hechos 2:46"
+    },
+    reflection: "La comida sabe mejor acompañada. Agradecer por la comunidad, por la mesa compartida. La comunión es parte de la cosecha. La gratitud une.",
+    quote: {
+      text: "Compartir la mesa es compartir la vida, así como Jesús lo hizo.",
+      author: "Henri Nouwen"
+    },
+    challenge: "Organiza una comida o café con hermanos de la fe pronto.",
+    song: {
+      title: "En Unidad",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=En+Unidad+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/En%20Unidad%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 304,
+    month: "Octubre",
+    monthId: 10,
+    title: "Gratitud por la Cosecha Eterna",
+    verse: {
+      text: "Y el que siega recibe salario, y recoge fruto para vida eterna.",
+      reference: "Juan 4:36"
+    },
+    reflection: "Cerramos el mes de la cosecha mirando al cielo. Agradecer porque lo que hacemos para Dios dura para siempre. Nuestra labor no es en vano. La gratitud tiene perspectiva eterna.",
+    quote: {
+      text: "Solo una vida, pronto pasará; solo lo hecho por Cristo durará.",
+      author: "C.T. Studd"
+    },
+    challenge: "Agradece a Dios por las recompensas eternas que te esperan.",
+    song: {
+      title: "Galardón",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Galardón+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Galardón%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 305,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud como Hábito",
+    verse: {
+      text: "Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús.",
+      reference: "1 Tesalonicenses 5:18"
+    },
+    reflection: "Iniciamos Noviembre haciendo de la gratitud un estilo de vida. No es solo un acto, es un hábito. Agradecer 'en todo' cambia nuestra perspectiva. La gratitud constante transforma la mente.",
+    quote: {
+      text: "La gratitud transforma lo que tenemos en suficiente y más.",
+      author: "Max Lucado"
+    },
+    challenge: "Pon una alarma 3 veces hoy solo para detenerte y dar gracias por algo.",
+    song: {
+      title: "Admirable Dios",
+      artist: "Julissa",
+      youtubeUrl: "https://www.youtube.com/watch?v=qv8TPdZqKWE",
+      spotifyUrl: "https://open.spotify.com/track/4pG2zNjxVv2RJl8LmQPQ0L"
+    },
+    movie: {
+      title: "Coco (2017)",
+      description: "Aunque es cultural, resalta la importancia de la memoria y la gratitud hacia la familia y los ancestros. Nos recuerda que somos parte de una historia más grande.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=Rvr68u6k5sI"
+    }
+  },
+  {
+    day: 306,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud en el Habla",
+    verse: {
+      text: "Ni palabras deshonestas, ni necedades... sino antes bien acciones de gracias.",
+      reference: "Efesios 5:4"
+    },
+    reflection: "Nuestras palabras revelan nuestro corazón. Agradecer en lugar de quejarse cambia la atmósfera. Que la gratitud sea el idioma que hablamos. La gratitud endulza la conversación.",
+    quote: {
+      text: "Nuestras palabras reflejan el estado de nuestro corazón.",
+      author: "Charles Stanley"
+    },
+    challenge: "Proponte no quejarte de nada durante 24 horas. Solo agradece.",
+    song: {
+      title: "Sean Gratos",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sean+Gratos+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sean%20Gratos%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 307,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud en el Pensamiento",
+    verse: {
+      text: "Si hay virtud alguna, si algo digno de alabanza, en esto pensad.",
+      reference: "Filipenses 4:8"
+    },
+    reflection: "La gratitud empieza en la mente. Agradecer es enfocar el pensamiento en lo bueno. Desplazamos la ansiedad con gratitud. La gratitud protege la salud mental.",
+    quote: {
+      text: "Renueva tu mente y transformarás tu vida.",
+      author: "Rick Warren"
+    },
+    challenge: "Cada vez que tengas un pensamiento negativo hoy, reemplázalo por uno de gratitud.",
+    song: {
+      title: "Mente de Cristo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Mente+de+Cristo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Mente%20de%20Cristo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 308,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por lo Simple",
+    verse: {
+      text: "Mejor es un bocado seco, y en paz, que casa de contiendas llena de provisiones.",
+      reference: "Proverbios 17:1"
+    },
+    reflection: "La felicidad no está en el lujo. Agradecer por las cosas sencillas: un café, una sonrisa, el sol. La vida está hecha de pequeños momentos. La gratitud disfruta lo simple.",
+    quote: {
+      text: "Las bendiciones más grandes de Dios a menudo vienen en los paquetes más pequeños.",
+      author: "Max Lucado"
+    },
+    challenge: "Toma una foto de algo simple que te haga feliz y agradece por ello.",
+    song: {
+      title: "Cosas Pequeñas",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Cosas+Pequeñas+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Cosas%20Pequeñas%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 309,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud en la Adversidad",
+    verse: {
+      text: "Tenemos por sumo gozo cuando os halléis en diversas pruebas.",
+      reference: "Santiago 1:2"
+    },
+    reflection: "Es fácil agradecer en lo bueno. Agradecer en la prueba es fe pura. Sabemos que Dios tiene el control. La gratitud en el dolor es un sacrificio de alabanza.",
+    quote: {
+      text: "En los momentos más oscuros es cuando Dios hace brillar su luz más fuerte.",
+      author: "Max Lucado"
+    },
+    challenge: "Agradece por una dificultad actual, confiando que te hará más fuerte.",
+    song: {
+      title: "Alabaré",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Alabaré+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Alabaré%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 310,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Libertad",
+    verse: {
+      text: "Estad, pues, firmes en la libertad con que Cristo nos hizo libres.",
+      reference: "Gálatas 5:1"
+    },
+    reflection: "No somos esclavos del pecado ni del miedo. Agradecer por la libertad espiritual. Las cadenas han sido rotas. La gratitud vive libre.",
+    quote: {
+      text: "La verdadera libertad no es hacer lo que queremos, sino ser lo que Dios quiere.",
+      author: "Billy Graham"
+    },
+    challenge: "Haz algo hoy que te recuerde tu libertad en Cristo (cantar fuerte, orar al aire libre).",
+    song: {
+      title: "Cada Día",
+      artist: "Alex Campos",
+      youtubeUrl: "https://www.youtube.com/watch?v=a-3gkE0Qo5I",
+      spotifyUrl: "https://open.spotify.com/track/5YJnfKcnGxZBhLfIFWoGNu"
+    }
+  },
+  {
+    day: 311,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Amistad",
+    verse: {
+      text: "En todo tiempo ama el amigo, y es como un hermano en tiempo de angustia.",
+      reference: "Proverbios 17:17"
+    },
+    reflection: "Los amigos son la familia que elegimos. Agradecer por quienes nos acompañan en el camino. No estamos solos. La gratitud cuida el amigos.",
+    quote: {
+      text: "La amistad verdadera es un regalo de Dios que refleja su amor fiel.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Llama a tu mejor amigo solo para decirle gracias por su amistad.",
+    song: {
+      title: "Amigos",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Toy Story (1995)",
+      description: "Una historia clásica sobre la amistad, la lealtad y el valor de estar ahí el uno para el otro ('Yo soy tu amigo fiel'). Nos enseña a agradecer por los amigos que nunca fallan.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=v-PjgYDrg70"
+    }
+  },
+  {
+    day: 312,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Hogar",
+    verse: {
+      text: "Si Jehová no edificare la casa, en vano trabajan los que la edifican.",
+      reference: "Salmo 127:1"
+    },
+    reflection: "Tener un techo es una bendición. Agradecer por nuestro refugio, sea grande o pequeño. Es el lugar de descanso y familia. La gratitud bendice la casa.",
+    quote: {
+      text: "El hogar es donde Cristo es el centro y el amor es la atmósfera.",
+      author: "Billy Graham"
+    },
+    challenge: "Ora bendiciendo cada habitación de tu casa hoy.",
+    song: {
+      title: "Yo y Mi Casa",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Yo+y+Mi+Casa+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Yo%20y%20Mi%20Casa%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 313,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Ropa",
+    verse: {
+      text: "¿Y por el vestido, por qué os afanáis? Considerad los lirios del campo...",
+      reference: "Mateo 6:28"
+    },
+    reflection: "Dios nos viste. Agradecer porque tenemos qué ponernos. A veces nos quejamos de 'no tener nada' frente a un armario lleno. La gratitud valora lo que tiene.",
+    quote: {
+      text: "La gratitud no cambia las circunstancias, cambia nuestra perspectiva.",
+      author: "Max Lucado"
+    },
+    challenge: "Saca ropa que no uses y prepárala para donar.",
+    song: {
+      title: "Vísteme",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Vísteme+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Vísteme%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 314,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Agua",
+    verse: {
+      text: "El que bebiere del agua que yo le daré, no tendrá sed jamás.",
+      reference: "Juan 4:14"
+    },
+    reflection: "El agua es vida física y símbolo de vida espiritual. Agradecer por el agua potable y por el Agua Viva. No todos tienen este privilegio. La gratitud no desperdicia.",
+    quote: {
+      text: "El agua física sostiene el cuerpo, pero solo Jesús sacia la sed del alma.",
+      author: "John Piper"
+    },
+    challenge: "Cada vez que bebas agua hoy, da gracias a Dios.",
+    song: {
+      title: "Fuente de Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Fuente+de+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Fuente%20de%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 315,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Música",
+    verse: {
+      text: "Cantad a Jehová cántico nuevo; su alabanza sea en la congregación de los santos.",
+      reference: "Salmo 149:1"
+    },
+    reflection: "La música es el lenguaje del alma. Agradecer por las melodías que nos elevan y consuelan. Dios creó la música para su gloria. La gratitud canta.",
+    quote: {
+      text: "El que canta, ora dos veces.",
+      author: "San Agustín"
+    },
+    challenge: "Escucha tu canción de alabanza favorita y cántala a todo pulmón.",
+    song: {
+      title: "Canción Feliz",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Canción+Feliz+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Canción%20Feliz%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 316,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Risa",
+    verse: {
+      text: "Entonces nuestra boca se llenará de risa, y nuestra lengua de alabanza.",
+      reference: "Salmo 126:2"
+    },
+    reflection: "La risa es medicina. Agradecer por los momentos de alegría y humor. Dios tiene sentido del humor. La gratitud sonríe.",
+    quote: {
+      text: "El gozo del Señor es nuestra fuerza, y la risa es su medicina.",
+      author: "Joyce Meyer"
+    },
+    challenge: "Busca algo que te haga reír sanamente y compártelo.",
+    song: {
+      title: "El Gozo del Señor",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=El+Gozo+del+Señor+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/El%20Gozo%20del%20Señor%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 317,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Llanto",
+    verse: {
+      text: "Bienaventurados los que lloran, porque ellos recibirán consolación.",
+      reference: "Mateo 5:4"
+    },
+    reflection: "Las lágrimas también son un regalo. Agradecer porque limpian el alma y nos llevan al Consador. No reprimas el dolor, entrégalo. La gratitud es honesta.",
+    quote: {
+      text: "Dios guarda cada una de nuestras lágrimas y las convierte en bendiciones.",
+      author: "Max Lucado"
+    },
+    challenge: "Si necesitas llorar, hazlo delante de Dios y agradece su consuelo.",
+    song: {
+      title: "Llorar es Bueno",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Llorar+es+Bueno+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Llorar%20es%20Bueno%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 318,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Silencio",
+    verse: {
+      text: "Guarda silencio ante Jehová, y espera en él.",
+      reference: "Salmo 37:7"
+    },
+    reflection: "En el ruido del mundo, el silencio es oro. Agradecer por momentos de quietud para escuchar a Dios. Él habla en el susurro apacible. La gratitud escucha.",
+    quote: {
+      text: "En el silencio encontramos a Dios, y en su presencia hallamos paz.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Pasa 10 minutos en absoluto silencio hoy, solo 'estando' con Dios.",
+    song: {
+      title: "En el Silencio",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Un Lugar en Silencio (A Quiet Place) (2018)",
+      description: "Aunque es suspenso, resalta el valor del silencio y la comunicación no verbal, y cómo una familia se protege y sacrifica por amor en medio de la adversidad.",
+      platform: "Netflix / Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=WR7cc5t7tv8"
+    }
+  },
+  {
+    day: 319,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Naturaleza",
+    verse: {
+      text: "Los cielos cuentan la gloria de Dios, y el firmamento anuncia la obra de sus manos.",
+      reference: "Salmo 19:1"
+    },
+    reflection: "La creación es el primer templo. Agradecer por la belleza de un paisaje, una flor, un animal. Todo apunta al Creador. La gratitud admira la obra de Dios.",
+    quote: {
+      text: "Toda la creación es el lienzo donde Dios pinta su gloria.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Sal a caminar a un parque o lugar natural y alaba al Creador.",
+    song: {
+      title: "Indescriptible",
+      artist: "Chris Tomlin",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Indescriptible+Chris+Tomlin",
+      spotifyUrl: "https://open.spotify.com/search/Indescriptible%20Chris%20Tomlin"
+    }
+  },
+  {
+    day: 320,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por los Sentidos",
+    verse: {
+      text: "El oído que oye, y el ojo que ve, ambas cosas igualmente ha hecho Jehová.",
+      reference: "Proverbios 20:12"
+    },
+    reflection: "Ver, oír, gustar, tocar, oler. Agradecer por la capacidad de experimentar el mundo. Son ventanas al alma. La gratitud percibe la belleza.",
+    quote: {
+      text: "Cada sentido es un regalo de Dios para experimentar su bondad.",
+      author: "Rick Warren"
+    },
+    challenge: "Concéntrate en un sentido hoy (ej. gusto al comer) y agradece por él.",
+    song: {
+      title: "Abre Mis Ojos",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Abre+Mis+Ojos+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Abre%20Mis%20Ojos%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 321,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Movimiento",
+    verse: {
+      text: "Porque en él vivimos, y nos movemos, y somos.",
+      reference: "Hechos 17:28"
+    },
+    reflection: "Caminar, correr, levantar las manos. Agradecer por la libertad de movimiento. Nuestro cuerpo es un milagro de ingeniería divina. La gratitud se mueve.",
+    quote: {
+      text: "En Dios vivimos, nos movemos y existimos; cada movimiento es un regalo.",
+      author: "Rick Warren"
+    },
+    challenge: "Haz ejercicio o estírate hoy dando gracias por tu cuerpo.",
+    song: {
+      title: "Yo Te Busco",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/4W7jKDXNfVcxvqYYGqQVDO"
+    }
+  },
+  {
+    day: 322,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Sueño",
+    verse: {
+      text: "En paz me acostaré, y asimismo dormiré; porque solo tú, Jehová, me haces vivir confiado.",
+      reference: "Salmo 4:8"
+    },
+    reflection: "Dormir es un acto de confianza. Agradecer porque Dios cuida de nosotros mientras no podemos cuidarnos. El sueño repara. La gratitud descansa tranquila.",
+    quote: {
+      text: "Dios nos da el sueño como recordatorio de que Él nunca duerme y siempre nos cuida.",
+      author: "Max Lucado"
+    },
+    challenge: "Antes de dormir, entrega todas tus preocupaciones a Dios.",
+    song: {
+      title: "Duerme",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Duerme+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Duerme%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 323,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Aprendizaje",
+    verse: {
+      text: "Da al sabio, y será más sabio; enseña al justo, y aumentará su saber.",
+      reference: "Proverbios 9:9"
+    },
+    reflection: "Nunca dejamos de aprender. Agradecer por la capacidad de entender cosas nuevas. El conocimiento nos expande. La gratitud es enseñable.",
+    quote: {
+      text: "El verdadero aprendizaje comienza cuando reconocemos que Dios es la fuente de toda sabiduría.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Aprende algo nuevo hoy (un dato, una palabra, una habilidad) y agradécelo.",
+    song: {
+      title: "Sabiduría",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Sabiduría+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Sabiduría%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 324,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Tecnología",
+    verse: {
+      text: "Y se aumentará la ciencia.",
+      reference: "Daniel 12:4"
+    },
+    reflection: "Vivimos tiempos de avance. Agradecer por la tecnología que nos conecta y facilita la vida (como esta app). Usémosla para bien. La gratitud usa la ciencia para gloria de Dios.",
+    quote: {
+      text: "Usemos la tecnología para extender el Reino, no para reemplazar la presencia de Dios.",
+      author: "Billy Graham"
+    },
+    challenge: "Usa tu teléfono para enviar un mensaje de bendición a 3 personas.",
+    song: {
+      title: "Conectados",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Conectados+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Conectados%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 325,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Diversidad",
+    verse: {
+      text: "De todas naciones y tribus y pueblos y lenguas.",
+      reference: "Apocalipsis 7:9"
+    },
+    reflection: "Dios ama la variedad. Agradecer por las diferentes culturas, colores y formas de ser. La uniformidad es humana, la unidad en diversidad es divina. La gratitud celebra la diferencia.",
+    quote: {
+      text: "Dios creó la diversidad para mostrar la riqueza infinita de su creatividad.",
+      author: "Max Lucado"
+    },
+    challenge: "Ora por un país o cultura diferente a la tuya hoy.",
+    song: {
+      title: "Pueblos Todos",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Zootopia (2016)",
+      description: "Una película inteligente que celebra la diversidad y desafía los prejuicios. Nos enseña que todos tienen algo valioso que aportar y que juntos somos mejores.",
+      platform: "Disney+",
+      youtubeUrl: "https://www.youtube.com/watch?v=jWM0ct-OLsM"
+    }
+  },
+  {
+    day: 326,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Perdón Recibido",
+    verse: {
+      text: "Como Cristo os perdonó, así también hacedlo vosotros.",
+      reference: "Colosenses 3:13"
+    },
+    reflection: "No merecíamos perdón, pero lo tuvimos. Agradecer por la gracia que borró nuestras faltas. Vivir perdonado es vivir ligero. La gratitud no olvida de dónde salió.",
+    quote: {
+      text: "El perdón es la llave que abre las esposas del odio.",
+      author: "Corrie ten Boom"
+    },
+    challenge: "Agradece a Dios explícitamente por perdonar tus pecados pasados.",
+    song: {
+      title: "Perdonado",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Perdonado+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Perdonado%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 327,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por Poder Perdonar",
+    verse: {
+      text: "Perdónanos nuestras deudas, como también nosotros perdonamos.",
+      reference: "Mateo 6:12"
+    },
+    reflection: "Perdonar es un regalo que nos damos a nosotros mismos. Agradecer por la capacidad de soltar ofensas. El rencor envenena, el perdón sana. La gratitud elige perdonar.",
+    quote: {
+      text: "Perdonar es liberar a un prisionero y descubrir que el prisionero eras tú.",
+      author: "Lewis B. Smedes"
+    },
+    challenge: "Si tienes algo contra alguien, perdónalo hoy en tu corazón.",
+    song: {
+      title: "Libre del Rencor",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Libre+del+Rencor+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Libre%20del%20Rencor%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 328,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Esperanza",
+    verse: {
+      text: "La esperanza no avergüenza; porque el amor de Dios ha sido derramado en nuestros corazones.",
+      reference: "Romanos 5:5"
+    },
+    reflection: "El futuro es seguro en Él. Agradecer porque no caminamos hacia la nada, sino hacia una esperanza viva. Lo mejor está por venir. La gratitud espera con alegría.",
+    quote: {
+      text: "La esperanza cristiana no es optimismo ciego, es certeza basada en las promesas de Dios.",
+      author: "John Piper"
+    },
+    challenge: "Escribe una cosa que esperas con ilusión del futuro.",
+    song: {
+      title: "Esperanza de Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Esperanza+de+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Esperanza%20de%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 329,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Oración",
+    verse: {
+      text: "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios.",
+      reference: "Filipenses 4:6"
+    },
+    reflection: "Tenemos línea directa con el Cielo. Agradecer porque Dios nos escucha. No necesitamos intermediarios. La oración cambia las cosas. La gratitud ora sin cesar.",
+    quote: {
+      text: "La oración no cambia a Dios, nos cambia a nosotros.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Dedica 5 minutos solo a agradecer en oración, sin pedir nada.",
+    song: {
+      title: "El Poder de la Oración",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=El+Poder+de+la+Oración+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/El%20Poder%20de%20la%20Oración%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 330,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por la Iglesia",
+    verse: {
+      text: "No dejando de congregarnos, como algunos tienen por costumbre.",
+      reference: "Hebreos 10:25"
+    },
+    reflection: "La iglesia es el cuerpo de Cristo. Agradecer por nuestra comunidad de fe. Imperfecta pero amada por Dios. Nos necesitamos unos a otros. La gratitud ama a la iglesia.",
+    quote: {
+      text: "La iglesia es el cuerpo de Cristo, imperfecta pero amada y redimida.",
+      author: "Dietrich Bonhoeffer"
+    },
+    challenge: "Ora por tu pastor y los líderes de tu iglesia hoy.",
+    song: {
+      title: "Pueblo Adquirido",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Pueblo+Adquirido+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Pueblo%20Adquirido%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 331,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Ejemplo de Jesús",
+    verse: {
+      text: "Porque ejemplo os he dado, para que como yo os he hecho, vosotros también hagáis.",
+      reference: "Juan 13:15"
+    },
+    reflection: "Tenemos un modelo perfecto. Agradecer por la vida de Jesús que nos muestra cómo vivir. Él es el camino. La gratitud sigue sus pisadas.",
+    quote: {
+      text: "Ser cristiano es ser un pequeño Cristo.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Pregúntate hoy ante una situación: '¿Qué haría Jesús?' y hazlo.",
+    song: {
+      title: "Como Jesús",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Como+Jesús+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Como%20Jesús%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 332,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Día de Acción de Gracias",
+    verse: {
+      text: "Entrad por sus puertas con acción de gracias, por sus atrios con alabanza.",
+      reference: "Salmo 100:4"
+    },
+    reflection: "Hoy celebramos (simbólicamente) la gratitud. Agradecer por todo lo recibido en el año. Es un día para contar bendiciones, no problemas. La gratitud celebra.",
+    quote: {
+      text: "La gratitud transforma los días comunes en acciones de gracias.",
+      author: "Max Lucado"
+    },
+    challenge: "Haz una cena especial o comida de 'Acción de Gracias' (aunque sea sencilla) y comparte lo que agradeces.",
+    song: {
+      title: "Gracias Señor",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Un Sueño Posible (The Blind Side) (2009)",
+      description: "Una historia conmovedora sobre gratitud, generosidad y cómo abrir el hogar y el corazón puede cambiar el destino de una persona. Perfecta para el espíritu de Acción de Gracias.",
+      platform: "Netflix / Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=gvqj_Tk_kuM"
+    }
+  },
+  {
+    day: 333,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Ayer",
+    verse: {
+      text: "Hasta aquí nos ayudó Jehová.",
+      reference: "1 Samuel 7:12"
+    },
+    reflection: "Mirar atrás y ver la mano de Dios. Agradecer por el pasado, con sus luces y sombras, porque nos trajo hasta aquí. Ebenezer. La gratitud tiene memoria.",
+    quote: {
+      text: "La gratitud nos ayuda a ver la mano de Dios en cada capítulo de nuestra historia.",
+      author: "Max Lucado"
+    },
+    challenge: "Escribe 3 hitos de tu pasado donde viste la mano de Dios.",
+    song: {
+      title: "Ebenezer",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ebenezer+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Ebenezer%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 334,
+    month: "Noviembre",
+    monthId: 11,
+    title: "Gratitud por el Hoy",
+    verse: {
+      text: "Este es el día que hizo Jehová; nos gozaremos y alegraremos en él.",
+      reference: "Salmo 118:24"
+    },
+    reflection: "Cerramos Noviembre viviendo el presente. Agradecer por este momento exacto. El ayer pasó, el mañana no ha llegado. Dios está en el ahora. La gratitud vive hoy.",
+    quote: {
+      text: "Cada día es un regalo de Dios, por eso se llama presente.",
+      author: "Rick Warren"
+    },
+    challenge: "Disfruta conscientemente de cada hora de este día.",
+    song: {
+      title: "Hoy es el Día",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hoy+es+el+Día+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Hoy%20es%20el%20Día%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 335,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Promesa Cumplida",
+    verse: {
+      text: "Pero cuando vino el cumplimiento del tiempo, Dios envió a su Hijo.",
+      reference: "Gálatas 4:4"
+    },
+    reflection: "Iniciamos Diciembre, el mes del regalo. Agradecer porque Dios cumple sus promesas. Siglos de espera terminaron en un pesebre. La gratitud celebra el cumplimiento.",
+    quote: {
+      text: "La Navidad es Dios diciendo: 'Cumplo mis promesas'.",
+      author: "Max Lucado"
+    },
+    challenge: "Inicia tu calendario de adviento agradeciendo por la fidelidad de Dios.",
+    song: {
+      title: "Ven a Mi Corazón Oh Cristo",
+      artist: "Himno",
+    },
+    movie: {
+      title: "Natividad (The Nativity Story) (2006)",
+      description: "Una representación hermosa y realista del viaje de María y José. Nos ayuda a visualizar el costo y la maravilla de la primera Navidad.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=UiSfup00uZY"
+    }
+  },
+  {
+    day: 336,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Humildad de Dios",
+    verse: {
+      text: "Y dio a luz a su hijo primogénito, y lo envolvió en pañales, y lo acostó en un pesebre.",
+      reference: "Lucas 2:7"
+    },
+    reflection: "El Rey del universo nació entre animales. Agradecer por su humildad extrema. Se hizo pobre para enriquecernos. La gratitud se maravilla ante el pesebre.",
+    quote: {
+      text: "El Hijo de Dios se convirtió en hijo del hombre para que los hijos del hombre pudieran convertirse en hijos de Dios.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Humíllate hoy sirviendo a alguien de manera anónima.",
+    song: {
+      title: "En el Pesebre",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=En+el+Pesebre+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/En%20el%20Pesebre%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 337,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Encarnación",
+    verse: {
+      text: "Y aquel Verbo fue hecho carne, y habitó entre nosotros.",
+      reference: "Juan 1:14"
+    },
+    reflection: "Dios se hizo uno de nosotros. Agradecer porque entiende nuestro dolor, frío y hambre. No es un Dios lejano. Emanuel, Dios con nosotros. La gratitud abraza la cercanía de Dios.",
+    quote: {
+      text: "La encarnación es el milagro supremo de la gracia divina.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Agradece a Dios por tener un cuerpo físico como el tuyo.",
+    song: {
+      title: "Emanuel",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Emanuel+Marcos+Witt",
+      spotifyUrl: "https://open.spotify.com/search/Emanuel%20Marcos%20Witt"
+    }
+  },
+  {
+    day: 338,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por María",
+    verse: {
+      text: "He aquí la sierva del Señor; hágase conmigo conforme a tu palabra.",
+      reference: "Lucas 1:38"
+    },
+    reflection: "Una joven dijo 'sí' a Dios. Agradecer por el ejemplo de obediencia y fe de María. Su 'sí' cambió la historia. La gratitud es obediente.",
+    quote: {
+      text: "La obediencia de María nos enseña que la fe dice 'sí' antes de entender el 'cómo'.",
+      author: "Max Lucado"
+    },
+    challenge: "Di 'sí' a algo que Dios te esté pidiendo hoy.",
+    song: {
+      title: "Hágase en Mí",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hágase+en+Mí+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Hágase%20en%20Mí%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 339,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por José",
+    verse: {
+      text: "José... hizo como el ángel del Señor le había mandado.",
+      reference: "Mateo 1:24"
+    },
+    reflection: "Un hombre justo protegió al Salvador. Agradecer por los hombres íntegros y protectores. José obedeció en silencio. La gratitud actúa con integridad.",
+    quote: {
+      text: "José nos enseña que la verdadera fortaleza se encuentra en la obediencia callada.",
+      author: "Rick Warren"
+    },
+    challenge: "Agradece a un hombre íntegro en tu vida (padre, esposo, líder).",
+    song: {
+      title: "Hombre de Fe",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hombre+de+Fe+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Hombre%20de%20Fe%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 340,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por los Ángeles",
+    verse: {
+      text: "Gloria a Dios en las alturas, y en la tierra paz, buena voluntad para con los hombres.",
+      reference: "Lucas 2:14"
+    },
+    reflection: "El cielo celebró. Agradecer por los mensajeros de Dios y por las buenas noticias. El gozo del cielo llegó a la tierra. La gratitud se une al coro celestial.",
+    quote: {
+      text: "Los ángeles anunciaron las buenas nuevas, pero nosotros debemos vivirlas y compartirlas.",
+      author: "Billy Graham"
+    },
+    challenge: "Canta un villancico hoy como si fueras parte del coro de ángeles.",
+    song: {
+      title: "Ángeles Cantando Están",
+      artist: "Villancico",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ángeles+Cantando+Están+Villancico",
+      spotifyUrl: "https://open.spotify.com/search/Ángeles%20Cantando%20Están%20Villancico"
+    }
+  },
+  {
+    day: 341,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por los Pastores",
+    verse: {
+      text: "Vinieron, pues, apresuradamente, y hallaron a María y a José, y al niño.",
+      reference: "Lucas 2:16"
+    },
+    reflection: "Los primeros invitados fueron los marginados. Agradecer porque el Evangelio es para todos, empezando por los humildes. Nadie está excluido. La gratitud corre al encuentro de Jesús.",
+    quote: {
+      text: "El evangelio siempre llega primero a los humildes y marginados.",
+      author: "Timothy Keller"
+    },
+    challenge: "Comparte la noticia de Jesús con alguien 'improbable' hoy.",
+    song: {
+      title: "El Tamborilero",
+      artist: "Villancico",
+    },
+    movie: {
+      title: "Se Armó el Belén (The Star) (2017)",
+      description: "Una versión animada y divertida de la Navidad desde la perspectiva de los animales. Ideal para ver en familia y recordar la historia con una sonrisa.",
+      platform: "Netflix",
+      youtubeUrl: "https://www.youtube.com/watch?v=9NjvYZtwk00"
+    }
+  },
+  {
+    day: 342,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Estrella",
+    verse: {
+      text: "Y he aquí la estrella que habían visto en el oriente iba delante de ellos.",
+      reference: "Mateo 2:9"
+    },
+    reflection: "Dios guía a los buscadores. Agradecer por las señales que nos guiaron a Cristo. Él usa todo para atraernos. La gratitud sigue la luz.",
+    quote: {
+      text: "La verdadera sabiduría siempre conduce a Cristo.",
+      author: "John Piper"
+    },
+    challenge: "Mira las estrellas esta noche y agradece por la Guía Divina.",
+    song: {
+      title: "Estrella de Belén",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Estrella+de+Belén+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Estrella%20de%20Belén%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 343,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por los Magos",
+    verse: {
+      text: "Y al entrar en la casa... postrándose lo adoraron.",
+      reference: "Mateo 2:11"
+    },
+    reflection: "Vinieron de lejos para adorar. Agradecer por el ejemplo de adoración extravagante. Dieron lo mejor que tenían. La gratitud ofrece sus tesoros.",
+    quote: {
+      text: "La adoración es la respuesta del corazón a la revelación de Dios.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Ofrece a Dios algo valioso hoy (tiempo, dinero o talento).",
+    song: {
+      title: "Nosotros Los Tres Reyes",
+      artist: "Villancico",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Nosotros+Los+Tres+Reyes+Villancico",
+      spotifyUrl: "https://open.spotify.com/search/Nosotros%20Los%20Tres%20Reyes%20Villancico"
+    }
+  },
+  {
+    day: 344,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Oro (Realeza)",
+    verse: {
+      text: "Y abriendo sus tesoros, le ofrecieron presentes: oro...",
+      reference: "Mateo 2:11"
+    },
+    reflection: "El oro es para el Rey. Agradecer porque Jesús es nuestro Rey Soberano. Él gobierna con justicia. La gratitud se somete a su reinado.",
+    quote: {
+      text: "Cristo no vino a ser un rey temporal, sino el Rey eterno de un reino que no tendrá fin.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Declara hoy: 'Jesús, tú eres mi Rey' en cada decisión.",
+    song: {
+      title: "Rey de Reyes",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Rey+de+Reyes+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Rey%20de%20Reyes%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 345,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Incienso (Divinidad)",
+    verse: {
+      text: "...incienso...",
+      reference: "Mateo 2:11"
+    },
+    reflection: "El incienso es para Dios. Agradecer porque Jesús es Dios. No es solo un maestro, es el Divino. Merece toda adoración. La gratitud adora.",
+    quote: {
+      text: "La adoración es la ocupación más elevada del alma humana.",
+      author: "John MacArthur"
+    },
+    challenge: "Dedica un tiempo solo a adorar a Jesús por quien Él es.",
+    song: {
+      title: "Agnus Dei",
+      artist: "Marco Barrientos",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Agnus+Dei+Marco+Barrientos",
+      spotifyUrl: "https://open.spotify.com/search/Agnus%20Dei%20Marco%20Barrientos"
+    }
+  },
+  {
+    day: 346,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Mirra (Sacrificio)",
+    verse: {
+      text: "...y mirra.",
+      reference: "Mateo 2:11"
+    },
+    reflection: "La mirra es para la sepultura. Agradecer porque nació para morir por nosotros. Desde la cuna se veía la cruz. La gratitud recuerda el sacrificio.",
+    quote: {
+      text: "El pesebre y la cruz están inseparablemente unidos en el propósito redentor de Dios.",
+      author: "Max Lucado"
+    },
+    challenge: "Agradece hoy por la cruz, incluso en medio de la Navidad.",
+    song: {
+      title: "La Cruz",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=La+Cruz+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/La%20Cruz%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 347,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Luz del Mundo",
+    verse: {
+      text: "Yo soy la luz del mundo; el que me sigue, no andará en tinieblas.",
+      reference: "Juan 8:12"
+    },
+    reflection: "La Navidad es fiesta de luces. Agradecer porque Jesús disipó nuestras tinieblas. Ya no vivimos en oscuridad. La gratitud brilla.",
+    quote: {
+      text: "Cristo es la luz que ninguna oscuridad puede apagar.",
+      author: "Billy Graham"
+    },
+    challenge: "Enciende una vela hoy y agradece por la Luz de Cristo.",
+    song: {
+      title: "Noche de Paz",
+      artist: "Villancico",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Noche+de+Paz+Villancico",
+      spotifyUrl: "https://open.spotify.com/search/Noche%20de%20Paz%20Villancico"
+    }
+  },
+  {
+    day: 348,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Nombre de Jesús",
+    verse: {
+      text: "Y llamarás su nombre JESÚS, porque él salvará a su pueblo de sus pecados.",
+      reference: "Mateo 1:21"
+    },
+    reflection: "Nombre sobre todo nombre. Agradecer por el poder en el nombre de Jesús. En su nombre hay salvación y poder. La gratitud invoca su nombre.",
+    quote: {
+      text: "El nombre de Jesús es el nombre sobre todo nombre, el nombre que trae salvación.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Repite el nombre de Jesús con gratitud varias veces hoy.",
+    song: {
+      title: "Jesús",
+      artist: "Marcos Witt",
+    },
+    movie: {
+      title: "El Grinch (2000 o 2018)",
+      description: "Más allá de la comedia, nos enseña que la Navidad no viene de una tienda. La gratitud y el amor pueden hacer crecer incluso el corazón más pequeño.",
+      platform: "Netflix / Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=YQV5Pr7pWtM"
+    }
+  },
+  {
+    day: 349,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Paz en la Tierra",
+    verse: {
+      text: "Y se llamará su nombre... Príncipe de Paz.",
+      reference: "Isaías 9:6"
+    },
+    reflection: "El mundo busca paz sin el Príncipe. Agradecer por la paz interior que Jesús da, incluso en medio del caos. Él es nuestra paz. La gratitud pacifica.",
+    quote: {
+      text: "La paz verdadera no es la ausencia de conflicto, sino la presencia del Príncipe de Paz.",
+      author: "Max Lucado"
+    },
+    challenge: "Sé un instrumento de paz en un conflicto hoy.",
+    song: {
+      title: "Paz, Paz, Cuán Dulce Paz",
+      artist: "Himno",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Paz,+Paz,+Cuán+Dulce+Paz+Himno",
+      spotifyUrl: "https://open.spotify.com/search/Paz,%20Paz,%20Cuán%20Dulce%20Paz%20Himno"
+    }
+  },
+  {
+    day: 350,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Gozo",
+    verse: {
+      text: "Os doy nuevas de gran gozo.",
+      reference: "Lucas 2:10"
+    },
+    reflection: "La Navidad es gozo. Agradecer porque el gozo del Señor es nuestra fortaleza. No es felicidad pasajera, es gozo profundo. La gratitud se regocija.",
+    quote: {
+      text: "El gozo es la seriedad del cielo.",
+      author: "C.S. Lewis"
+    },
+    challenge: "Sonríe y desea 'Feliz Navidad' a extraños hoy.",
+    song: {
+      title: "Regocijad",
+      artist: "Villancico",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Regocijad+Villancico",
+      spotifyUrl: "https://open.spotify.com/search/Regocijad%20Villancico"
+    }
+  },
+  {
+    day: 351,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Familia de Dios",
+    verse: {
+      text: "Mirad cuál amor nos ha dado el Padre, para que seamos llamados hijos de Dios.",
+      reference: "1 Juan 3:1"
+    },
+    reflection: "Jesús nació para que nosotros renaciéramos. Agradecer por ser adoptados en la familia divina. Somos hijos del Rey. La gratitud valora la identidad.",
+    quote: {
+      text: "En Cristo, somos adoptados en la familia más grande y eterna que existe.",
+      author: "Rick Warren"
+    },
+    challenge: "Llama a un 'hermano' en la fe y recuérdale cuánto lo aprecias.",
+    song: {
+      title: "Somos Familia",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Somos+Familia+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Somos%20Familia%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 352,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por los Regalos",
+    verse: {
+      text: "Toda buena dádiva y todo don perfecto desciende de lo alto.",
+      reference: "Santiago 1:17"
+    },
+    reflection: "Damos regalos porque Él nos dio primero. Agradecer por la generosidad de Dios y de los hombres. Recibir con gratitud es tan importante como dar. La gratitud disfruta el don.",
+    quote: {
+      text: "El mayor regalo de Navidad no es lo que encontramos bajo el árbol, sino quien nació en el pesebre.",
+      author: "Max Lucado"
+    },
+    challenge: "Agradece sinceramente por cualquier detalle que recibas estos días.",
+    song: {
+      title: "El Mejor Regalo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=El+Mejor+Regalo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/El%20Mejor%20Regalo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 353,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Cena",
+    verse: {
+      text: "He aquí, yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta, entraré a él, y cenaré con él.",
+      reference: "Apocalipsis 3:20"
+    },
+    reflection: "Jesús quiere cenar con nosotros. Agradecer por la comunión íntima con Él. La cena de Navidad es un reflejo de la Cena del Cordero. La gratitud invita a Jesús a la mesa.",
+    quote: {
+      text: "Cristo desea tener comunión íntima con nosotros, no solo ser recordado, sino ser el centro.",
+      author: "A.W. Tozer"
+    },
+    challenge: "Pon un lugar extra en la mesa (simbólico) para Jesús en tu cena.",
+    song: {
+      title: "Ven a Cenar",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ven+a+Cenar+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Ven%20a%20Cenar%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 354,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Esperanza de su Regreso",
+    verse: {
+      text: "Vendré otra vez, y os tomaré a mí mismo.",
+      reference: "Juan 14:3"
+    },
+    reflection: "Vino una vez, y volverá. Agradecer por la Segunda Venida. La Navidad nos recuerda que Dios cumple, así que cumplirá su regreso. La gratitud espera despierta.",
+    quote: {
+      text: "Vino una vez como Salvador, volverá como Rey conquistador.",
+      author: "Billy Graham"
+    },
+    challenge: "Vive hoy como si Jesús fuera a volver esta noche.",
+    song: {
+      title: "Sacia Mi Alma",
+      artist: "Marcos Witt",
+      youtubeUrl: "https://www.youtube.com/watch?v=Ey2YGMnlzYU",
+      spotifyUrl: "https://open.spotify.com/track/5Fy4pqGYYvYLcOqbmwxlIp"
+    }
+  },
+  {
+    day: 355,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Amor",
+    verse: {
+      text: "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito.",
+      reference: "Juan 3:16"
+    },
+    reflection: "El amor fue la razón. Agradecer por el amor incomprensible de Dios. No fue por mérito, fue por amor. La gratitud responde al amor con amor.",
+    quote: {
+      text: "El amor bajó en Navidad.",
+      author: "Christina Rossetti"
+    },
+    challenge: "Dile 'Te amo' a Dios y a tus seres queridos hoy.",
+    song: {
+      title: "Amor Real",
+      artist: "Música Cristiana",
+    },
+    movie: {
+      title: "Qué Bello es Vivir (It's a Wonderful Life) (1946)",
+      description: "El clásico navideño por excelencia. Nos enseña que la vida de cada persona toca muchas otras y que, a pesar de los problemas, la vida es un regalo maravilloso.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=iLR3gZrU2Xo"
+    }
+  },
+  {
+    day: 356,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Vida de Jesús",
+    verse: {
+      text: "Yo he venido para que tengan vida, y para que la tengan en abundancia.",
+      reference: "Juan 10:10"
+    },
+    reflection: "No solo nació, vivió para nosotros. Agradecer por sus 33 años de ejemplo perfecto. Su vida es nuestra escuela. La gratitud aprende del Maestro.",
+    quote: {
+      text: "La vida de Cristo es el modelo perfecto para nuestra vida diaria.",
+      author: "Charles Spurgeon"
+    },
+    challenge: "Lee un pasaje de los Evangelios sobre la vida de Jesús.",
+    song: {
+      title: "La Vida",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=La+Vida+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/La%20Vida%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 357,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Año Vivido",
+    verse: {
+      text: "Te corona el año con tus bienes.",
+      reference: "Salmo 65:11"
+    },
+    reflection: "El año termina. Agradecer por cada día vivido, bueno o malo. Dios ha sido fiel en las 4 estaciones. La gratitud hace balance positivo.",
+    quote: {
+      text: "No cuentes los días, haz que los días cuenten.",
+      author: "Muhammad Ali"
+    },
+    challenge: "Haz una lista de las 12 mejores cosas que te pasaron este año (una por mes).",
+    song: {
+      title: "Un Año Más",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Un+Año+Más+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Un%20Año%20Más%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 358,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por lo que No Sucedió",
+    verse: {
+      text: "Él te librará del lazo del cazador, de la peste destructora.",
+      reference: "Salmo 91:3"
+    },
+    reflection: "Dios nos libró de males que ni vimos. Agradecer por la protección invisible. Accidentes evitados, enfermedades no contraídas. La gratitud ve lo invisible.",
+    quote: {
+      text: "Las bendiciones más grandes a menudo son las oraciones que Dios no respondió como queríamos.",
+      author: "Max Lucado"
+    },
+    challenge: "Agradece a Dios por librarte de peligros desconocidos este año.",
+    song: {
+      title: "Ángeles Acampan",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Ángeles+Acampan+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Ángeles%20Acampan%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 359,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Crecimiento",
+    verse: {
+      text: "Antes bien, creced en la gracia y el conocimiento de nuestro Señor.",
+      reference: "2 Pedro 3:18"
+    },
+    reflection: "No somos los mismos que en Enero. Agradecer por el crecimiento espiritual y personal. Hemos madurado. La gratitud celebra el progreso.",
+    quote: {
+      text: "El crecimiento es la única evidencia de vida.",
+      author: "John Henry Newman"
+    },
+    challenge: "Identifica un área donde has crecido este año y agradécelo.",
+    song: {
+      title: "Creciendo",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Creciendo+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Creciendo%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 360,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Perseverancia",
+    verse: {
+      text: "Mas el que persevere hasta el fin, éste será salvo.",
+      reference: "Mateo 24:13"
+    },
+    reflection: "Seguimos aquí. Agradecer porque Dios nos sostuvo y no nos rendimos. La perseverancia es un don de su gracia. La gratitud sigue caminando.",
+    quote: {
+      text: "La perseverancia es la marca de un verdadero discípulo.",
+      author: "Warren Wiersbe"
+    },
+    challenge: "Felicítate a ti mismo y a Dios por haber llegado casi al final del año.",
+    song: {
+      title: "No Me Rendiré",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=No+Me+Rendiré+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/No%20Me%20Rendiré%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 361,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por las Lecciones",
+    verse: {
+      text: "Enséñanos de tal modo a contar nuestros días, que traigamos al corazón sabiduría.",
+      reference: "Salmo 90:12"
+    },
+    reflection: "Los errores fueron maestros. Agradecer por lo aprendido, incluso a través de fallos. Somos más sabios hoy. La gratitud aprende.",
+    quote: {
+      text: "Dios usa nuestros errores para enseñarnos lecciones que no aprenderíamos de otra manera.",
+      author: "Rick Warren"
+    },
+    challenge: "Agradece por una lección dura pero necesaria que aprendiste este año.",
+    song: {
+      title: "Enséñame",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Enséñame+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Enséñame%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 362,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por la Fidelidad de Dios",
+    verse: {
+      text: "Grande es tu fidelidad; sus misericordias son nuevas cada mañana.",
+      reference: "Lamentaciones 3:23"
+    },
+    reflection: "Dios no falló ni un día. Agradecer por su constancia. Nosotros cambiamos, Él permanece. Su fidelidad es nuestra roca. La gratitud confía.",
+    quote: {
+      text: "La fidelidad de Dios nunca depende de nuestra fidelidad.",
+      author: "Max Lucado"
+    },
+    challenge: "Escribe 'Dios es Fiel' en un lugar visible para el próximo año.",
+    song: {
+      title: "Cielo",
+      artist: "Barak",
+      youtubeUrl: "https://www.youtube.com/watch?v=a-3gkE0Qo5I",
+      spotifyUrl: "https://open.spotify.com/track/5YJnfKcnGxZBhLfIFWoGNu"
+    },
+    movie: {
+      title: "El Progreso del Peregrino (The Pilgrim's Progress) (2019)",
+      description: "Al final del viaje, Cristiano llega a la Ciudad Celestial. Nos recuerda que la fidelidad de Dios nos acompaña hasta el final del camino.",
+      platform: "Prime Video",
+      youtubeUrl: "https://www.youtube.com/watch?v=04WXlAcOtS0"
+    }
+  },
+  {
+    day: 363,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Futuro",
+    verse: {
+      text: "Porque yo sé los pensamientos que tengo acerca de vosotros... pensamientos de paz, y no de mal.",
+      reference: "Jeremías 29:11"
+    },
+    reflection: "El año nuevo se acerca. Agradecer anticipadamente por lo que Dios hará. El futuro está en sus manos seguras. La gratitud mira adelante con esperanza.",
+    quote: {
+      text: "No sé qué depara el futuro, pero sé quién sostiene el futuro.",
+      author: "Ralph Abernathy"
+    },
+    challenge: "Ora bendiciendo tu próximo año.",
+    song: {
+      title: "Mi Futuro",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Mi+Futuro+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Mi%20Futuro%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 364,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud por el Fin de una Etapa",
+    verse: {
+      text: "He acabado la carrera, he guardado la fe.",
+      reference: "2 Timoteo 4:7"
+    },
+    reflection: "Casi terminamos. Agradecer por la satisfacción de concluir. Cerrar ciclos es importante para abrir nuevos. La gratitud cierra bien.",
+    quote: {
+      text: "Cada final que Dios permite es la puerta a un nuevo comienzo que Él ha preparado.",
+      author: "Charles Stanley"
+    },
+    challenge: "Limpia o ordena algo físico hoy como símbolo de cerrar una etapa.",
+    song: {
+      title: "Hasta Aquí",
+      artist: "Música Cristiana",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Hasta+Aquí+Música+Cristiana",
+      spotifyUrl: "https://open.spotify.com/search/Hasta%20Aquí%20Música%20Cristiana"
+    }
+  },
+  {
+    day: 365,
+    month: "Diciembre",
+    monthId: 12,
+    title: "Gratitud Eterna",
+    verse: {
+      text: "Te alabaré para siempre, por lo que has hecho.",
+      reference: "Salmo 52:9"
+    },
+    reflection: "Día 365. ¡Lo logramos! Agradecer a Dios por este viaje de gratitud. Que la gratitud no termine aquí, sino que sea eterna. Gracias, Señor, por todo. La gratitud es para siempre.",
+    quote: {
+      text: "La gratitud transforma lo que tenemos en suficiente, y más.",
+      author: "Max Lucado"
+    },
+    challenge: "Celebra hoy. Has completado un año de gratitud. ¡Gloria a Dios!",
+    song: {
+      title: "Demos Gracias al Señor",
+      artist: "Himno",
+      youtubeUrl: "https://www.youtube.com/results?search_query=Demos+Gracias+al+Señor+Himno",
+      spotifyUrl: "https://open.spotify.com/search/Demos%20Gracias%20al%20Señor%20Himno"
+    }
+  }
+];
