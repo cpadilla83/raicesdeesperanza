@@ -1,73 +1,84 @@
-import { createContext, ReactNode, useContext, useState, useEffect } from "react";
+import { createContext, ReactNode, useContext, useEffect, useMemo, useState } from "react";
+import { useAuth } from "@/contexts/AuthContext";
+
+type DevotionalType = "raices" | "legado" | "atletas";
 
 interface ProgressContextType {
   completedDays: number[];
-  toggleDayCompletion: (dayId: number) => void;
+  toggleDayCompletion: (dayId: number) => Promise<void>;
   isDayCompleted: (dayId: number) => boolean;
   isLoading: boolean;
+  refresh: () => Promise<void>;
 }
 
 const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
 
-export function ProgressProvider({ children, devotionalType }: { children: ReactNode; devotionalType: "raices" | "legado" | "atletas" }) {
+export function ProgressProvider({
+  children,
+  devotionalType,
+}: {
+  children: ReactNode;
+  devotionalType: DevotionalType;
+}) {
+  const { user } = useAuth();
   const [completedDays, setCompletedDays] = useState<number[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  
-  // Load from localStorage on mount
-  useEffect(() => {
-    const storageKey = `devotional-progress-${devotionalType}`;
-    const stored = localStorage.getItem(storageKey);
-    if (stored) {
-      try {
-        const parsed = JSON.parse(stored);
-        setCompletedDays(parsed);
-      } catch (e) {
-        console.error("Failed to parse stored progress", e);
-      }
+
+  const refresh = async () => {
+    if (!user) return;
+    setIsLoading(true);
+    try {
+      const res = await fetch(`/api/progress?devotionalType=${devotionalType}`, {
+        credentials: "include",
+      });
+      const data = await res.json();
+      setCompletedDays(Array.isArray(data.completedDays) ? data.completedDays : []);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
-  }, []);
-  
-  // Save to localStorage whenever completedDays changes
+  };
+
   useEffect(() => {
-    if (!isLoading) {
-      const storageKey = `devotional-progress-${devotionalType}`;
-      localStorage.setItem(storageKey, JSON.stringify(completedDays));
-    }
-  }, [completedDays, isLoading, devotionalType]);
-  
-  const toggleDayCompletion = (dayId: number) => {
-    setCompletedDays((prev) => {
-      if (prev.includes(dayId)) {
-        return prev.filter((id) => id !== dayId);
-      } else {
-        return [...prev, dayId];
-      }
+    if (!user) return;
+    refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.id, devotionalType]);
+
+  const toggleDayCompletion = async (dayId: number) => {
+    if (!user) return;
+
+    // Optimistic UI
+    setCompletedDays((prev) => (prev.includes(dayId) ? prev.filter((d) => d !== dayId) : [...prev, dayId]));
+
+    const res = await fetch("/api/progress/toggle", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ devotionalType, dayNumber: dayId }),
     });
+
+    if (!res.ok) {
+      // Revertir si falló
+      await refresh();
+    }
   };
-  
-  const isDayCompleted = (dayId: number) => {
-    return completedDays.includes(dayId);
-  };
-  
-  return (
-    <ProgressContext.Provider
-      value={{
-        completedDays,
-        toggleDayCompletion,
-        isDayCompleted,
-        isLoading,
-      }}
-    >
-      {children}
-    </ProgressContext.Provider>
+
+  const value = useMemo(
+    () => ({
+      completedDays,
+      toggleDayCompletion,
+      isDayCompleted: (dayId: number) => completedDays.includes(dayId),
+      isLoading,
+      refresh,
+    }),
+    [completedDays, isLoading]
   );
+
+  return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>;
 }
 
 export function useProgress() {
-  const context = useContext(ProgressContext);
-  if (!context) {
-    throw new Error("useProgress must be used within a ProgressProvider");
-  }
-  return context;
+  const ctx = useContext(ProgressContext);
+  if (!ctx) throw new Error("useProgress must be used within a ProgressProvider");
+  return ctx;
 }

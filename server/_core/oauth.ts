@@ -1,4 +1,4 @@
-import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
+import { COOKIE_NAME } from "@shared/const";
 import type { Express, Request, Response } from "express";
 import * as db from "../db";
 import { getSessionCookieOptions } from "./cookies";
@@ -28,6 +28,7 @@ export function registerOAuthRoutes(app: Express) {
         return;
       }
 
+      // 1) Upsert user
       await db.upsertUser({
         openId: userInfo.openId,
         name: userInfo.name || null,
@@ -36,14 +37,29 @@ export function registerOAuthRoutes(app: Express) {
         lastSignedIn: new Date(),
       });
 
-      const sessionToken = await sdk.createSessionToken(userInfo.openId, {
-        name: userInfo.name || "",
-        expiresInMs: ONE_YEAR_MS,
-      });
+      // 2) Get user row (we need numeric userId)
+      const user = await db.getUserByOpenId(userInfo.openId);
+      if (!user) {
+        res.status(500).json({ error: "User upserted but could not be fetched" });
+        return;
+      }
 
+      // 3) Create OUR auth session in DB (multi-device ready)
+      const { sessionId, expiresAt } = await db.createAuthSession(user.id, req);
+
+      // 4) Set cookie with our sessionId (httpOnly)
       const cookieOptions = getSessionCookieOptions(req);
-      res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
+      const maxAge = Math.max(0, new Date(expiresAt).getTime() - Date.now());
 
+      // Important:
+      // We keep COOKIE_NAME to avoid breaking the client that expects that cookie name.
+      // This cookie now stores our DB sessionId (auth_sessions.id)
+      res.cookie(COOKIE_NAME, sessionId, { ...cookieOptions, maxAge });
+
+      // (Optional) track activity using the auth sessionId as session key
+      // await db.recordUserActivity(user.id, sessionId);
+
+      // 5) Redirect back to app
       res.redirect(302, "/");
     } catch (error) {
       console.error("[OAuth] Callback failed", error);

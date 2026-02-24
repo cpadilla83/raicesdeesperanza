@@ -17,10 +17,17 @@ export function WelcomeScreen({ onStart, devotionalType }: WelcomeScreenProps) {
       <div className="w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
         {/* Imagen de bienvenida */}
         <div className="w-full max-w-4xl flex flex-col items-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <img 
-            src={imageSrc} 
-            alt={title} 
-            className="w-full h-auto object-contain"
+          <img
+            src={imageSrc}
+            alt="Devocional"
+            className="
+              w-full
+              max-w-md
+              h-auto
+              object-contain
+              rounded-2xl
+              shadow-xl
+            "
           />
           
           {/* Botón de inicio */}

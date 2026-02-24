@@ -18,31 +18,45 @@ import { ProgressProvider } from "@/contexts/ProgressContext";
 
 export default function Home() {
   const [, setLocation] = useLocation();
+
+  const getTodayDayOfYear = () => {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const diff = now.getTime() - start.getTime();
+  const oneDay = 1000 * 60 * 60 * 24;
+  const dayOfYear = Math.floor(diff / oneDay);
+  return Math.max(1, Math.min(dayOfYear, 365));
+};
+
+const getSuggestedDay = (today: number, completedDays: number[]) => {
+  const completed = new Set(completedDays);
+  // busca el primer NO leído empezando desde hoy (y si llega al 365 vuelve al 1)
+  for (let offset = 0; offset < 365; offset++) {
+    const day = ((today - 1 + offset) % 365) + 1;
+    if (!completed.has(day)) return day;
+  }
+  return today;
+};
+
+// Función para obtener el siguiente día no leído
+const getNextUnreadDay = (devotionalType: "raices" | "legado" | "atletas") => {
+  const storageKey = `devotional-progress-${devotionalType}`;
+  const completedDays = JSON.parse(localStorage.getItem(storageKey) || "{}");
   
-  // Función para obtener el siguiente día no leído
-  const getNextUnreadDay = (devotionalType: "raices" | "legado" | "atletas") => {
-    const storageKey = `devotional-progress-${devotionalType}`;
-    const completedDays = JSON.parse(localStorage.getItem(storageKey) || "{}");
-    
-    // Buscar el primer día no marcado como leído
-    for (let day = 1; day <= 365; day++) {
-      if (!completedDays[day]) {
-        return day;
-      }
+  for (let day = 1; day <= 365; day++) {
+    if (!completedDays[day]) {
+      return day;
     }
-    
-    // Si todos están leídos, volver al día 1
-    return 1;
-  };
+  }
+  return 1;
+};
   
   const [selectedDevotional, setSelectedDevotional] = useState<"raices" | "legado" | "atletas" | null>(() => {
     return (localStorage.getItem("selected-devotional") as "raices" | "legado" | "atletas") || null;
   });
   
-  const [currentDay, setCurrentDay] = useState(() => {
-    const devotionalType = (localStorage.getItem("selected-devotional") as "raices" | "legado" | "atletas") || "raices";
-    return getNextUnreadDay(devotionalType);
-  });
+  const [currentDay, setCurrentDay] = useState(() => getTodayDayOfYear());
+
   const [view, setView] = useState<"daily" | "calendar" | "advent">("daily");
   const [showWelcome, setShowWelcome] = useState(() => {
     // Verificar si es la primera visita
@@ -61,11 +75,28 @@ export default function Home() {
   
   // Actualizar currentDay cuando cambia el devocional seleccionado
   useEffect(() => {
-    if (selectedDevotional) {
-      const nextDay = getNextUnreadDay(selectedDevotional);
-      setCurrentDay(nextDay);
+  if (!selectedDevotional) return;
+
+  (async () => {
+    try {
+      const res = await fetch(`/api/progress?devotionalType=${selectedDevotional}`, {
+        credentials: "include",
+      });
+      if (!res.ok) return;
+
+      const data = await res.json();
+      const completedDays = Array.isArray(data.completedDays) ? data.completedDays : [];
+
+      const today = getTodayDayOfYear();
+      const suggested = getSuggestedDay(today, completedDays);
+
+      setCurrentDay(suggested);
+    } catch (e) {
+      // si falla, al menos dejamos "hoy"
+      setCurrentDay(getTodayDayOfYear());
     }
-  }, [selectedDevotional]);
+  })();
+}, [selectedDevotional]);
   
   // Obtener datos del devocional actual
   const currentDevotionalData = selectedDevotional === "legado" ? legadoData : selectedDevotional === "atletas" ? atletasData : devotionalData;
